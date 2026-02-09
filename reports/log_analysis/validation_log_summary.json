@@ -1,0 +1,205 @@
+{
+  "timestamp": "2026-01-31T17:56:39.281847",
+  "aggregated": {
+    "total_logs": 9,
+    "errors": 1,
+    "warnings": 0,
+    "logs": [
+      {
+        "timestamp": "2026-01-31T17:56:29.621784",
+        "level": "INFO",
+        "logger": "test_validation",
+        "message": "Phase 1 started: Test Phase",
+        "correlation_id": "N/A",
+        "module": "test_logger",
+        "function": "log_phase_start",
+        "line": 155,
+        "phase": 1,
+        "phase_name": "Test Phase",
+        "event": "phase_start"
+      },
+      {
+        "timestamp": "2026-01-31T17:56:29.621784",
+        "level": "INFO",
+        "logger": "test_validation",
+        "message": "Test test_example: PASSED (0.123s)",
+        "correlation_id": "N/A",
+        "module": "test_logger",
+        "function": "log_test_result",
+        "line": 216,
+        "test": "test_example",
+        "status": "PASSED",
+        "duration": 0.123,
+        "event": "test_result",
+        "phase": 1
+      },
+      {
+        "timestamp": "2026-01-31T17:56:29.621784",
+        "level": "INFO",
+        "logger": "test_validation",
+        "message": "Performance metrics for Phase 1",
+        "correlation_id": "N/A",
+        "module": "test_logger",
+        "function": "log_performance_metrics",
+        "line": 224,
+        "phase": 1,
+        "event": "performance_metrics",
+        "metrics": {
+          "memory_mb": 256,
+          "cpu_percent": 15.5
+        }
+      },
+      {
+        "timestamp": "2026-01-31T17:56:29.621784",
+        "level": "INFO",
+        "logger": "test_validation",
+        "message": "Phase 1 completed: Test Phase",
+        "correlation_id": "N/A",
+        "module": "test_logger",
+        "function": "log_phase_end",
+        "line": 177,
+        "phase": 1,
+        "phase_name": "Test Phase",
+        "event": "phase_end",
+        "duration": 0.5,
+        "results": {
+          "success": true
+        }
+      },
+      {
+        "timestamp": "2026-01-31T17:56:34.605156",
+        "level": "ERROR",
+        "message": "Test error message",
+        "module": "test_module",
+        "function": "test_function",
+        "line": 123
+      },
+      {
+        "timestamp": "2026-01-31T17:56:34.605156",
+        "level": "INFO",
+        "logger": "test_validation",
+        "message": "Phase 1 started: Test Phase",
+        "correlation_id": "N/A",
+        "module": "test_logger",
+        "function": "log_phase_start",
+        "line": 155,
+        "phase": 1,
+        "phase_name": "Test Phase",
+        "event": "phase_start"
+      },
+      {
+        "timestamp": "2026-01-31T17:56:34.605156",
+        "level": "INFO",
+        "logger": "test_validation",
+        "message": "Test test_example: PASSED (0.123s)",
+        "correlation_id": "N/A",
+        "module": "test_logger",
+        "function": "log_test_result",
+        "line": 216,
+        "test": "test_example",
+        "status": "PASSED",
+        "duration": 0.123,
+        "event": "test_result",
+        "phase": 1
+      },
+      {
+        "timestamp": "2026-01-31T17:56:34.605156",
+        "level": "INFO",
+        "logger": "test_validation",
+        "message": "Performance metrics for Phase 1",
+        "correlation_id": "N/A",
+        "module": "test_logger",
+        "function": "log_performance_metrics",
+        "line": 224,
+        "phase": 1,
+        "event": "performance_metrics",
+        "metrics": {
+          "memory_mb": 256,
+          "cpu_percent": 15.5
+        }
+      },
+      {
+        "timestamp": "2026-01-31T17:56:34.605156",
+        "level": "INFO",
+        "logger": "test_validation",
+        "message": "Phase 1 completed: Test Phase",
+        "correlation_id": "N/A",
+        "module": "test_logger",
+        "function": "log_phase_end",
+        "line": 177,
+        "phase": 1,
+        "phase_name": "Test Phase",
+        "event": "phase_end",
+        "duration": 0.5,
+        "results": {
+          "success": true
+        }
+      }
+    ]
+  },
+  "summary": {
+    "total_logs": 9,
+    "time_range": {
+      "start": "2026-01-31T17:56:29.621784",
+      "end": "2026-01-31T17:56:34.605156"
+    },
+    "level_distribution": {
+      "INFO": 8,
+      "ERROR": 1
+    },
+    "phase_distribution": {},
+    "event_distribution": {},
+    "errors": 1,
+    "warnings": 0,
+    "patterns": {
+      "error_types": {
+        "Unknown": 1
+      },
+      "error_modules": {
+        "test_module": 1
+      },
+      "error_functions": {
+        "test_function": 1
+      },
+      "warning_types": {},
+      "phase_errors": {},
+      "common_messages": {
+        "Phase 1 started": 2,
+        "Test test_example": 2,
+        "Performance metrics for Phase 1": 2,
+        "Phase 1 completed": 2,
+        "Test error message": 1
+      },
+      "correlation_ids": {}
+    }
+  },
+  "errors": [
+    {
+      "timestamp": "2026-01-31T17:56:34.605156",
+      "level": "ERROR",
+      "message": "Test error message",
+      "module": "test_module",
+      "function": "test_function",
+      "line": 123,
+      "exception": null,
+      "correlation_id": null,
+      "extra_fields": {}
+    }
+  ],
+  "warnings": [],
+  "insights": {
+    "critical_issues": [],
+    "recommendations": [
+      {
+        "type": "error_review",
+        "message": "Review error logs to identify root causes",
+        "priority": "high"
+      }
+    ],
+    "trends": {
+      "error_rate": "11.11%",
+      "peak_error_hour": 17
+    },
+    "anomalies": []
+  }
+}

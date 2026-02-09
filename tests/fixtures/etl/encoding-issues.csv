@@ -1,0 +1,4 @@
+BIN,Brand,Type,Issuer,CountryName
+400000,Visa,Debit,Test Bank,United States
+510000,Mastercard,Credit,Banco Español,España
+378282,Amex,Credit,Banque Française,France

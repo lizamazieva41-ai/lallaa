@@ -1,0 +1,149 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Bin Check API - Application Performance",
+    "tags": ["performance", "bin-check-api"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "API Request Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(api_requests_total[5m])",
+            "legendFormat": "{{method}} {{endpoint}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Response Time (95th percentile)",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m]))",
+            "legendFormat": "95th percentile"
+          },
+          {
+            "expr": "histogram_quantile(0.50, rate(http_request_duration_seconds_bucket[5m]))",
+            "legendFormat": "50th percentile"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "BIN Lookup Success Rate",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "rate(bin_lookup_total{status=\"db_found\"}[5m]) / rate(bin_lookup_total[5m]) * 100",
+            "legendFormat": "Success Rate %"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": null},
+                {"color": "yellow", "value": 80},
+                {"color": "green", "value": 95}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 8, "x": 0, "y": 8}
+      },
+      {
+        "id": 4,
+        "title": "Cache Hit Rate",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "rate(cache_operations_total{result=\"hit\"}[5m]) / rate(cache_operations_total{operation=\"get\"}[5m]) * 100",
+            "legendFormat": "Cache Hit Rate %"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": null},
+                {"color": "yellow", "value": 70},
+                {"color": "green", "value": 90}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 8, "x": 8, "y": 8}
+      },
+      {
+        "id": 5,
+        "title": "Active Users",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "active_users",
+            "legendFormat": "Active Users"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 8, "x": 16, "y": 8}
+      },
+      {
+        "id": 6,
+        "title": "Error Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(api_requests_total{status_code=~\"5..\"}[5m]) / rate(api_requests_total[5m]) * 100",
+            "legendFormat": "5xx Error Rate %"
+          },
+          {
+            "expr": "rate(api_requests_total{status_code=~\"4..\"}[5m]) / rate(api_requests_total[5m]) * 100",
+            "legendFormat": "4xx Error Rate %"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 16}
+      },
+      {
+        "id": 7,
+        "title": "BIN Lookup Duration",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(bin_lookup_duration_seconds_bucket[5m]))",
+            "legendFormat": "95th percentile"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 24}
+      },
+      {
+        "id": 8,
+        "title": "Cache Operations",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(cache_operations_total[5m])",
+            "legendFormat": "{{operation}} - {{result}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 24}
+      }
+    ],
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "refresh": "5s"
+  }
+}

@@ -1,0 +1,7623 @@
+[
+  {
+    "bin": "493532",
+    "verifiedFields": {
+      "country": {
+        "value": "IT",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "DEUTSCHE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.501Z"
+  },
+  {
+    "bin": "492980",
+    "verifiedFields": {
+      "country": {
+        "value": "GB",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ENTROPAY, LTD.",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.500Z"
+  },
+  {
+    "bin": "550028",
+    "verifiedFields": {
+      "country": {
+        "value": "DK",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "JYSKE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "371566",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.481Z"
+  },
+  {
+    "bin": "550860",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BERKSHIRE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "442743",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF AMERICA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "427360",
+    "verifiedFields": {
+      "country": {
+        "value": "DE",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "DORTMUNDER VOLKSBANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.488Z"
+  },
+  {
+    "bin": "403647",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF AMERICA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.485Z"
+  },
+  {
+    "bin": "543440",
+    "verifiedFields": {
+      "country": {
+        "value": "CA",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "WALMART",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "430496",
+    "verifiedFields": {
+      "country": {
+        "value": "AR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANCO HIPOTECARIO",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.488Z"
+  },
+  {
+    "bin": "415710",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "HOUSTON FEDERAL CREDIT UNION",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "400390",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF AMERICA, N.A. (USA)",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.484Z"
+  },
+  {
+    "bin": "445320",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "GREAT WESTERN",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "518081",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "HAWTHORN BANK",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.502Z"
+  },
+  {
+    "bin": "466186",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "SEACOAST NATIONAL",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.492Z"
+  },
+  {
+    "bin": "371556",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.481Z"
+  },
+  {
+    "bin": "436542",
+    "verifiedFields": {
+      "country": {
+        "value": "MY",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK ISLAM",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.489Z"
+  },
+  {
+    "bin": "539039",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ITAU",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.504Z"
+  },
+  {
+    "bin": "523256",
+    "verifiedFields": {
+      "country": {
+        "value": "DE",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "DEUTSCHER SPARKASSEN UND GIROVERBAND",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.503Z"
+  },
+  {
+    "bin": "445253",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "HORIZON CREDIT UNION",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "522242",
+    "verifiedFields": {
+      "country": {
+        "value": "MY",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK RAKYAT",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.503Z"
+  },
+  {
+    "bin": "544549",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANORTE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "547837",
+    "verifiedFields": {
+      "country": {
+        "value": "BE",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "KBC BANKVERZEKERINGSHOLDING (KBC BANK N.V.)",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "436479",
+    "verifiedFields": {
+      "country": {
+        "value": "NZ",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "GEM VISA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.489Z"
+  },
+  {
+    "bin": "551641",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ACHIEVA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "551168",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "UNION STATE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "435921",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF OKLAHOMA",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.489Z"
+  },
+  {
+    "bin": "527468",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ITAU",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.503Z"
+  },
+  {
+    "bin": "414721",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "NORDSTROM",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.486Z"
+  },
+  {
+    "bin": "530436",
+    "verifiedFields": {
+      "country": {
+        "value": "BG",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "FIBANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.503Z"
+  },
+  {
+    "bin": "488890",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF AMERICA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.494Z"
+  },
+  {
+    "bin": "558174",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "UNION",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.507Z"
+  },
+  {
+    "bin": "550805",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "TEG FEDERAL CREDIT UNION",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "517759",
+    "verifiedFields": {
+      "country": {
+        "value": "CA",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CIBC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.502Z"
+  },
+  {
+    "bin": "479851",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CHASE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.493Z"
+  },
+  {
+    "bin": "548234",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANAMEX",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "372715",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.481Z"
+  },
+  {
+    "bin": "455206",
+    "verifiedFields": {
+      "country": {
+        "value": "GB",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "COOPERATIVE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.491Z"
+  },
+  {
+    "bin": "491639",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "PUTNAM COUNTY BANK",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.494Z"
+  },
+  {
+    "bin": "426685",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CHASE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.488Z"
+  },
+  {
+    "bin": "543805",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "USAA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "376669",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.482Z"
+  },
+  {
+    "bin": "412061",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "MERRICK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.486Z"
+  },
+  {
+    "bin": "490638",
+    "verifiedFields": {
+      "country": {
+        "value": "DE",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BARCLAYS BANK PLC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.494Z"
+  },
+  {
+    "bin": "464303",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "OLD NATIONAL BANK IN EVANSVILLE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.492Z"
+  },
+  {
+    "bin": "463675",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "EAGLE COMMUNITY CREDIT UNION",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.492Z"
+  },
+  {
+    "bin": "525640",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANCO BRADESCARD, S.A.",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.503Z"
+  },
+  {
+    "bin": "439354",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ITAU",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.489Z"
+  },
+  {
+    "bin": "443244",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "USBANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "521314",
+    "verifiedFields": {
+      "country": {
+        "value": "AE",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "FIRST GULF",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.502Z"
+  },
+  {
+    "bin": "454683",
+    "verifiedFields": {
+      "country": {
+        "value": "SA",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "RIYAD",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.491Z"
+  },
+  {
+    "bin": "427324",
+    "verifiedFields": {
+      "country": {
+        "value": "IT",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANCA SELLA SPA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.488Z"
+  },
+  {
+    "bin": "463491",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "METABANK",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.492Z"
+  },
+  {
+    "bin": "551848",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "THE BANK OF ROMNEY",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "511559",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "WELLS FARGO",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.501Z"
+  },
+  {
+    "bin": "538831",
+    "verifiedFields": {
+      "country": {
+        "value": "KR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BC CARD CO., LTD.",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.504Z"
+  },
+  {
+    "bin": "540162",
+    "verifiedFields": {
+      "country": {
+        "value": "MY",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "OCBC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.504Z"
+  },
+  {
+    "bin": "479746",
+    "verifiedFields": {
+      "country": {
+        "value": "AE",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ADCB",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.493Z"
+  },
+  {
+    "bin": "421712",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "SCHOOL EMPLOYEES CREDIT UNION OF WASHINGTON",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "376781",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.482Z"
+  },
+  {
+    "bin": "402988",
+    "verifiedFields": {
+      "country": {
+        "value": "MY",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "RHBBANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.485Z"
+  },
+  {
+    "bin": "486236",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CAPITAL ONE BANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.494Z"
+  },
+  {
+    "bin": "402066",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "COASTAL FEDERAL CREDIT UNION",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.485Z"
+  },
+  {
+    "bin": "376706",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.482Z"
+  },
+  {
+    "bin": "435237",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "TARGET NATIONAL",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.489Z"
+  },
+  {
+    "bin": "426628",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "UMB BANK N.A.",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.488Z"
+  },
+  {
+    "bin": "557829",
+    "verifiedFields": {
+      "country": {
+        "value": "TR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AKBANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.507Z"
+  },
+  {
+    "bin": "421316",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "HSBC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "373216",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.481Z"
+  },
+  {
+    "bin": "519133",
+    "verifiedFields": {
+      "country": {
+        "value": "CA",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF MONTREAL",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.502Z"
+  },
+  {
+    "bin": "551817",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "EDS EMPLOYEES FEDERAL CREDIT UNION",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "447993",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANANA REPUBLIC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "455187",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BRADESCO",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.491Z"
+  },
+  {
+    "bin": "458124",
+    "verifiedFields": {
+      "country": {
+        "value": "CN",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF COMMUNICATIONS",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.492Z"
+  },
+  {
+    "bin": "442642",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "SIOUX EMPIRE FEDERAL CREDIT UNION",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "528939",
+    "verifiedFields": {
+      "country": {
+        "value": "TR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "GARANTI",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.503Z"
+  },
+  {
+    "bin": "421364",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANCO AZTECA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "544540",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ITAU",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "543095",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ITAU UNIBANCO, S.A.",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "601136",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "discover",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "SAMS CLUB",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.507Z"
+  },
+  {
+    "bin": "457098",
+    "verifiedFields": {
+      "country": {
+        "value": "DE",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "VOLKSBANK GUETERSLOH",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.492Z"
+  },
+  {
+    "bin": "545631",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANAMEX",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "542444",
+    "verifiedFields": {
+      "country": {
+        "value": "MY",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "STANDARD CHARTERED BANK MALAYSIA BERHAD",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.504Z"
+  },
+  {
+    "bin": "415967",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "THE CITIZENS BANK",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "549007",
+    "verifiedFields": {
+      "country": {
+        "value": "DE",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "SPARKASSE GERA-GREIZ",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "426414",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "FRANKLIN SAVINGS BANK",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.488Z"
+  },
+  {
+    "bin": "544199",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ITAU",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "378296",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.483Z"
+  },
+  {
+    "bin": "371538",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.481Z"
+  },
+  {
+    "bin": "431231",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CHASE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.488Z"
+  },
+  {
+    "bin": "468451",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AA CREDIT UNION",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.493Z"
+  },
+  {
+    "bin": "542640",
+    "verifiedFields": {
+      "country": {
+        "value": "ID",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "PT. BANK NEGARA INDONESIA (PERSERO) TBK.",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.504Z"
+  },
+  {
+    "bin": "377229",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.483Z"
+  },
+  {
+    "bin": "542598",
+    "verifiedFields": {
+      "country": {
+        "value": "GB",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "POSTOFFICE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.504Z"
+  },
+  {
+    "bin": "547071",
+    "verifiedFields": {
+      "country": {
+        "value": "MY",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AEON CREDIT SERVICE (M) BERHAD",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "378201",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.483Z"
+  },
+  {
+    "bin": "516230",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "NUBANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.502Z"
+  },
+  {
+    "bin": "529108",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BARCLAYS BANK DELAWARE",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.503Z"
+  },
+  {
+    "bin": "552128",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CITIBANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "434287",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "REGIONS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.489Z"
+  },
+  {
+    "bin": "401804",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CITI",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.485Z"
+  },
+  {
+    "bin": "469072",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "IBERIA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.493Z"
+  },
+  {
+    "bin": "377240",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.483Z"
+  },
+  {
+    "bin": "446568",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CHASE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "435157",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "UNITED SOUTHEAST FEDERAL CREDIT UNION",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.489Z"
+  },
+  {
+    "bin": "415231",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BBVA BANCOMER",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "461100",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "SIMMONS FIRST NATIONAL BANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.492Z"
+  },
+  {
+    "bin": "415853",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "PNCBANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "492163",
+    "verifiedFields": {
+      "country": {
+        "value": "ES",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "IBERCAJA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.500Z"
+  },
+  {
+    "bin": "546657",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CHASE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "492536",
+    "verifiedFields": {
+      "country": {
+        "value": "NO",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "SPAREBANKEN VEST",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.500Z"
+  },
+  {
+    "bin": "547074",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "HSBC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "372794",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.481Z"
+  },
+  {
+    "bin": "556331",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "FIFTH THIRD BANK",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.507Z"
+  },
+  {
+    "bin": "527496",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ITAU",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.503Z"
+  },
+  {
+    "bin": "549650",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "GLOBAL CREDIT UNION",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "544887",
+    "verifiedFields": {
+      "country": {
+        "value": "CN",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CHINA CONSTRUCTION",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "455953",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CHASE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.492Z"
+  },
+  {
+    "bin": "456462",
+    "verifiedFields": {
+      "country": {
+        "value": "AU",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ANZ",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.492Z"
+  },
+  {
+    "bin": "371701",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.481Z"
+  },
+  {
+    "bin": "486310",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "COREFIRST BANK & TRUST",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.494Z"
+  },
+  {
+    "bin": "448819",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "HELENA NATIONAL BANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "549113",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CITI",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "542528",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANCO DO ESTADO DO PARA, S.A.",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.504Z"
+  },
+  {
+    "bin": "376464",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANCO BANKPAR S.A.",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.482Z"
+  },
+  {
+    "bin": "489464",
+    "verifiedFields": {
+      "country": {
+        "value": "IT",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CARIGE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.494Z"
+  },
+  {
+    "bin": "430279",
+    "verifiedFields": {
+      "country": {
+        "value": "DE",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "LANDESBANK BERLIN",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.488Z"
+  },
+  {
+    "bin": "548591",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "HSBC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.506Z"
+  },
+  {
+    "bin": "526224",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CITIBANK SOUTH DAKOTA, N.A.",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.503Z"
+  },
+  {
+    "bin": "516390",
+    "verifiedFields": {
+      "country": {
+        "value": "AU",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "WESTPAC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.502Z"
+  },
+  {
+    "bin": "418080",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANCOMER",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "453091",
+    "verifiedFields": {
+      "country": {
+        "value": "CA",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "DESJARDINS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.491Z"
+  },
+  {
+    "bin": "377130",
+    "verifiedFields": {
+      "country": {
+        "value": "GB",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "MBNA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.483Z"
+  },
+  {
+    "bin": "518004",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANAMEX",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.502Z"
+  },
+  {
+    "bin": "425981",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "IXE BANCO S.A.",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.488Z"
+  },
+  {
+    "bin": "415874",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "TD BANKNORTH",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "498401",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANCO DO BRASIL S.A.",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.501Z"
+  },
+  {
+    "bin": "493171",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ACADEMY BANK, N.A.",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.501Z"
+  },
+  {
+    "bin": "489407",
+    "verifiedFields": {
+      "country": {
+        "value": "PL",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK BPH, S.A.",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.494Z"
+  },
+  {
+    "bin": "543240",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CITIBANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "449221",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF OKLAHOMA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "556950",
+    "verifiedFields": {
+      "country": {
+        "value": "GB",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ROYAL BANK OF SCOTLAND",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.507Z"
+  },
+  {
+    "bin": "541286",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "HSBC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.504Z"
+  },
+  {
+    "bin": "514573",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "FRANKLIN SYNERGY",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.502Z"
+  },
+  {
+    "bin": "371348",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.480Z"
+  },
+  {
+    "bin": "403493",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "PNC BANK N.A.",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.485Z"
+  },
+  {
+    "bin": "447305",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "SELCO COMMUNITY CREDIT UNION",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "442777",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF AMERICA, NATIONAL ASSOCIATION",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "404673",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "FIRST NATIONAL BANK OF OMAHA",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.485Z"
+  },
+  {
+    "bin": "442521",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CAPITOL FEDERAL SAVINGS BANK",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "526863",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ITAU",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.503Z"
+  },
+  {
+    "bin": "422200",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "ITAU",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "475056",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CHASE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.493Z"
+  },
+  {
+    "bin": "545534",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CAPITAL ONE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "376601",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BRADESCO",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.482Z"
+  },
+  {
+    "bin": "521180",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "SANTANDER",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.502Z"
+  },
+  {
+    "bin": "415274",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "PORTO SEGURO",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "521044",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BRYANT STATE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.502Z"
+  },
+  {
+    "bin": "402367",
+    "verifiedFields": {
+      "country": {
+        "value": "KR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "HANA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.485Z"
+  },
+  {
+    "bin": "490070",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CHASE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.494Z"
+  },
+  {
+    "bin": "376473",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.482Z"
+  },
+  {
+    "bin": "421763",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF AMERICA N.T. & S.A.",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "377266",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.483Z"
+  },
+  {
+    "bin": "422373",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "WILSON BANK & TRUST",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "436303",
+    "verifiedFields": {
+      "country": {
+        "value": "IN",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "HDFC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.489Z"
+  },
+  {
+    "bin": "477353",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "E*TRADE BANK",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.493Z"
+  },
+  {
+    "bin": "520396",
+    "verifiedFields": {
+      "country": {
+        "value": "MY",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK ISLAM",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.502Z"
+  },
+  {
+    "bin": "405428",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "UNIVERSITY FEDERAL CREDIT UNION",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.485Z"
+  },
+  {
+    "bin": "413571",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF AMERICA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.486Z"
+  },
+  {
+    "bin": "494052",
+    "verifiedFields": {
+      "country": {
+        "value": "AU",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "COMMONWEALTH BANK OF AUSTRALIA",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.501Z"
+  },
+  {
+    "bin": "547497",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF AMERICA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.505Z"
+  },
+  {
+    "bin": "404507",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "DUPACO",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.485Z"
+  },
+  {
+    "bin": "510774",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "HIGHER ONE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.501Z"
+  },
+  {
+    "bin": "463575",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF AMERICA, NATIONAL ASSOCIATION",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.492Z"
+  },
+  {
+    "bin": "453510",
+    "verifiedFields": {
+      "country": {
+        "value": "CA",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "SCOTIABANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.491Z"
+  },
+  {
+    "bin": "409600",
+    "verifiedFields": {
+      "country": {
+        "value": "BR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BRADESCO",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.486Z"
+  },
+  {
+    "bin": "540012",
+    "verifiedFields": {
+      "country": {
+        "value": "SG",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "OCBC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.504Z"
+  },
+  {
+    "bin": "558911",
+    "verifiedFields": {
+      "country": {
+        "value": "KR",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BC CARD CO., LTD.",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.507Z"
+  },
+  {
+    "bin": "377847",
+    "verifiedFields": {
+      "country": {
+        "value": "CO",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANCOLOMBIA",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.483Z"
+  },
+  {
+    "bin": "449449",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "STBANK",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.490Z"
+  },
+  {
+    "bin": "486123",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "MOUNTAIN CREDIT UNION",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.494Z"
+  },
+  {
+    "bin": "536208",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "NORTHWEST FEDERAL CREDIT UNION",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.504Z"
+  },
+  {
+    "bin": "455656",
+    "verifiedFields": {
+      "country": {
+        "value": "ES",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANCO MARE NOSTRUM, S.A.",
+        "sources": [
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.491Z"
+  },
+  {
+    "bin": "435619",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF AMERICA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.489Z"
+  },
+  {
+    "bin": "467726",
+    "verifiedFields": {
+      "country": {
+        "value": "CA",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "PEOPLES TRUST COMPANY",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.492Z"
+  },
+  {
+    "bin": "372837",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.481Z"
+  },
+  {
+    "bin": "514759",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CAPITAL ONE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.502Z"
+  },
+  {
+    "bin": "486483",
+    "verifiedFields": {
+      "country": {
+        "value": "GB",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "HSBC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.494Z"
+  },
+  {
+    "bin": "426241",
+    "verifiedFields": {
+      "country": {
+        "value": "IN",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "INDIAN OVERSEAS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.488Z"
+  },
+  {
+    "bin": "420377",
+    "verifiedFields": {
+      "country": {
+        "value": "NO",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "DANSKE",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.487Z"
+  },
+  {
+    "bin": "527518",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANK OF AMERICA",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.503Z"
+  },
+  {
+    "bin": "414449",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "FIRST BRISTOL FEDERAL CREDIT UNION",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.486Z"
+  },
+  {
+    "bin": "376469",
+    "verifiedFields": {
+      "country": {
+        "value": "GB",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "amex",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "AMERICAN EXPRESS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.482Z"
+  },
+  {
+    "bin": "476559",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "SOUTH FLORIDA EDUCATIONAL FEDERAL CREDIT UNION",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.493Z"
+  },
+  {
+    "bin": "510070",
+    "verifiedFields": {
+      "country": {
+        "value": "RU",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "RAIFFEISENBANK AUSTRIA (MOSCOW)",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.501Z"
+  },
+  {
+    "bin": "414729",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "CITI",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.486Z"
+  },
+  {
+    "bin": "465858",
+    "verifiedFields": {
+      "country": {
+        "value": "GB",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 0.7666666666666666
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BARCLAYS",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "debit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.492Z"
+  },
+  {
+    "bin": "530756",
+    "verifiedFields": {
+      "country": {
+        "value": "MX",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "mastercard",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "BANAMEX",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.503Z"
+  },
+  {
+    "bin": "406041",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "NAVY FEDERAL CREDIT UNION",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.485Z"
+  },
+  {
+    "bin": "425788",
+    "verifiedFields": {
+      "country": {
+        "value": "US",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "network": {
+        "value": "visa",
+        "sources": [
+          "binlist/data",
+          "venelinkochev/bin-list-data"
+        ],
+        "confidence": 1
+      },
+      "issuer": {
+        "value": "FIRST REPUBLIC",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      },
+      "type": {
+        "value": "credit",
+        "sources": [
+          "binlist/data"
+        ],
+        "confidence": 0.5
+      }
+    },
+    "verificationMethod": "cross-source",
+    "lastVerified": "2026-01-28T07:38:49.488Z"
+  }
+]

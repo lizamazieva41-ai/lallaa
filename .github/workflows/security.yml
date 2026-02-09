@@ -1,0 +1,116 @@
+name: Security CI/CD Pipeline
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run NPM Audit
+        run: npm audit --audit-level=high --json > security-audit.json || true
+        continue-on-error: true
+
+      - name: Run SAST (CodeQL)
+        uses: github/codeql-action/analyze@v2
+        with:
+          languages: typescript
+          queries: security-extended
+          output: sarif-results
+        env:
+          CODEQL_ACTION: analyze
+          CODEQL_EXTRACTOR_JAVA: not_needed
+
+      - name: Run Dependency Security Scan
+        run: npx snyk test --json > security-snyk.json || true
+        continue-on-error: true
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+      - name: Run Bandit Security Scan
+        run: |
+          pip install bandit
+          bandit -r . -f json -o security-bandit.json || true
+        continue-on-error: true
+
+      - name: Generate Security Report
+        run: |
+          node scripts/generate-security-report.js
+
+      - name: Upload Security Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: security-scan-results
+          path: |
+            security-*.json
+
+      - name: Comment Security Issues
+        if: failure()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            # Create security comment with critical issues highlighted
+            echo "🚨 **Security Scan Results** 🚨" >> security-comment.md
+            echo "" >> security-comment.md
+            npm run security:check >> security-comment.md
+            echo "" >> security-comment.md
+            cat security-comment.md >> $GITHUB_OUTPUT
+            
+      - name: Security Gate
+        run: |
+          # Fail build if critical security issues found
+          if [ -f security-failures.json ]; then
+            echo "Critical security vulnerabilities detected. Build failed."
+            exit 1
+          else
+            echo "Security checks passed. Build successful."
+            
+  security-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Security Integration Tests
+        run: npm test -- --testPathPattern="security" --coverage --passWithNoTests
+
+      - name: Upload Security Test Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: security-test-results
+          path: coverage/
+
+      - name: Security Coverage Check
+        run: |
+          # Ensure minimum 75% coverage on security-critical modules
+          COVERAGE_THRESHOLD=75
+          ACTUAL_COVERAGE=$(npm test -- --testPathPattern="security" --coverage --passWithNoTests | grep -o "All files" | awk '{print $2}' | sed 's/%//')
+          
+          if (( $(echo "$ACTUAL_COVERAGE >= $COVERAGE_THRESHOLD" | bc -l))); then
+            echo "✅ Security test coverage: $ACTUAL_COVERAGE% (threshold: $COVERAGE_THRESHOLD%)"
+          else
+            echo "❌ Security test coverage below threshold: $ACTUAL_COVERAGE% (threshold: $COVERAGE_THRESHOLD%)"
+            echo "::error::Security test coverage requirement not met::${ACTUAL_COVERAGE}::${COVERAGE_THRESHOLD}%"

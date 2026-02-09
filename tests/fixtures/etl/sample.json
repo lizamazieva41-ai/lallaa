@@ -1,0 +1,38 @@
+{
+  "400000": {
+    "length": 16,
+    "luhn": true,
+    "scheme": "visa",
+    "brand": "Visa",
+    "type": "debit",
+    "bank": {
+      "name": "Test Bank",
+      "url": "https://testbank.com",
+      "phone": "+1-555-0100",
+      "city": "New York"
+    },
+    "country": {
+      "alpha2": "US",
+      "alpha3": "USA",
+      "name": "United States",
+      "numeric": "840"
+    }
+  },
+  "510000": {
+    "length": 16,
+    "luhn": true,
+    "scheme": "mastercard",
+    "brand": "Mastercard",
+    "type": "credit",
+    "bank": {
+      "name": "Test Bank 2",
+      "url": "https://testbank2.com"
+    },
+    "country": {
+      "alpha2": "GB",
+      "alpha3": "GBR",
+      "name": "United Kingdom",
+      "numeric": "826"
+    }
+  }
+}

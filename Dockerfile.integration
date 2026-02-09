@@ -1,0 +1,61 @@
+# Multi-stage build for bin-check integration features
+FROM node:18-alpine AS base
+
+# Install dependencies only when needed
+FROM base AS deps
+RUN apk add --no-cache libc6-compat
+WORKDIR /app
+
+# Install dependencies
+COPY package.json package-lock.json* ./
+RUN npm ci && npm cache clean --force
+
+# Rebuild the source code only when needed
+FROM base AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+
+# Build the application
+RUN npm run build
+
+# Production image
+FROM base AS runner
+WORKDIR /app
+
+ENV NODE_ENV production
+
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+# Copy built application
+COPY --from=builder --chown=nextjs:nodejs /app/dist ./dist
+COPY --from=builder --chown=nextjs:nodejs /app/node_modules ./node_modules
+COPY --from=builder --chown=nextjs:nodejs /app/package.json ./package.json
+
+# Create directories for Excel exports
+RUN mkdir -p /app/temp/exports /app/logs && \
+    chown -R nextjs:nodejs /app/temp /app/logs
+
+USER nextjs
+
+EXPOSE 8080
+
+ENV PORT 8080
+ENV HOSTNAME "0.0.0.0"
+
+# Environment variables for integration
+ENV DOREMON_API_URL="http://doremon-ai:8000"
+ENV DOREMON_TIMEOUT=30000
+ENV DOREMON_RETRY_ATTEMPTS=3
+ENV EXCEL_EXPORT_PATH="/app/temp/exports"
+ENV WORKFLOW_STATUS_CHECK_INTERVAL=5000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
+  CMD node -e "require('http').get('http://localhost:8080/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })"
+
+# Volume for Excel exports
+VOLUME ["/app/temp/exports"]
+
+CMD ["node", "dist/index.js"]

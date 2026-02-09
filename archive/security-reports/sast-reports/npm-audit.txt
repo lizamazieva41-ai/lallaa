@@ -1,0 +1,11 @@
+# npm audit report
+
+pm2  *
+pm2 Regular Expression Denial of Service vulnerability - https://github.com/advisories/GHSA-x5gf-qvw8-r2rm
+No fix available
+node_modules/pm2
+
+1 low severity vulnerability
+
+Some issues need review, and may require choosing
+a different dependency.

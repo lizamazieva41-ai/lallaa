@@ -1,0 +1,115 @@
+# Trivy Configuration for Container Security Scanning
+
+# Scan configuration
+scan:
+  # Include all vulnerabilities
+  severity: ["UNKNOWN", "LOW", "MEDIUM", "HIGH", "CRITICAL"]
+  
+  # Enable all scan types
+  security-checks:
+    - vuln
+    - misconfig
+    - secret
+    - license
+  
+  # Ignore specific CVEs if needed (false positives)
+  ignore-unfixed: true
+  
+  # Skip directories that might cause false positives
+  skip-dirs:
+    - /tmp
+    - /var/log
+    - /home
+  
+  # Skip files
+  skip-files:
+    - "*.log"
+    - "*.tmp"
+
+# Misconfiguration checks
+misconfig:
+  # Enable all misconfiguration checks
+  check-configs:
+    - os-release
+    - pkg-list
+    - distro-ver
+    - secret-scan
+  
+  # Check for hardcoded secrets
+  secret-scan:
+    patterns:
+      - password
+      - api_key
+      - secret
+      - token
+      - private_key
+
+# License checking
+license:
+  # Check for problematic licenses
+  allowed-licenses:
+    - MIT
+    - Apache-2.0
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - ISC
+  
+  # Block problematic licenses
+  blocked-licenses:
+    - GPL-2.0
+    - GPL-3.0
+    - AGPL-1.0
+    - AGPL-3.0
+
+# Output configuration
+output:
+  # Generate SARIF format for GitHub integration
+  format: sarif
+  
+  # Include detailed information
+  include-licenses: true
+  include-dev-deps: true
+  
+  # Vulnerability details
+  show-suppressed: false
+  list-all-pkgs: true
+
+# Reporting
+report:
+  # Generate comprehensive reports
+  templates:
+    - template: html
+      output: trivy-report.html
+    - template: json
+      output: trivy-report.json
+    - template: sarif
+      output: trivy-report.sarif
+  
+  # Include severity breakdown
+  severity-summary: true
+  
+  # Include recommendations
+  recommendations: true
+
+# Database configuration
+db:
+  # Use Trivy's built-in vulnerability database
+  type: trivy
+  
+  # Auto-update vulnerability database
+  auto-update: true
+  
+  # Database cache
+  cache-dir: /root/.cache/trivy
+
+# API configuration
+api:
+  # Rate limiting for vulnerability APIs
+  rate-limit: 1000
+  
+  # Timeout settings
+  timeout: 300s
+  
+  # Retry settings
+  retry-count: 3
+  retry-interval: 5s

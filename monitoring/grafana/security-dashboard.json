@@ -1,0 +1,167 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Bin Check API - Security Dashboard",
+    "tags": ["security", "bin-check-api"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Failed Authentication Attempts",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "rate(failed_auth_total[5m])",
+            "legendFormat": "Failed Auth/min"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": null},
+                {"color": "yellow", "value": 5},
+                {"color": "red", "value": 10}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Suspicious Activity",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "increase(suspicious_activity_total[5m])",
+            "legendFormat": "Suspicious Events"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": null},
+                {"color": "yellow", "value": 1},
+                {"color": "red", "value": 5}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "Authentication Failures by Reason",
+        "type": "piechart",
+        "targets": [
+          {
+            "expr": "sum by (reason) (increase(failed_auth_total[1h]))",
+            "legendFormat": "{{reason}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 8}
+      },
+      {
+        "id": 4,
+        "title": "Vault Access Operations",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(vault_access_total[5m])",
+            "legendFormat": "{{operation}} - {{result}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8}
+      },
+      {
+        "id": 5,
+        "title": "Database Access Trends",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(database_access_total[5m])",
+            "legendFormat": "{{operation}} on {{table}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 16}
+      },
+      {
+        "id": 6,
+        "title": "Rate Limit Breaches",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "increase(rate_limit_breach_total[5m])",
+            "legendFormat": "Rate Limit Breaches"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": null},
+                {"color": "red", "value": 1}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 24}
+      },
+      {
+        "id": 7,
+        "title": "Unauthorized Access Attempts",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "increase(unauthorized_access_total[5m])",
+            "legendFormat": "Unauthorized Attempts"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": null},
+                {"color": "yellow", "value": 1},
+                {"color": "red", "value": 5}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 24}
+      },
+      {
+        "id": 8,
+        "title": "Security Events Timeline",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "increase(audit_events_total[1h])",
+            "legendFormat": "{{action}} - {{resource}} - {{result}}",
+            "format": "table"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 32}
+      }
+    ],
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "refresh": "5s"
+  }
+}

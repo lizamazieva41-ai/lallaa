@@ -1,0 +1,249 @@
+groups:
+  - name: security_alerts
+    rules:
+      # High failed authentication rate
+      - alert: HighFailedAuthenticationRate
+        expr: rate(failed_auth_total[5m]) > 10
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High rate of failed authentication attempts"
+          description: "More than 10 failed authentication attempts per minute for the last 2 minutes"
+
+      # Suspicious activity detected
+      - alert: SuspiciousActivityDetected
+        expr: suspicious_activity_total > 0
+        for: 0m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Suspicious activity detected"
+          description: "Suspicious activity has been detected in the application"
+
+      # Vault access denied
+      - alert: VaultAccessDenied
+        expr: vault_access_failed_total > 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Vault access denied"
+          description: "Failed access attempts to Vault secrets detected"
+
+      # Database access anomalies
+      - alert: DatabaseAccessAnomaly
+        expr: rate(database_access_failed_total[5m]) > 5
+        for: 3m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High database access failure rate"
+          description: "Unusual number of database access failures detected"
+
+  - name: application_alerts
+    rules:
+      # High error rate
+      - alert: HighErrorRate
+        expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High error rate detected"
+          description: "Error rate is above 10% for more than 5 minutes"
+
+      # High response time
+      - alert: HighResponseTime
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 2
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High response time detected"
+          description: "95th percentile response time is above 2 seconds"
+
+      # Application down
+      - alert: ApplicationDown
+        expr: up{job="bin-check-api"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Application is down"
+          description: "Bin Check API application is not responding"
+
+  - name: infrastructure_alerts
+    rules:
+      # High CPU usage
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage is above 80% for more than 5 minutes"
+
+      # High memory usage
+      - alert: HighMemoryUsage
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage detected"
+          description: "Memory usage is above 85% for more than 5 minutes"
+
+      # Disk space low
+      - alert: LowDiskSpace
+        expr: (node_filesystem_avail_bytes / node_filesystem_size_bytes) * 100 < 15
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Low disk space detected"
+          description: "Disk space is below 15%"
+
+  - name: vault_alerts
+    rules:
+      # Vault sealed
+      - alert: VaultSealed
+        expr: vault_core_unsealed == 0
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Vault is sealed"
+          description: "HashiCorp Vault is sealed and unavailable"
+
+      # Vault high request rate
+      - alert: VaultHighRequestRate
+        expr: rate(vault_core_handle_request_count[5m]) > 1000
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High Vault request rate"
+          description: "Vault is handling more than 1000 requests per second"
+
+  - name: card_generation_alerts
+    rules:
+      # High card generation failure rate
+      - alert: HighCardGenerationFailureRate
+        expr: |
+          rate(card_generation_total{status="failed"}[5m]) / 
+          rate(card_generation_total[5m]) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High card generation failure rate"
+          description: "Card generation failure rate is above 5% for more than 5 minutes"
+
+      # High duplicate rate
+      - alert: HighCardGenerationDuplicateRate
+        expr: card_generation_duplicate_rate > 0.05
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High card generation duplicate rate"
+          description: "Card generation duplicate rate is above 5% for more than 10 minutes"
+
+      # Very high duplicate rate (critical)
+      - alert: VeryHighCardGenerationDuplicateRate
+        expr: card_generation_duplicate_rate > 0.10
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Very high card generation duplicate rate"
+          description: "Card generation duplicate rate is above 10% for more than 5 minutes"
+
+      # Slow card generation
+      - alert: SlowCardGeneration
+        expr: |
+          histogram_quantile(0.95, rate(card_generation_duration_seconds_bucket[5m])) > 1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Slow card generation detected"
+          description: "95th percentile card generation time is above 1 second for more than 5 minutes"
+
+      # Very slow card generation (critical)
+      - alert: VerySlowCardGeneration
+        expr: |
+          histogram_quantile(0.95, rate(card_generation_duration_seconds_bucket[5m])) > 2
+        for: 3m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Very slow card generation detected"
+          description: "95th percentile card generation time is above 2 seconds for more than 3 minutes"
+
+      # High card generation rate (potential abuse)
+      - alert: HighCardGenerationRate
+        expr: rate(card_generation_total[5m]) > 100
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High card generation rate detected"
+          description: "Card generation rate is above 100 cards per second for more than 5 minutes"
+
+      # Statistics aggregation failed
+      - alert: StatisticsAggregationFailed
+        expr: |
+          rate(statistics_aggregation_status_total{status="failed"}[1h]) > 0
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Statistics aggregation job failed"
+          description: "Daily statistics aggregation job has failed"
+
+      # Statistics aggregation slow
+      - alert: StatisticsAggregationSlow
+        expr: |
+          histogram_quantile(0.95, rate(statistics_aggregation_duration_seconds_bucket[1h])) > 300
+        for: 0m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Statistics aggregation is slow"
+          description: "Statistics aggregation job is taking more than 5 minutes (95th percentile)"
+
+      # Card storage failures
+      - alert: HighCardStorageFailureRate
+        expr: |
+          rate(card_storage_operations_total{result="failed"}[5m]) / 
+          rate(card_storage_operations_total[5m]) > 0.01
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High card storage failure rate"
+          description: "Card storage failure rate is above 1% for more than 5 minutes"
+
+      # Deduplication errors
+      - alert: DeduplicationErrors
+        expr: rate(card_deduplication_total{result="error"}[5m]) > 1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Deduplication errors detected"
+          description: "More than 1 deduplication error per second for more than 5 minutes"
+
+      # Statistics query slow
+      - alert: SlowStatisticsQueries
+        expr: |
+          histogram_quantile(0.95, rate(card_statistics_query_duration_seconds_bucket[5m])) > 0.5
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Slow statistics queries detected"
+          description: "95th percentile statistics query time is above 0.5 seconds for more than 5 minutes"

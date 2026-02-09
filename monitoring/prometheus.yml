@@ -1,0 +1,56 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  - "alert_rules.yml"
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - alertmanager:9093
+
+scrape_configs:
+  # Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Node Exporter - System Metrics
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+
+  # cAdvisor - Container Metrics
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+
+  # Application Metrics
+  - job_name: 'bin-check-api'
+    static_configs:
+      - targets: ['host.docker.internal:3000']  # Adjust to your app port
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  # Vault Metrics
+  - job_name: 'vault'
+    static_configs:
+      - targets: ['vault:8200']
+    metrics_path: '/v1/sys/metrics'
+    params:
+      format: ['prometheus']
+    scrape_interval: 30s
+
+  # Database Metrics (if available)
+  - job_name: 'postgres-exporter'
+    static_configs:
+      - targets: ['postgres-exporter:9187']
+    scrape_interval: 30s
+
+  # Redis Metrics (if available)
+  - job_name: 'redis-exporter'
+    static_configs:
+      - targets: ['redis-exporter:9121']
+    scrape_interval: 30s

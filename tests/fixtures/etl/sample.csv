@@ -1,0 +1,4 @@
+BIN,Brand,Type,Category,Issuer,IssuerPhone,IssuerUrl,isoCode2,isoCode3,CountryName
+400000,Visa,Debit,Consumer,Test Bank,+1-555-0100,https://testbank.com,US,USA,United States
+510000,Mastercard,Credit,Consumer,Test Bank 2,+44-20-1234-5678,https://testbank2.com,GB,GBR,United Kingdom
+378282246310005,American Express,Credit,Consumer,Test Bank 3,+1-555-0200,https://testbank3.com,US,USA,United States

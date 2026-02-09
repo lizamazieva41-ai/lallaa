@@ -1,0 +1,424 @@
+src/utils/logger.ts:  operation: 'READ' | 'WRITE' | 'DELETE' | 'UPDATE',
+src/types/index.ts:  updatedAt: Date;
+src/types/index.ts:  updatedAt: Date;
+src/types/index.ts:  updatedAt: Date;
+src/middleware/rls.ts:    await client.query('SELECT set_rls_context($1, $2)', [userId, userRole]);
+src/middleware/rls.ts:      await client.query('SELECT clear_rls_context()');
+src/middleware/rls.ts:    await client.query("SELECT set_rls_context(NULL, 'service_account')");
+src/middleware/rls.ts:      await client.query('SELECT set_rls_context($1, $2)', [userId, userRole]);
+src/middleware/rls.ts:      await client.query('SELECT clear_rls_context()');
+src/middleware/rls.ts:    const sql = 'SELECT * FROM security.test_rls_policies($1)';
+src/middleware/rls.ts:    const sql = 'SELECT can_access_user($1) as can_access';
+src/middleware/rls.ts:      const result = await client.query('SELECT * FROM security.rls_policy_audit');
+src/middleware/rls.ts:      const result = await client.query('SELECT * FROM security.user_access_audit');
+src/middleware/rls.ts:      SELECT 
+src/middleware/rls.ts:        created_at, updated_at, last_login_at
+src/middleware/rls.ts:      SELECT 
+src/middleware/rls.ts:        last_used_at, expires_at, is_active, created_at, updated_at
+src/middleware/rls.ts:      SELECT 
+src/middleware/rls.ts:      await client.query("SELECT set_rls_context(NULL, 'service_account')");
+src/middleware/rls.ts:        INSERT INTO audit_logs (
+src/middleware/rls.ts:      await client.query('SELECT clear_rls_context()');
+src/middleware/audit.ts:  operation: 'READ' | 'WRITE' | 'DELETE' | 'UPDATE',
+src/middleware/auth-enhanced.ts:    const apiKeyHash = crypto.createHash('sha256').update(apiKey).digest('hex');
+src/middleware/auth-enhanced.ts:      SELECT 
+src/middleware/auth-enhanced.ts:    // Update last used timestamp asynchronously
+src/middleware/auth-enhanced.ts:      'UPDATE api_keys SET last_used_at = CURRENT_TIMESTAMP WHERE id = $1',
+src/middleware/auth-enhanced.ts:      logger.error('Failed to update API key last used timestamp', error);
+src/middleware/auth-enhanced.ts:      SELECT created_at, 
+src/middleware/auth.ts:      .update(apiKey)
+src/middleware/auth.ts:    // Update last used timestamp (async, don't wait)
+src/middleware/auth.ts:    apiKeyModel.updateLastUsed(keyData.id).catch((err) => {
+src/middleware/auth.ts:      logger.error('Failed to update API key last used', { error: err });
+src/scripts/test-rls-simple.ts:        SELECT 
+src/scripts/test-rls-simple.ts:      // Insert test user with service account context
+src/scripts/test-rls-simple.ts:      await this.pool.query('INSERT INTO users (id, email, password_hash, first_name, last_name, role, tier) VALUES ($1, $2, $3, $4, $5, $6, $7)', [
+src/scripts/test-rls-simple.ts:      await this.pool.query('SELECT set_rls_context($1, $2)', [testUserId, 'user']);
+src/scripts/test-rls-simple.ts:      const ownData = await this.pool.query('SELECT id, email FROM users WHERE id = $1', [testUserId]);
+src/scripts/test-rls-simple.ts:      const otherData = await this.pool.query('SELECT id, email FROM users WHERE id != $1 LIMIT 1', [testUserId]);
+src/scripts/test-rls-simple.ts:      await this.pool.query('SELECT set_rls_context($1, $2)', [uuidv4(), 'admin']);
+src/scripts/test-rls-simple.ts:      const adminDataAccess = await this.pool.query('SELECT COUNT(*) as count FROM users');
+src/scripts/test-rls-simple.ts:        SELECT 
+src/scripts/test-rls-simple.ts:      await this.pool.query('SELECT set_rls_context($1, $2)', [testUserId, 'user']);
+src/scripts/test-rls-simple.ts:      await this.pool.query('INSERT INTO api_keys (id, key_id, user_id, key_hash, key_prefix, name, rate_limit) VALUES ($1, $2, $3, $4, $5, $6, $7)', [
+src/scripts/test-rls-simple.ts:      const ownAPIKey = await this.pool.query('SELECT key_id, name FROM api_keys WHERE user_id = $1', [testUserId]);
+src/scripts/test-rls-simple.ts:      const otherAPIKeys = await this.pool.query('SELECT key_id FROM api_keys WHERE user_id != $1 LIMIT 1', [testUserId]);
+src/scripts/test-rls-simple.ts:      await this.pool.query('INSERT INTO audit_logs (user_id, action, entity_type, entity_id) VALUES ($1, $2, $3, $4)', [
+src/scripts/test-rls-simple.ts:      await this.pool.query('INSERT INTO usage_logs (user_id, endpoint, method, response_time, status_code) VALUES ($1, $2, $3, $4, $5)', [
+src/scripts/test-rls-simple.ts:      await this.pool.query('SELECT set_rls_context($1, $2)', [testUserId, 'user']);
+src/scripts/test-rls-simple.ts:      const ownDataTest = await this.pool.query('SELECT id, email FROM users WHERE id = $1', [testUserId]);
+src/scripts/test-rls-simple.ts:      const otherDataTest = await this.pool.query('SELECT id, email FROM users WHERE id = $1', [uuidv4()]);
+src/scripts/test-rls-simple.ts:      const userTableCount = await this.pool.query('SELECT COUNT(*) as count FROM users');
+src/scripts/test-rls-simple.ts:      const apiKeyTableCount = await this.pool.query('SELECT COUNT(*) as count FROM api_keys');
+src/scripts/test-rls-simple.ts:      const auditTableCount = await this.pool.query('SELECT COUNT(*) as count FROM audit_logs');
+src/scripts/test-rls-simple.ts:      const usageTableCount = await this.pool.query('SELECT COUNT(*) as count FROM usage_logs');
+src/scripts/test-rls-simple.ts:      await this.pool.query('SELECT clear_rls_context()');
+src/scripts/test-rls-secure.ts:        'INSERT INTO users (id, email, password_hash, first_name, last_name, role, tier) VALUES ($1, $2, $3, $4, $5, $6, $7)',
+src/scripts/test-rls-secure.ts:      await this.pool.query('SELECT set_rls_context($1, $2)', [testUserId, 'user']);
+src/scripts/test-rls-secure.ts:      const ownData = await this.pool.query('SELECT id, email FROM users WHERE id = $1', [testUserId]);
+src/scripts/test-rls-secure.ts:      const otherData = await this.pool.query('SELECT id, email FROM users WHERE id != $1 LIMIT 1', [testUserId]);
+src/scripts/test-rls-secure.ts:      await this.pool.query('SELECT set_rls_context($1, $2)', [uuidv4(), 'admin']);
+src/scripts/test-rls-secure.ts:      const adminData = await this.pool.query('SELECT COUNT(*) as count FROM users');
+src/scripts/test-rls-secure.ts:      await this.pool.query('SELECT set_rls_context($1, $2)', [testUserId, 'service_account']);
+src/scripts/test-rls-secure.ts:      await this.pool.query('INSERT INTO audit_logs (user_id, action, entity_type) VALUES ($1, $2, $3)', [
+src/scripts/test-rls-secure.ts:      await this.pool.query('SELECT set_rls_context($1, $2)', [testUserId, 'user']);
+src/scripts/test-rls-secure.ts:        SELECT COUNT(*) as count 
+src/scripts/test-rls-secure.ts:        SELECT 
+src/scripts/test-rls-secure.ts:      await this.pool.query('SELECT clear_rls_context()');
+src/scripts/test-rls.ts:      'SELECT set_rls_context($1, $2)',
+src/scripts/test-rls.ts:      'SELECT clear_rls_context()',
+src/scripts/debug-rls-detailed.ts:    const allUsers = await pool.query('SELECT id, email FROM users LIMIT 5');
+src/scripts/debug-rls-detailed.ts:    await pool.query('SELECT set_rls_context($1, $2)', [testUserId, 'user']);
+src/scripts/debug-rls-detailed.ts:      SELECT id, email 
+src/scripts/debug-rls-detailed.ts:        SELECT 
+src/scripts/debug-rls-detailed.ts:        SELECT id, email 
+src/scripts/debug-rls-detailed.ts:        SELECT 
+src/scripts/debug-rls-detailed.ts:    await pool.query('SELECT clear_rls_context()');
+src/services/metrics.ts: * Update cache metrics
+src/services/metrics.ts:export function updateCacheMetrics(size: number): void {
+src/services/metrics.ts: * Update database pool metrics
+src/services/metrics.ts:export function updateDbPoolMetrics(active: number, idle: number, total: number): void {
+src/services/metrics.ts:export function recordDatabaseAccess(operation: 'READ' | 'WRITE' | 'DELETE' | 'UPDATE', table: string, result: 'SUCCESS' | 'FAILURE'): void {
+src/services/metrics.ts:  updateCacheMetrics,
+src/services/metrics.ts:  updateDbPoolMetrics,
+src/services/twoFactor.ts:      crypto.createHash('sha256').update(code).digest('hex')
+src/services/twoFactor.ts:    await userModel.updateTwoFactorSecret(userId, secret, hashedBackupCodes);
+src/services/twoFactor.ts:      .update(providedCode.toUpperCase())
+src/services/twoFactor.ts:      crypto.createHash('sha256').update(code).digest('hex')
+src/services/twoFactor.ts:    await userModel.updateBackupCodes(userId, hashedCodes);
+src/services/bin.ts:   * Useful for admin operations or when data is updated
+src/services/testCardsETL.ts:        // Prepare cards for bulk insert
+src/services/testCardsETL.ts:        const cardsToInsert = gatewayCards.map(card => ({
+src/services/testCardsETL.ts:        // Bulk insert cards
+src/services/testCardsETL.ts:        if (cardsToInsert.length > 0) {
+src/services/testCardsETL.ts:          await testCardModel.bulkCreate(cardsToInsert);
+src/services/testCardsETL.ts:          logger.info(`Loaded ${cardsToInsert.length} test cards for gateway ${gateway.name}`);
+src/services/auth.ts:    // Update last login
+src/services/auth.ts:    await userModel.updateLastLogin(user.id);
+src/services/auth.ts:      await userModel.updateLastActivity(userId);
+src/services/auth.ts:    // Update password
+src/services/auth.ts:    await userModel.updatePassword(userId, newPasswordHash);
+src/services/auth.ts:    // Update user password
+src/services/auth.ts:    await userModel.updatePassword(reset.userId, newPasswordHash);
+src/models/passwordReset.ts:    const tokenHash = crypto.createHash('sha256').update(token).digest('hex');
+src/models/passwordReset.ts:      INSERT INTO ${this.tableName} (user_id, token_hash, expires_at)
+src/models/passwordReset.ts:    const tokenHash = crypto.createHash('sha256').update(token).digest('hex');
+src/models/passwordReset.ts:      SELECT * FROM ${this.tableName}
+src/models/passwordReset.ts:      UPDATE ${this.tableName}
+src/models/passwordReset.ts:      UPDATE ${this.tableName}
+src/models/passwordReset.ts:      SELECT COUNT(*) as count
+src/models/passwordReset.ts:      SELECT COUNT(*) as count
+src/models/apiKey.ts:  updated_at: Date;
+src/models/apiKey.ts:  updatedAt: row.updated_at,
+src/models/apiKey.ts:    const keyHash = crypto.createHash('sha256').update(rawKey).digest('hex');
+src/models/apiKey.ts:      INSERT INTO api_keys (
+src/models/apiKey.ts:    const query = `SELECT * FROM ${this.tableName} WHERE id = $1`;
+src/models/apiKey.ts:    const query = `SELECT * FROM ${this.tableName} WHERE key_id = $1`;
+src/models/apiKey.ts:      SELECT * FROM ${this.tableName}
+src/models/apiKey.ts:      SELECT id, key_id, name, rate_limit, last_used_at, expires_at, is_active, created_at
+src/models/apiKey.ts:      SELECT * FROM ${this.tableName}
+src/models/apiKey.ts:  public async update(
+src/models/apiKey.ts:    const updates: string[] = [];
+src/models/apiKey.ts:      updates.push(`${dbField} = $${paramIndex}`);
+src/models/apiKey.ts:    if (updates.length === 0) {
+src/models/apiKey.ts:    updates.push(`updated_at = CURRENT_TIMESTAMP`);
+src/models/apiKey.ts:      UPDATE ${this.tableName}
+src/models/apiKey.ts:      SET ${updates.join(', ')}
+src/models/apiKey.ts:      logger.error('Failed to update API key', { id, error });
+src/models/apiKey.ts:  public async updateLastUsed(id: string): Promise<void> {
+src/models/apiKey.ts:      UPDATE ${this.tableName}
+src/models/apiKey.ts:      SET last_used_at = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP
+src/models/apiKey.ts:      logger.error('Failed to update API key last used', { id, error });
+src/models/apiKey.ts:      UPDATE ${this.tableName}
+src/models/apiKey.ts:      SET is_active = false, updated_at = CURRENT_TIMESTAMP
+src/models/apiKey.ts:    const keyHash = crypto.createHash('sha256').update(rawKey).digest('hex');
+src/models/apiKey.ts:      UPDATE ${this.tableName}
+src/models/apiKey.ts:      SET key_hash = $1, key_prefix = $2, updated_at = CURRENT_TIMESTAMP
+src/models/bin.ts:  updated_at: Date;
+src/models/bin.ts:  updatedAt: row.updated_at,
+src/models/bin.ts:      SELECT * FROM ${this.tableName}
+src/models/bin.ts:      SELECT COUNT(*) as total
+src/models/bin.ts:      SELECT *
+src/models/bin.ts:      SELECT *
+src/models/bin.ts:      SELECT *
+src/models/bin.ts:  public async create(binData: Omit<BIN, 'createdAt' | 'updatedAt'>): Promise<BIN> {
+src/models/bin.ts:      INSERT INTO bins (
+src/models/bin.ts:  public async update(
+src/models/bin.ts:    data: Partial<Omit<BIN, 'bin' | 'createdAt' | 'updatedAt'>>
+src/models/bin.ts:    const updates: string[] = [];
+src/models/bin.ts:      updates.push(`${dbField} = $${paramIndex}`);
+src/models/bin.ts:    if (updates.length === 0) {
+src/models/bin.ts:    updates.push(`updated_at = CURRENT_TIMESTAMP`);
+src/models/bin.ts:      UPDATE ${this.tableName}
+src/models/bin.ts:      SET ${updates.join(', ')}
+src/models/bin.ts:      logger.error('Failed to update BIN', { bin, error });
+src/models/bin.ts:      SELECT
+src/models/bin.ts:      SELECT country_code, COUNT(*) as count
+src/models/bin.ts:      SELECT *
+src/models/bin.ts:      SELECT
+src/models/bin.ts:      SELECT
+src/models/testCard.ts:  updatedAt: Date;
+src/models/testCard.ts:  updatedAt: Date;
+src/models/testCard.ts:  updated_at: Date;
+src/models/testCard.ts:  updated_at: Date;
+src/models/testCard.ts:  updatedAt: row.updated_at,
+src/models/testCard.ts:  updatedAt: row.updated_at,
+src/models/testCard.ts:      SELECT * FROM ${this.tableName}
+src/models/testCard.ts:      SELECT * FROM ${this.tableName}
+src/models/testCard.ts:  public async create(gateway: Omit<CardGateway, 'id' | 'createdAt' | 'updatedAt'>): Promise<CardGateway> {
+src/models/testCard.ts:      INSERT INTO ${this.tableName} (name, slug, docs_url, description, is_active)
+src/models/testCard.ts:      SELECT * FROM ${this.tableName}
+src/models/testCard.ts:      SELECT COUNT(*) as total
+src/models/testCard.ts:      SELECT 
+src/models/testCard.ts:        cg.updated_at as gateway_updated_at
+src/models/testCard.ts:          updatedAt: row.updated_at,
+src/models/testCard.ts:          updatedAt: row.gateway_updated_at,
+src/models/testCard.ts:  public async create(card: Omit<TestCard, 'id' | 'createdAt' | 'updatedAt'>): Promise<TestCard> {
+src/models/testCard.ts:      INSERT INTO ${this.tableName} (
+src/models/testCard.ts:  public async bulkCreate(cards: Omit<TestCard, 'id' | 'createdAt' | 'updatedAt'>[]): Promise<TestCard[]> {
+src/models/testCard.ts:      SELECT 
+src/models/testCard.ts:      SELECT cg.name, COUNT(tc.id) as count
+src/models/testCard.ts:      SELECT brand, COUNT(*) as count
+src/models/testCard.ts:      SELECT expected_result, COUNT(*) as count
+src/models/country.ts:  updated_at: Date;
+src/models/country.ts:    const query = `SELECT * FROM ${this.tableName} WHERE country_code = $1`;
+src/models/country.ts:    const query = `SELECT * FROM ${this.tableName} ORDER BY country_name ASC`;
+src/models/country.ts:      SELECT * FROM ${this.tableName}
+src/models/country.ts:      SELECT * FROM ${this.tableName}
+src/models/country.ts:      SELECT * FROM ${this.tableName}
+src/models/country.ts:  public async create(country: Omit<Country, 'createdAt' | 'updatedAt'>): Promise<Country> {
+src/models/country.ts:      INSERT INTO countries (
+src/models/country.ts:  public async update(
+src/models/country.ts:    data: Partial<Omit<Country, 'countryCode' | 'createdAt' | 'updatedAt'>>
+src/models/country.ts:    const updates: string[] = [];
+src/models/country.ts:      updates.push(`${dbField} = $${paramIndex}`);
+src/models/country.ts:    if (updates.length === 0) {
+src/models/country.ts:    updates.push(`updated_at = CURRENT_TIMESTAMP`);
+src/models/country.ts:      UPDATE ${this.tableName}
+src/models/country.ts:      SET ${updates.join(', ')}
+src/models/country.ts:      logger.error('Failed to update country', { countryCode, error });
+src/models/country.ts:    const query = `SELECT DISTINCT continent FROM ${this.tableName} ORDER BY continent`;
+src/models/country.ts:    const query = `SELECT DISTINCT currency_code, currency_name FROM ${this.tableName} ORDER BY currency_name`;
+src/models/country.ts:        'SELECT COUNT(*) as count FROM countries'
+src/models/country.ts:          INSERT INTO countries (
+src/models/country.ts:            iban_regex, is_sepa, created_at, updated_at
+src/models/country.ts:          ON CONFLICT (country_code) DO UPDATE SET
+src/models/country.ts:            updated_at = CURRENT_TIMESTAMP
+src/models/user.ts:  updated_at: Date;
+src/models/user.ts:  updatedAt: row.updated_at,
+src/models/user.ts:      INSERT INTO users (email, password_hash, first_name, last_name)
+src/models/user.ts:    const query = `SELECT * FROM ${this.tableName} WHERE id = $1`;
+src/models/user.ts:    const query = `SELECT * FROM ${this.tableName} WHERE email = $1`;
+src/models/user.ts:  public async update(
+src/models/user.ts:    const updates: string[] = [];
+src/models/user.ts:      updates.push(`${dbField} = $${paramIndex}`);
+src/models/user.ts:    if (updates.length === 0) {
+src/models/user.ts:    updates.push(`updated_at = CURRENT_TIMESTAMP`);
+src/models/user.ts:      UPDATE ${this.tableName}
+src/models/user.ts:      SET ${updates.join(', ')}
+src/models/user.ts:      logger.error('Failed to update user', { id, error });
+src/models/user.ts:  public async updateLastLogin(id: string): Promise<void> {
+src/models/user.ts:      UPDATE ${this.tableName}
+src/models/user.ts:      SET last_login_at = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP
+src/models/user.ts:      logger.error('Failed to update last login', { id, error });
+src/models/user.ts:      UPDATE ${this.tableName}
+src/models/user.ts:      SET quota_used = quota_used + $1, updated_at = CURRENT_TIMESTAMP
+src/models/user.ts:  public async updatePassword(
+src/models/user.ts:      UPDATE ${this.tableName}
+src/models/user.ts:      SET password_hash = $1, updated_at = CURRENT_TIMESTAMP
+src/models/user.ts:      logger.info('Password updated successfully', { userId });
+src/models/user.ts:      logger.error('Failed to update password', { userId, error });
+src/models/user.ts:      SELECT id, email, first_name, last_name, role, tier, email_verified, created_at
+src/models/user.ts:      SELECT quota_used, quota_limit
+src/models/user.ts:  public async updateTwoFactorSecret(userId: string, secret: string, backupCodes: string[]): Promise<void> {
+src/models/user.ts:      UPDATE ${this.tableName}
+src/models/user.ts:      SET two_factor_secret = $1, backup_codes = $2, updated_at = CURRENT_TIMESTAMP
+src/models/user.ts:      logger.info('2FA secret updated', { userId });
+src/models/user.ts:      logger.error('Failed to update 2FA secret', { userId, error });
+src/models/user.ts:      UPDATE ${this.tableName}
+src/models/user.ts:      SET two_factor_enabled = true, updated_at = CURRENT_TIMESTAMP
+src/models/user.ts:      UPDATE ${this.tableName}
+src/models/user.ts:      SET two_factor_enabled = false, two_factor_secret = NULL, backup_codes = NULL, updated_at = CURRENT_TIMESTAMP
+src/models/user.ts:      SELECT backup_codes
+src/models/user.ts:  public async updateBackupCodes(userId: string, backupCodes: string[]): Promise<void> {
+src/models/user.ts:      UPDATE ${this.tableName}
+src/models/user.ts:      SET backup_codes = $1, updated_at = CURRENT_TIMESTAMP
+src/models/user.ts:      logger.info('Backup codes updated', { userId });
+src/models/user.ts:      logger.error('Failed to update backup codes', { userId, error });
+src/models/user.ts:      .update(codeToRemove.toUpperCase())
+src/models/user.ts:    await this.updateBackupCodes(userId, filteredCodes);
+src/database/schema-master.sql:  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+src/database/schema-master.sql:  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+src/database/schema-master.sql:  last_updated TIMESTAMP WITH TIME ZONE,
+src/database/schema-master.sql:  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+src/database/schema-master.sql:  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+src/database/schema-master.sql:  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+src/database/schema-master.sql:  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+src/database/schema-master.sql:  records_inserted INTEGER DEFAULT 0,
+src/database/schema-master.sql:  records_updated INTEGER DEFAULT 0,
+src/database/schema-master.sql:-- Updated at trigger function
+src/database/schema-master.sql:CREATE OR REPLACE FUNCTION update_updated_at_column()
+src/database/schema-master.sql:  NEW.updated_at = CURRENT_TIMESTAMP;
+src/database/schema-master.sql:-- Apply updated at triggers
+src/database/schema-master.sql:  IF NOT EXISTS (SELECT 1 FROM pg_trigger WHERE tgname = 'update_users_updated_at') THEN
+src/database/schema-master.sql:    CREATE TRIGGER update_users_updated_at
+src/database/schema-master.sql:      BEFORE UPDATE ON users
+src/database/schema-master.sql:      FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+src/database/schema-master.sql:  IF NOT EXISTS (SELECT 1 FROM pg_trigger WHERE tgname = 'update_countries_updated_at') THEN
+src/database/schema-master.sql:    CREATE TRIGGER update_countries_updated_at
+src/database/schema-master.sql:      BEFORE UPDATE ON countries
+src/database/schema-master.sql:      FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+src/database/schema-master.sql:  IF NOT EXISTS (SELECT 1 FROM pg_trigger WHERE tgname = 'update_bins_updated_at') THEN
+src/database/schema-master.sql:    CREATE TRIGGER update_bins_updated_at
+src/database/schema-master.sql:      BEFORE UPDATE ON bins
+src/database/schema-master.sql:      FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+src/database/schema-master.sql:  IF NOT EXISTS (SELECT 1 FROM pg_trigger WHERE tgname = 'update_api_keys_updated_at') THEN
+src/database/schema-master.sql:    CREATE TRIGGER update_api_keys_updated_at
+src/database/schema-master.sql:      BEFORE UPDATE ON api_keys
+src/database/schema-master.sql:      FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+src/database/schema-master.sql:  IF NOT EXISTS (SELECT 1 FROM pg_trigger WHERE tgname = 'update_card_gateways_updated_at') THEN
+src/database/schema-master.sql:    CREATE TRIGGER update_card_gateways_updated_at
+src/database/schema-master.sql:      BEFORE UPDATE ON card_gateways
+src/database/schema-master.sql:      FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+src/database/schema-master.sql:  IF NOT EXISTS (SELECT 1 FROM pg_trigger WHERE tgname = 'update_test_cards_updated_at') THEN
+src/database/schema-master.sql:    CREATE TRIGGER update_test_cards_updated_at
+src/database/schema-master.sql:      BEFORE UPDATE ON test_cards
+src/database/schema-master.sql:      FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+src/database/migrate.js:      'SELECT COUNT(*) as count FROM countries'
+src/database/migrate.js:        INSERT INTO countries (
+src/database/migrate.js:          iban_regex, is_sepa, created_at, updated_at
+src/database/migrate.js:        ON CONFLICT (country_code) DO UPDATE SET
+src/database/migrate.js:          updated_at = CURRENT_TIMESTAMP
+src/database/migrate.js:    await pool.query('SELECT 1');
+src/database/seeds/001_seed_countries.ts:        INSERT INTO countries (
+src/database/seeds/001_seed_countries.ts:        ON CONFLICT (country_code) DO UPDATE SET
+src/database/seeds/001_seed_countries.ts:          updated_at = CURRENT_TIMESTAMP
+src/database/security/security-setup.sql:    IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'authenticated_user') THEN
+src/database/security/security-setup.sql:    IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'service_account') THEN
+src/database/security/security-setup.sql:GRANT SELECT, INSERT, UPDATE, DELETE ON users TO authenticated_user;
+src/database/security/security-setup.sql:GRANT SELECT, INSERT, UPDATE, DELETE ON api_keys TO authenticated_user;
+src/database/security/security-setup.sql:GRANT SELECT ON audit_logs TO authenticated_user;
+src/database/security/security-setup.sql:GRANT SELECT ON usage_logs TO authenticated_user;
+src/database/security/security-setup.sql:GRANT SELECT, INSERT, DELETE ON password_resets TO authenticated_user;
+src/database/security/security-setup.sql:GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO service_account;
+src/database/security/security-setup.sql:    FOR SELECT
+src/database/security/security-setup.sql:    FOR INSERT
+src/database/security/security-setup.sql:    FOR INSERT
+src/database/security/security-setup.sql:SELECT 
+src/database/security/security-setup.sql:SELECT 
+src/database/security/security-setup.sql:        SELECT tablename FROM pg_tables 
+src/database/security/security-setup.sql:        SELECT rowsecurity INTO rls_enabled 
+src/database/security/rls-policies-fixed.sql:-- CRITICAL FIX: Update all RLS policies with proper NULL handling
+src/database/security/rls-policies-fixed.sql:    FOR SELECT
+src/database/security/rls-policies-fixed.sql:    FOR INSERT
+src/database/security/rls-policies-fixed.sql:    FOR INSERT
+src/database/security/rls-policies-fixed.sql:    FOR INSERT
+src/database/security/rls-policies-fixed.sql:SELECT 
+src/database/security/rls-basic.sql:-- Service policy: Allow insertion without user_id check (for system logs)
+src/database/security/rls-basic.sql:    FOR INSERT
+src/database/security/rls-basic.sql:-- Service policy: Allow insertion without user_id check
+src/database/security/rls-basic.sql:    FOR INSERT
+src/database/security/rls-basic.sql:    can_select BOOLEAN,
+src/database/security/rls-basic.sql:    SELECT 'users'::TEXT, true, COUNT(*)::BIGINT
+src/database/security/rls-basic.sql:    SELECT 'api_keys'::TEXT, true, COUNT(*)::BIGINT
+src/database/security/rls-basic.sql:    SELECT 'audit_logs'::TEXT, true, COUNT(*)::BIGINT
+src/database/security/rls-basic.sql:    SELECT 'usage_logs'::TEXT, true, COUNT(*)::BIGINT
+src/database/security/rls-basic.sql:    SELECT 'password_resets'::TEXT, true, COUNT(*)::BIGINT
+src/database/security/rls-basic.sql:SELECT 
+src/database/security/rls-basic.sql:SELECT 
+src/database/security/rls-policies.sql:    FOR SELECT
+src/database/security/rls-policies.sql:    FOR INSERT
+src/database/security/rls-policies.sql:    FOR INSERT
+src/database/security/rls-policies.sql:    IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'authenticated_user') THEN
+src/database/security/rls-policies.sql:    IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'service_account') THEN
+src/database/security/rls-policies.sql:GRANT SELECT, INSERT, UPDATE, DELETE ON users TO authenticated_user;
+src/database/security/rls-policies.sql:GRANT SELECT, INSERT, UPDATE, DELETE ON api_keys TO authenticated_user;
+src/database/security/rls-policies.sql:GRANT SELECT ON audit_logs TO authenticated_user;
+src/database/security/rls-policies.sql:GRANT SELECT ON usage_logs TO authenticated_user;
+src/database/security/rls-policies.sql:GRANT SELECT, INSERT, DELETE ON password_resets TO authenticated_user;
+src/database/security/rls-policies.sql:GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO service_account;
+src/database/security/rls-policies.sql:    BEFORE INSERT OR UPDATE ON audit_logs
+src/database/security/rls-policies.sql:    BEFORE INSERT ON usage_logs
+src/database/security/rls-policies.sql:SELECT 
+src/database/security/rls-policies.sql:SELECT 
+src/database/security/rls-policies.sql:    can_select BOOLEAN,
+src/database/security/rls-policies.sql:    can_insert BOOLEAN,
+src/database/security/rls-policies.sql:    can_update BOOLEAN,
+src/database/security/rls-policies.sql:    SELECT 'users'::TEXT,
+src/database/security/rls-policies.sql:           (SELECT COUNT(*) > 0 FROM users WHERE id = test_user_id),
+src/database/security/rls-policies.sql:           false, -- Insert test would violate constraints
+src/database/security/rls-policies.sql:           false, -- Update test would need specific conditions
+src/database/security/rls-policies.sql:    SELECT 'api_keys'::TEXT,
+src/database/security/rls-policies.sql:           (SELECT COUNT(*) > 0 FROM api_keys WHERE user_id = test_user_id),
+src/database/security/rls-policies.sql:    SELECT 'audit_logs'::TEXT,
+src/database/security/rls-policies.sql:           (SELECT COUNT(*) > 0 FROM audit_logs WHERE user_id = test_user_id),
+src/database/security/rls-policies.sql:    SELECT 'usage_logs'::TEXT,
+src/database/security/rls-policies.sql:           (SELECT COUNT(*) > 0 FROM usage_logs WHERE user_id = test_user_id),
+src/database/security/rls-policies.sql:        SELECT tablename FROM pg_tables 
+src/database/security/rls-policies.sql:        SELECT rowsecurity INTO rls_enabled 
+src/database/security/rls-final.sql:    FOR INSERT
+src/database/security/rls-final.sql:    FOR INSERT
+src/database/security/rls-final-fix.sql:    FOR SELECT
+src/database/security/rls-final-fix.sql:    FOR INSERT
+src/database/security/rls-final-fix.sql:    FOR INSERT
+src/database/security/rls-final-fix.sql:    -- Insert test user
+src/database/security/rls-final-fix.sql:    INSERT INTO users (email, password_hash, first_name, last_name, role, tier) 
+src/database/security/rls-final-fix.sql:    IF EXISTS (SELECT 1 FROM users WHERE id = test_user_id) THEN
+src/database/security/rls-final-fix.sql:    IF EXISTS (SELECT 1 FROM users WHERE id != test_user_id LIMIT 1) THEN
+src/database/security/rls-functions-fixed.sql:-- CRITICAL FIX: Update RLS functions to handle context properly
+src/database/security/rls-functions-fixed.sql:    can_select BOOLEAN,
+src/database/security/rls-functions-fixed.sql:    SELECT 'users'::TEXT, true, COUNT(*)::BIGINT
+src/database/security/rls-functions-fixed.sql:    SELECT 'api_keys'::TEXT, true, COUNT(*)::BIGINT
+src/database/security/rls-functions-fixed.sql:    SELECT 'audit_logs'::TEXT, true, COUNT(*)::BIGINT
+src/database/security/rls-functions-fixed.sql:    SELECT 'usage_logs'::TEXT, true, COUNT(*)::BIGINT
+src/database/security/rls-functions-fixed.sql:    SELECT 'password_resets'::TEXT, true, COUNT(*)::BIGINT
+src/database/security/rls-fixed.sql:    FOR INSERT
+src/database/security/rls-fixed.sql:    FOR INSERT
+src/database/connection.ts:      await this.query('SELECT 1');
+src/database/migrations/004_create_password_resets.sql:    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+src/database/migrations/004_create_password_resets.sql:-- Create trigger to automatically update updated_at
+src/database/migrations/004_create_password_resets.sql:CREATE OR REPLACE FUNCTION update_password_resets_updated_at()
+src/database/migrations/004_create_password_resets.sql:    NEW.updated_at = CURRENT_TIMESTAMP;
+src/database/migrations/004_create_password_resets.sql:CREATE TRIGGER password_resets_updated_at
+src/database/migrations/004_create_password_resets.sql:    BEFORE UPDATE ON password_resets
+src/database/migrations/004_create_password_resets.sql:    EXECUTE FUNCTION update_password_resets_updated_at();
+src/database/migrations/002_create_test_payment_cards.sql:    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+src/database/migrations/002_create_test_payment_cards.sql:    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+src/database/migrations/002_create_test_payment_cards.sql:-- Create trigger to update updated_at timestamp
+src/database/migrations/002_create_test_payment_cards.sql:CREATE OR REPLACE FUNCTION update_updated_at_column()
+src/database/migrations/002_create_test_payment_cards.sql:    NEW.updated_at = CURRENT_TIMESTAMP;
+src/database/migrations/002_create_test_payment_cards.sql:CREATE TRIGGER update_card_gateways_updated_at 
+src/database/migrations/002_create_test_payment_cards.sql:    BEFORE UPDATE ON card_gateways 
+src/database/migrations/002_create_test_payment_cards.sql:    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+src/database/migrations/002_create_test_payment_cards.sql:CREATE TRIGGER update_test_cards_updated_at 
+src/database/migrations/002_create_test_payment_cards.sql:    BEFORE UPDATE ON test_cards 
+src/database/migrations/002_create_test_payment_cards.sql:    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+src/database/migrations/002_create_test_payment_cards.sql:-- Insert initial gateways
+src/database/migrations/002_create_test_payment_cards.sql:INSERT INTO card_gateways (name, slug, docs_url, description) VALUES
+src/database/migrations/001_initial_schema.sql:  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+src/database/migrations/001_initial_schema.sql:  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+src/database/migrations/001_initial_schema.sql:  last_updated TIMESTAMP WITH TIME ZONE,
+src/database/migrations/001_initial_schema.sql:  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+src/database/migrations/001_initial_schema.sql:  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+src/database/migrations/001_initial_schema.sql:  records_inserted INTEGER DEFAULT 0,
+src/database/migrations/001_initial_schema.sql:  records_updated INTEGER DEFAULT 0,
+src/database/migrations/001_initial_schema.sql:-- Updated at trigger function
+src/database/migrations/001_initial_schema.sql:CREATE OR REPLACE FUNCTION update_updated_at_column()
+src/database/migrations/001_initial_schema.sql:  NEW.updated_at = CURRENT_TIMESTAMP;
+src/database/migrations/001_initial_schema.sql:-- Apply updated at triggers
+src/database/migrations/001_initial_schema.sql:  IF NOT EXISTS (SELECT 1 FROM pg_trigger WHERE tgname = 'update_users_updated_at') THEN
+src/database/migrations/001_initial_schema.sql:    CREATE TRIGGER update_users_updated_at
+src/database/migrations/001_initial_schema.sql:      BEFORE UPDATE ON users
+src/database/migrations/001_initial_schema.sql:      FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+src/database/migrations/001_initial_schema.sql:  IF NOT EXISTS (SELECT 1 FROM pg_trigger WHERE tgname = 'update_countries_updated_at') THEN
+src/database/migrations/001_initial_schema.sql:    CREATE TRIGGER update_countries_updated_at
+src/database/migrations/001_initial_schema.sql:      BEFORE UPDATE ON countries
+src/database/migrations/001_initial_schema.sql:      FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+src/database/migrations/001_initial_schema.sql:  IF NOT EXISTS (SELECT 1 FROM pg_trigger WHERE tgname = 'update_bins_updated_at') THEN
+src/database/migrations/001_initial_schema.sql:    CREATE TRIGGER update_bins_updated_at
+src/database/migrations/001_initial_schema.sql:      BEFORE UPDATE ON bins
+src/database/migrations/001_initial_schema.sql:      FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+src/database/migrations/001_initial_schema.sql:  IF NOT EXISTS (SELECT 1 FROM pg_trigger WHERE tgname = 'update_api_keys_updated_at') THEN
+src/database/migrations/001_initial_schema.sql:    CREATE TRIGGER update_api_keys_updated_at
+src/database/migrations/001_initial_schema.sql:      BEFORE UPDATE ON api_keys
+src/database/migrations/001_initial_schema.sql:      FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();

@@ -1,0 +1,75 @@
+name: Project Analysis
+
+on:
+  schedule:
+    # Run every Sunday at midnight UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+    # Manual trigger
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.md'
+      - 'src/analysis/**'
+      - 'ANALYSIS_REPORT.md'
+      - 'SECURITY_ASSESSMENT.md'
+      - 'TECHNICAL_ANALYSIS.md'
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run analysis
+        run: npm run test-analysis
+      
+      - name: Upload reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: analysis-reports
+          path: reports/analysis/
+          retention-days: 30
+      
+      - name: Comment on PR (if PR)
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            try {
+              const completionStatus = fs.readFileSync(
+                'reports/analysis/PROJECT_COMPLETION_STATUS.md',
+                'utf-8'
+              );
+              const summary = completionStatus.split('\n').slice(0, 20).join('\n');
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `## 📊 Project Analysis Results\n\n\`\`\`\n${summary}\n\`\`\`\n\n[View full reports](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`
+              });
+            } catch (error) {
+              console.log('Could not read completion status:', error.message);
+            }
+      
+      - name: Create summary
+        run: |
+          echo "## 📊 Analysis Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Analysis completed successfully" >> $GITHUB_STEP_SUMMARY
+          echo "📄 Reports generated in \`reports/analysis/\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Check artifacts for full reports." >> $GITHUB_STEP_SUMMARY

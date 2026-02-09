@@ -1,0 +1,42 @@
+# OWASP ZAP Rules Configuration
+# Format: rule_id\tname\tdescription\ttype
+
+# Information Disclosure
+10021\tX-Content-Type-Options header missing\tThe Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'\tWARN
+10054\tCookie without SameSite Attribute\tA cookie has been set without the SameSite attribute\tWARN
+10055\tCSP Scanner Rule (Content Security Policy)\tContent Security Policy (CSP) header not implemented\tWARN
+10056\tX-Debug-Token Information Leak\tThe response contains a potential debug token\tHIGH
+
+# Server Configuration
+10017\tX-Frame-Options header not set\tClickjacking protection missing\tWARN
+10010\tCookie No HttpOnly Flag\tA cookie has been set without the HttpOnly flag\tWARN
+
+# Cross-Site Scripting (XSS)
+40012\tXSS Reflected (String)\tCross-site scripting vulnerability\tHIGH
+40013\tXSS Reflected (Vector)\tCross-site scripting vulnerability\tHIGH
+40014\tXSS Reflected (Attribute)\tCross-site scripting vulnerability\tHIGH
+
+# SQL Injection
+40018\tSQL Injection\tSQL injection vulnerability\tHIGH
+40019\tSQL Injection (Hibernate)\tSQL injection vulnerability\tHIGH
+
+# Cross-Site Request Forgery (CSRF)
+10202\tCross-Domain JavaScript Source File Inclusion\tCross-domain JavaScript source file inclusion\tMEDIUM
+
+# Authentication and Session Management
+10055\tSession ID in URL Rewrite\tSession ID found in URL rewrite\tHIGH
+10057\tUsername Hash Found\tUsername hash found in response\tLOW
+
+# Directory Traversal
+10009\tDirectory Browsing\tDirectory browsing enabled\tMEDIUM
+
+# Information Leakage
+10003\tInformation Disclosure - Debug Error Messages\tSensitive information disclosed in error messages\tMEDIUM
+
+# Security Headers
+10020\tStrict-Transport-Security header not set\tHTTPS enforcement missing\tWARN
+10055\tContent Security Policy (CSP) header not set\tContent Security Policy not implemented\tWARN
+
+# API Security
+10062\tSensitive Data in URL\tSensitive data exposed in URL\tMEDIUM
+10063\tInsecure HTTP Method\tPotentially dangerous HTTP method allowed\tMEDIUM

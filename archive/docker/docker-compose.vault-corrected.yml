@@ -1,0 +1,102 @@
+version: '3.8'
+
+services:
+  vault:
+    image: hashicorp/vault:1.15.6
+    container_name: bin-check-vault
+    ports:
+      - "8200:8200"  # HTTP API
+      - "8210:8201"  # Alternative port
+    environment:
+      VAULT_ADDR: "http://0.0.0.0:8200"
+      VAULT_API_ADDR: "http://0.0.0.0:8201"
+      VAULT_CLUSTER_ADDR: "http://0.0.0.0:8201"
+      VAULT_DEV_ROOT_TOKEN_ID: "bin-check-vault-root"
+      VAULT_DEV_LISTEN_ADDRESS: "0.0.0.0:8201"
+    volumes:
+      - vault_data:/vault/data
+      - vault_logs:/vault/logs
+    command: vault server -config=/vault/config/vault.hcl
+    restart: unless-stopped
+    networks:
+      - vault-network
+
+  postgres:
+    image: postgres:15
+    container_name: bin-check-db
+    environment:
+      POSTGRES_DB: bincheck_prod
+      POSTGRES_USER: bincheck
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: bin-check-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  bin-check-api:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: bin-check-api
+    container_name: bin-check-api
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgres://bincheck:${POSTGRES_PASSWORD}@postgres:5432/bincheck_prod
+      REDIS_URL: redis://redis:6379
+      # Vault integration variables
+      VAULT_ADDR: http://vault:8200
+      VAULT_TOKEN: ${VAULT_TOKEN}
+      VAULT_URI: http://vault:8200
+      VAULT_MOUNT_POINT: secret/data
+    networks:
+      - app-network
+      - vault-network
+    restart: unless-stopped
+    depends_on:
+      - postgres
+      - redis
+      - vault
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+volumes:
+  vault_data:
+    driver: local
+  vault_logs:
+    driver: local
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  vault-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+  app-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/16

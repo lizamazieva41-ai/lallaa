@@ -1,0 +1,3 @@
+BIN,brand,type,issuer,country,country_code
+411111,visa,debit,Test Bank,United States,US
+542523,mastercard,credit,No Country,,

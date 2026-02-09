@@ -1,0 +1,97 @@
+{
+  "341142": {
+    "fetchedAt": "2026-01-26T09:38:36.089Z",
+    "data": {
+      "number": null,
+      "country": {},
+      "bank": {}
+    }
+  },
+  "342562": {
+    "fetchedAt": "2026-01-26T09:38:37.570Z",
+    "data": {
+      "number": null,
+      "country": {},
+      "bank": {}
+    }
+  },
+  "360218": {
+    "fetchedAt": "2026-01-26T09:48:36.957Z",
+    "data": {
+      "number": {},
+      "scheme": "diners club international",
+      "type": "credit",
+      "brand": "Consumer Credit - Core",
+      "country": {
+        "numeric": "218",
+        "alpha2": "EC",
+        "name": "Ecuador",
+        "emoji": "🇪🇨",
+        "currency": "USD",
+        "latitude": -2,
+        "longitude": -77.5
+      },
+      "bank": {}
+    }
+  },
+  "376402": {
+    "fetchedAt": "2026-01-26T09:57:30.371Z",
+    "data": {
+      "number": {},
+      "scheme": "american express",
+      "type": "credit",
+      "country": {
+        "numeric": "32",
+        "alpha2": "AR",
+        "name": "Argentina",
+        "emoji": "🇦🇷",
+        "currency": "ARS",
+        "latitude": -34,
+        "longitude": -64
+      },
+      "bank": {}
+    }
+  },
+  "401795": {
+    "fetchedAt": "2026-01-26T09:57:31.855Z",
+    "data": {
+      "number": {},
+      "scheme": "visa",
+      "type": "debit",
+      "brand": "Visa Classic",
+      "country": {
+        "numeric": "36",
+        "alpha2": "AU",
+        "name": "Australia",
+        "emoji": "🇦🇺",
+        "currency": "AUD ",
+        "latitude": -27,
+        "longitude": 133
+      },
+      "bank": {
+        "name": "National Australia Bank Limited"
+      }
+    }
+  },
+  "401940": {
+    "fetchedAt": "2026-01-26T09:57:33.329Z",
+    "data": {
+      "number": {},
+      "scheme": "visa",
+      "type": "debit",
+      "brand": "Visa Classic",
+      "country": {
+        "numeric": "430",
+        "alpha2": "LR",
+        "name": "Liberia",
+        "emoji": "🇱🇷",
+        "currency": "LRD",
+        "latitude": 6.5,
+        "longitude": -9.5
+      },
+      "bank": {
+        "name": "Ecobank Liberia Limited"
+      }
+    }
+  }
+}

@@ -1,0 +1,1712 @@
+openapi: 3.0.0
+info:
+  title: Payment Sandbox API
+  description: |
+    A comprehensive REST API for payment instrument testing, BIN lookup, IBAN validation, 
+    and test credit card generation with enterprise-grade security and monitoring.
+    
+    ## Authentication
+    The API uses JWT authentication. Include the token in the `Authorization` header:
+    ```
+    Authorization: Bearer <your-jwt-token>
+    ```
+    
+    ## Rate Limiting
+    Rate limits are applied per user/API key based on subscription tier:
+    - Free: 100 requests/hour
+    - Basic: 1000 requests/hour  
+    - Premium: 5000 requests/hour
+    - Enterprise: Unlimited
+    
+    ## Error Format
+    All errors follow this format:
+    ```json
+    {
+      "success": false,
+      "error": {
+        "code": "ERROR_CODE",
+        "message": "Human readable error message",
+        "details": { "additional": "context" }
+      },
+      "meta": {
+        "timestamp": "2024-01-01T00:00:00.000Z",
+        "requestId": "req-123"
+      }
+    }
+    ```
+  version: 1.1.0
+  contact:
+    name: Payment Sandbox Support
+    email: support@payment-sandbox.com
+    url: https://support.payment-sandbox.com
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: https://api.payment-sandbox.com/api/v1
+    description: Production
+  - url: https://staging-api.payment-sandbox.com/api/v1
+    description: Staging
+  - url: http://localhost:3000/api/v1
+    description: Development
+
+tags:
+  - name: Authentication
+    description: User authentication and authorization
+  - name: Two-Factor Auth
+    description: Two-factor authentication management
+  - name: BIN Services
+    description: Bank Identification Number lookup services
+  - name: Payment Instruments
+    description: Credit card and IBAN services
+  - name: Admin
+    description: Administrative operations (requires admin role)
+
+paths:
+  # Authentication endpoints
+  /auth/register:
+    post:
+      tags: [Authentication]
+      summary: Register new user
+      description: Create a new user account
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserRegistration'
+      responses:
+        '201':
+          description: User registered successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '409':
+          $ref: '#/components/responses/Conflict'
+
+  /auth/login:
+    post:
+      tags: [Authentication]
+      summary: User login
+      description: Authenticate user and return JWT tokens
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /auth/refresh:
+    post:
+      tags: [Authentication]
+      summary: Refresh JWT token
+      description: Refresh access token using refresh token
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshTokenRequest'
+      responses:
+        '200':
+          description: Token refreshed successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /auth/logout:
+    post:
+      tags: [Authentication]
+      summary: User logout
+      description: Invalidate current session
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          $ref: '#/components/responses/Success'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  # Two-Factor Authentication endpoints
+  /auth/2fa/setup:
+    post:
+      tags: [Two-Factor Auth]
+      summary: Initiate 2FA setup
+      description: Generate 2FA secret and backup codes
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: 2FA setup initiated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TwoFactorSetup'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /auth/2fa/enable:
+    post:
+      tags: [Two-Factor Auth]
+      summary: Enable 2FA
+      description: Complete 2FA setup by verifying TOTP token
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TwoFactorEnable'
+      responses:
+        '200':
+          $ref: '#/components/responses/Success'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /auth/2fa/disable:
+    post:
+      tags: [Two-Factor Auth]
+      summary: Disable 2FA
+      description: Disable two-factor authentication
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TwoFactorVerify'
+      responses:
+        '200':
+          $ref: '#/components/responses/Success'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /auth/2fa/backup/regenerate:
+    post:
+      tags: [Two-Factor Auth]
+      summary: Regenerate backup codes
+      description: Generate new 2FA backup codes
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Backup codes regenerated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  backupCodes:
+                    type: array
+                    items:
+                      type: string
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  # BIN Services endpoints
+  /bin/{bin}:
+    get:
+      tags: [BIN Services]
+      summary: Basic BIN lookup
+      description: Get basic BIN information
+      parameters:
+        - name: bin
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^\d{6,8}$'
+          description: BIN to lookup (6-8 digits)
+      responses:
+        '200':
+          description: BIN information retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BINLookupResponse'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /bins/search:
+    get:
+      tags: [BIN Services]
+      summary: Advanced BIN search
+      description: Search BINs with filters
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: countryCode
+          in: query
+          schema:
+            type: string
+            pattern: '^[A-Z]{2}$'
+          description: ISO country code (2 letters)
+        - name: cardType
+          in: query
+          schema:
+            $ref: '#/components/schemas/CardType'
+          description: Card type filter
+        - name: cardNetwork
+          in: query
+          schema:
+            $ref: '#/components/schemas/CardNetwork'
+          description: Card network filter
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 10
+          description: Maximum number of results
+        - name: offset
+          in: query
+          schema:
+            type: integer
+            minimum: 0
+            default: 0
+          description: Pagination offset
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BINSearchResponse'
+
+  /bins/countries/{countryCode}:
+    get:
+      tags: [BIN Services]
+      summary: BINs by country
+      description: Get all BINs for a specific country
+      parameters:
+        - name: countryCode
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^[A-Z]{2}$'
+          description: ISO country code (2 letters)
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 50
+          description: Maximum number of results
+      responses:
+        '200':
+          description: BINs for country
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BINsByCountryResponse'
+
+  # Payment Instruments endpoints
+  /cards/generate:
+    get:
+      tags: [Payment Instruments]
+      summary: Generate test credit card
+      description: Generate a Luhn-valid test credit card
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: vendor
+          in: query
+          description: Card vendor/brand
+          required: false
+          schema:
+            type: string
+            enum: [visa, mastercard, amex, diners, discover, enroute, jcb, voyager]
+        - name: count
+          in: query
+          description: Number of cards to generate (1-10)
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 10
+      responses:
+        '200':
+          description: Test card generated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GeneratedCard'
+
+  /cards/vendors:
+    get:
+      tags: [Payment Instruments]
+      summary: Get supported card vendors
+      description: Get list of supported credit card vendors/brands
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: List of supported vendors
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: array
+                    items:
+                      type: string
+
+  /cards/gateways:
+    get:
+      tags: [Payment Instruments]
+      summary: Get payment gateway list
+      description: Get list of available payment gateways
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: List of payment gateways
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: array
+                    items:
+                      type: object
+
+  /cards/gateways/{slug}:
+    get:
+      tags: [Payment Instruments]
+      summary: Get payment gateway by slug
+      description: Get specific payment gateway information
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Gateway information
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /cards/gateways/{slug}/cards:
+    get:
+      tags: [Payment Instruments]
+      summary: Get test cards for gateway
+      description: Get test payment cards for specific gateway
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+        - name: offset
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 0
+      responses:
+        '200':
+          description: Test cards for gateway
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /cards/search:
+    get:
+      tags: [Payment Instruments]
+      summary: Search test cards
+      description: Search test cards by various criteria
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: gatewaySlug
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: brand
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: expectedResult
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: is3dsEnrolled
+          in: query
+          required: false
+          schema:
+            type: boolean
+        - name: cardType
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [credit, debit, prepaid]
+        - name: region
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+        - name: offset
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 0
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /cards/statistics:
+    get:
+      tags: [Payment Instruments]
+      summary: Get card statistics
+      description: Get card usage statistics (admin/premium only)
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Card statistics
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /cards/generate-async:
+    post:
+      tags: [Payment Instruments]
+      summary: Generate cards asynchronously
+      description: |
+        Start an asynchronous job to generate multiple cards. 
+        Use this endpoint for bulk generation (>100 cards).
+        Returns a job ID that can be used to track progress and retrieve results.
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - bin
+              properties:
+                bin:
+                  type: string
+                  pattern: '^\d{6,8}$'
+                  description: Bank Identification Number (6-8 digits)
+                count:
+                  type: integer
+                  minimum: 1
+                  maximum: 10000
+                  default: 1
+                  description: Number of cards to generate
+                expiryMonths:
+                  type: integer
+                  minimum: 1
+                  maximum: 120
+                  default: 12
+                  description: Months from now for expiry date
+                sequential:
+                  type: boolean
+                  default: false
+                  description: Generate sequential card numbers
+                startSequence:
+                  type: integer
+                  minimum: 0
+                  description: Starting sequence number
+                generate999:
+                  type: boolean
+                  default: false
+                  description: Generate 999 cards with all CVV variants
+      responses:
+        '202':
+          description: Job created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    type: object
+                    properties:
+                      jobId:
+                        type: string
+                        description: Job ID for tracking
+                      status:
+                        type: string
+                        example: created
+                  meta:
+                    $ref: '#/components/schemas/Meta'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /cards/jobs/{jobId}/status:
+    get:
+      tags: [Payment Instruments]
+      summary: Get job status
+      description: Get the current status of an async card generation job
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: jobId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Job ID returned from generate-async endpoint
+      responses:
+        '200':
+          description: Job status
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    type: object
+                    properties:
+                      jobId:
+                        type: string
+                      status:
+                        type: string
+                        enum: [waiting, active, completed, failed, delayed]
+                      progress:
+                        type: integer
+                        minimum: 0
+                        maximum: 100
+                        description: Progress percentage
+                      createdAt:
+                        type: string
+                        format: date-time
+                      processedAt:
+                        type: string
+                        format: date-time
+                      finishedAt:
+                        type: string
+                        format: date-time
+                      error:
+                        type: string
+                        description: Error message if job failed
+                  meta:
+                    $ref: '#/components/schemas/Meta'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /cards/jobs/{jobId}/result:
+    get:
+      tags: [Payment Instruments]
+      summary: Get job result
+      description: Get the result of a completed async card generation job
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: jobId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Job ID returned from generate-async endpoint
+      responses:
+        '200':
+          description: Job result
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  data:
+                    type: object
+                    properties:
+                      success:
+                        type: boolean
+                      cardsGenerated:
+                        type: integer
+                      cards:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            cardNumber:
+                              type: string
+                            bin:
+                              type: string
+                            expiryDate:
+                              type: string
+                            cvv:
+                              type: string
+                  meta:
+                    $ref: '#/components/schemas/Meta'
+        '400':
+          description: Job not completed yet
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+
+
+  /iban/validate:
+    post:
+      tags: [Payment Instruments]
+      summary: Validate IBAN
+      description: Validate an International Bank Account Number
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IBANValidationRequest'
+      responses:
+        '200':
+          description: IBAN validation result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IBANValidationResponse'
+
+  /iban/generate:
+    post:
+      tags: [Payment Instruments]
+      summary: Generate IBAN
+      description: Generate a valid IBAN for testing
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IBANGenerationRequest'
+      responses:
+        '200':
+          description: IBAN generated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IBANGenerationResponse'
+
+  /iban/parse:
+    post:
+      tags: [Payment Instruments]
+      summary: Parse IBAN
+      description: Parse IBAN into components
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IBANParseRequest'
+      responses:
+        '200':
+          description: IBAN components
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IBANParseResponse'
+
+  /iban/batch-validate:
+    post:
+      tags: [Payment Instruments]
+      summary: Batch validate IBANs
+      description: Validate multiple IBANs in a single request
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ibans:
+                  type: array
+                  items:
+                    type: string
+      responses:
+        '200':
+          description: Batch validation results
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /iban/convert:
+    post:
+      tags: [Payment Instruments]
+      summary: Convert local bank account to IBAN
+      description: Convert local bank account details to IBAN
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: IBAN conversion result
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /iban/test/{countryCode}:
+    get:
+      tags: [Payment Instruments]
+      summary: Get test IBAN for country
+      description: Generate test IBAN for specific country
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: countryCode
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Test IBAN for country
+          content:
+            application/json:
+              schema:
+                type: object
+
+  # Admin endpoints
+  /admin/bin/{bin}:
+    get:
+      tags: [Admin]
+      summary: Admin BIN lookup
+      description: Get full BIN record with provenance (admin only)
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: bin
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^\d{6,8}$'
+      responses:
+        '200':
+          description: Full BIN information
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdminBINResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+
+  /admin/bins/source:
+    get:
+      tags: [Admin]
+      summary: BINs by source
+      description: Get BINs from specific data source
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: source
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Data source name
+      responses:
+        '200':
+          description: BINs from source
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BINsBySourceResponse'
+
+  /admin/reports/source-quality:
+    get:
+      tags: [Admin]
+      summary: Data quality report
+      description: Get data quality report by source
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Quality report
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/QualityReportResponse'
+
+  /admin/etl/history:
+    get:
+      tags: [Admin]
+      summary: ETL run history
+      description: Get ETL execution history
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 50
+      responses:
+        '200':
+          description: ETL history
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/ETLHistoryResponse'
+
+  /admin/cache/clear:
+    post:
+      tags: [Admin]
+      summary: Clear cache
+      description: Clear lookup cache
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          $ref: '#/components/responses/Success'
+
+  /admin/cache/stats:
+    get:
+      tags: [Admin]
+      summary: Cache statistics
+      description: Get cache performance statistics
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Cache stats
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/CacheStatsResponse'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    UserRegistration:
+      type: object
+      required: [email, password, firstName, lastName]
+      properties:
+        email:
+          type: string
+          format: email
+          description: User email
+        password:
+          type: string
+          minLength: 8
+          description: Password (min 8 characters)
+        firstName:
+          type: string
+          description: First name
+        lastName:
+          type: string
+          description: Last name
+        organization:
+          type: string
+          description: Optional organization name
+
+    LoginRequest:
+      type: object
+      required: [email, password]
+      properties:
+        email:
+          type: string
+          format: email
+          description: User email
+        password:
+          type: string
+          description: User password
+        twoFactorCode:
+          type: string
+          description: Optional 2FA code if enabled
+
+    AuthResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            user:
+              $ref: '#/components/schemas/User'
+            tokens:
+              $ref: '#/components/schemas/TokenResponse'
+
+    TokenResponse:
+      type: object
+      properties:
+        accessToken:
+          type: string
+          description: JWT access token
+        refreshToken:
+          type: string
+          description: JWT refresh token
+        expiresIn:
+          type: integer
+          description: Access token expiration in seconds
+
+    RefreshTokenRequest:
+      type: object
+      required: [refreshToken]
+      properties:
+        refreshToken:
+          type: string
+          description: Refresh token
+
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          description: User ID
+        email:
+          type: string
+          format: email
+          description: User email
+        firstName:
+          type: string
+          description: First name
+        lastName:
+          type: string
+          description: Last name
+        organization:
+          type: string
+          description: Organization name
+        tier:
+          $ref: '#/components/schemas/UserTier'
+        twoFactorEnabled:
+          type: boolean
+          description: Whether 2FA is enabled
+        createdAt:
+          type: string
+          format: date-time
+          description: Account creation timestamp
+        updatedAt:
+          type: string
+          format: date-time
+          description: Last update timestamp
+
+    UserTier:
+      type: string
+      enum: [free, basic, premium, enterprise]
+      description: User subscription tier
+
+    TwoFactorSetup:
+      type: object
+      properties:
+        secret:
+          type: string
+          description: TOTP secret (base32)
+        qrCode:
+          type: string
+          description: QR code for authenticator apps
+        manualEntryKey:
+          type: string
+          description: Manual entry key
+        backupCodes:
+          type: array
+          items:
+            type: string
+          description: Backup codes array
+
+    TwoFactorEnable:
+      type: object
+      required: [token]
+      properties:
+        token:
+          type: string
+          pattern: '^\d{6}$'
+          description: 6-digit TOTP token
+
+    TwoFactorVerify:
+      type: object
+      required: [token]
+      properties:
+        token:
+          type: string
+          pattern: '^\d{6}$'
+          description: 6-digit TOTP token
+        backupCode:
+          type: string
+          pattern: '^\d{8}$'
+          description: 8-digit backup code
+
+    CardType:
+      type: string
+      enum: [debit, credit, prepaid, corporate]
+      description: Card type
+
+    CardNetwork:
+      type: string
+      enum: [visa, mastercard, amex, discover, jcb, diners, unionpay, maestro]
+      description: Card network
+
+    BINLookupResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            bin:
+              type: string
+              description: BIN number
+            bank:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: Bank name
+                website:
+                  type: string
+                  description: Bank website
+            country:
+              type: object
+              properties:
+                code:
+                  type: string
+                  description: ISO country code
+                name:
+                  type: string
+                  description: Country name
+            card:
+              type: object
+              properties:
+                type:
+                  $ref: '#/components/schemas/CardType'
+                network:
+                  $ref: '#/components/schemas/CardNetwork'
+                brand:
+                  type: string
+                  description: Card brand
+            metadata:
+              type: object
+              properties:
+                length:
+                  type: integer
+                  description: Card number length
+                luhn:
+                  type: boolean
+                  description: Whether card uses Luhn algorithm
+
+    BINSearchResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            bins:
+              type: array
+              items:
+                $ref: '#/components/schemas/BINLookupResponse'
+            total:
+              type: integer
+              description: Total number of matching BINs
+            limit:
+              type: integer
+              description: Query limit
+            offset:
+              type: integer
+              description: Query offset
+
+    BINsByCountryResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            countryCode:
+              type: string
+              description: ISO country code
+            bins:
+              type: array
+              items:
+                $ref: '#/components/schemas/BINLookupResponse'
+            count:
+              type: integer
+              description: Number of BINs returned
+
+    CardGenerationRequest:
+      type: object
+      properties:
+        cardNetwork:
+          $ref: '#/components/schemas/CardNetwork'
+          description: Desired card network
+        cardType:
+          $ref: '#/components/schemas/CardType'
+          description: Desired card type
+        customBin:
+          type: string
+          pattern: '^\d{6}$'
+          description: Custom BIN prefix (6 digits)
+
+    GeneratedCard:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            cardNumber:
+              type: string
+              description: Generated card number
+            cardNetwork:
+              $ref: '#/components/schemas/CardNetwork'
+              description: Detected card network
+            cardType:
+              $ref: '#/components/schemas/CardType'
+              description: Card type
+            valid:
+              type: boolean
+              description: Whether card is Luhn valid
+            expires:
+              type: string
+              description: Card expiration date (MM/YY)
+            cvv:
+              type: string
+              description: Card CVV
+
+    TestCardsResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            cards:
+              type: array
+              items:
+                $ref: '#/components/schemas/TestCard'
+            count:
+              type: integer
+              description: Number of test cards
+
+    TestCard:
+      type: object
+      properties:
+        cardNumber:
+          type: string
+          description: Test card number
+        cardNetwork:
+          $ref: '#/components/schemas/CardNetwork'
+          description: Card network
+        cardType:
+          $ref: '#/components/schemas/CardType'
+          description: Card type
+        description:
+          type: string
+          description: Card purpose/use case
+        testResult:
+          type: string
+          enum: [success, decline, challenge]
+          description: Expected test result
+
+    IBANValidationRequest:
+      type: object
+      required: [iban]
+      properties:
+        iban:
+          type: string
+          description: IBAN to validate
+
+    IBANValidationResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            iban:
+              type: string
+              description: Normalized IBAN
+            valid:
+              type: boolean
+              description: Whether IBAN is valid
+            countryCode:
+              type: string
+              description: ISO country code
+            bankCode:
+              type: string
+              description: Bank code
+            accountNumber:
+              type: string
+              description: Account number
+            errors:
+              type: array
+              items:
+                type: string
+              description: Validation errors (if invalid)
+
+    IBANGenerationRequest:
+      type: object
+      required: [countryCode]
+      properties:
+        countryCode:
+          type: string
+          pattern: '^[A-Z]{2}$'
+          description: ISO country code
+        bankCode:
+          type: string
+          description: Optional bank code
+        accountNumber:
+          type: string
+          description: Optional account number
+        format:
+          type: boolean
+          default: true
+          description: Whether to format IBAN with spaces
+
+    IBANGenerationResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            iban:
+              type: string
+              description: Generated IBAN
+            valid:
+              type: boolean
+              description: Whether IBAN is valid
+
+    IBANParseRequest:
+      type: object
+      required: [iban]
+      properties:
+        iban:
+          type: string
+          description: IBAN to parse
+
+    IBANParseResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            iban:
+              type: string
+              description: Normalized IBAN
+            valid:
+              type: boolean
+              description: Whether IBAN is valid
+            countryCode:
+              type: string
+              description: ISO country code
+            bankCode:
+              type: string
+              description: Bank code
+            accountNumber:
+              type: string
+              description: Account number
+
+    AdminBINResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            bin:
+              type: string
+              description: BIN number
+            bank:
+              type: object
+              properties:
+                name:
+                  type: string
+                nameLocal:
+                  type: string
+                code:
+                  type: string
+                website:
+                  type: string
+            country:
+              type: object
+              properties:
+                code:
+                  type: string
+                name:
+                  type: string
+            card:
+              type: object
+              properties:
+                type:
+                  $ref: '#/components/schemas/CardType'
+                network:
+                  $ref: '#/components/schemas/CardNetwork'
+                brand:
+                  type: string
+            metadata:
+              type: object
+              properties:
+                binRange:
+                  type: string
+                  description: BIN range
+                length:
+                  type: integer
+                luhn:
+                  type: boolean
+            provenance:
+              type: object
+              properties:
+                source:
+                  type: string
+                  description: Data source
+                sourceVersion:
+                  type: string
+                  description: Source version
+                importDate:
+                  type: string
+                  format: date-time
+                  description: Import timestamp
+                raw:
+                  type: object
+                  description: Raw source data
+            isActive:
+              type: boolean
+              description: Whether BIN is active
+            createdAt:
+              type: string
+              format: date-time
+            updatedAt:
+              type: string
+              format: date-time
+
+    BINsBySourceResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            source:
+              type: string
+              description: Data source name
+            count:
+              type: integer
+              description: Number of BINs
+            bins:
+              type: array
+              items:
+                type: object
+                properties:
+                  bin:
+                    type: string
+                  bankName:
+                    type: string
+                  bankNameLocal:
+                    type: string
+                  bankCode:
+                    type: string
+                  cardType:
+                    $ref: '#/components/schemas/CardType'
+                  cardNetwork:
+                    $ref: '#/components/schemas/CardNetwork'
+                  importDate:
+                    type: string
+                    format: date-time
+
+    ETLHistoryResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            history:
+              type: array
+              items:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  source:
+                    type: string
+                  status:
+                    type: string
+                    enum: [running, completed, failed]
+                  startedAt:
+                    type: string
+                    format: date-time
+                  completedAt:
+                    type: string
+                    format: date-time
+                  recordsProcessed:
+                    type: integer
+                  recordsFailed:
+                    type: integer
+                  processingTime:
+                    type: number
+                  errorMessage:
+                    type: string
+
+    CacheStatsResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            size:
+              type: integer
+              description: Number of cached items
+            hitRate:
+              type: number
+              description: Cache hit rate (0-1)
+            memoryUsage:
+              type: integer
+              description: Memory usage in bytes
+            uptime:
+              type: number
+              description: Cache uptime in seconds
+
+    QualityReportResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          properties:
+            report:
+              type: object
+              properties:
+                totalRecords:
+                  type: integer
+                recordsBySource:
+                  type: object
+                  additionalProperties:
+                    type: integer
+                dataCompleteness:
+                  type: object
+                  properties:
+                    bankName:
+                      type: number
+                    country:
+                      type: number
+                    cardNetwork:
+                      type: number
+                duplicateRate:
+                  type: number
+                lastUpdated:
+                  type: string
+                  format: date-time
+
+    ErrorResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: false
+        error:
+          type: object
+          properties:
+            code:
+              type: string
+              description: Error code
+            message:
+              type: string
+              description: Human readable error message
+            details:
+              type: object
+              description: Additional error context
+        meta:
+          type: object
+          properties:
+            timestamp:
+              type: string
+              format: date-time
+              description: Error timestamp
+            requestId:
+              type: string
+              description: Request correlation ID
+
+    SuccessResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        message:
+          type: string
+          description: Success message
+        meta:
+          type: object
+          properties:
+            timestamp:
+              type: string
+              format: date-time
+            requestId:
+              type: string
+
+  responses:
+    BadRequest:
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+    Forbidden:
+      description: Forbidden - insufficient permissions
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+    Conflict:
+      description: Resource conflict
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+    Success:
+      description: Operation successful
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/SuccessResponse'
+
+# Additional OpenAPI extensions
+x-apisguru-categories:
+  - financial
+  - payments
+
+x-logo:
+  url: https://payment-sandbox.com/logo.png
+  altText: Payment Sandbox API
+
+x-origin:
+  - format: openapi
+    url: https://api.payment-sandbox.com/openapi.json
+    version: "3.0.0"
+
+x-provider-name: Payment Sandbox
+x-service-name: Payment Sandbox API

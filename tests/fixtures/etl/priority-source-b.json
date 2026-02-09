@@ -1,0 +1,14 @@
+{
+  "411111": {
+    "scheme": "visa",
+    "type": "credit",
+    "brand": "Visa Gold",
+    "bank": {
+      "name": "Secondary Bank"
+    },
+    "country": {
+      "name": "United States",
+      "alpha2": "US"
+    }
+  }
+}

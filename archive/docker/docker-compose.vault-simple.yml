@@ -1,0 +1,155 @@
+# Simple HashiCorp Vault configuration
+version: '3.8'
+
+services:
+  vault:
+    image: hashicorp/vault:1.15.6
+    container_name: bin-check-vault
+    ports:
+      - "8200:8200"  # HTTP API
+      - "8210:8201"  # Alternative port
+    environment:
+      VAULT_ADDR: "http://0.0.0.0:8200"
+      VAULT_API_ADDR: "http://0.0.0.0:8201"
+      VAULT_CLUSTER_ADDR: "http://0.0.0.0:8201"
+      VAULT_DEV_ROOT_TOKEN_ID: "bin-check-vault-root"
+      VAULT_DEV_LISTEN_ADDRESS: "0.0.0.0:8201"
+      # Basic configuration for development
+    volumes:
+      - vault_data:/vault/data
+      - vault_logs:/vault/logs
+    command: vault server -config=/vault/config/vault.hcl
+    restart: unless-stopped
+    networks:
+      - vault-network
+      - app-network
+    restart: unless-stopped
+      - db-network
+
+volumes:
+  vault_data:
+    driver: local
+  vault_logs:
+    driver: local
+  app-network:
+    external: true
+
+networks:
+  vault-network:
+    driver: bridge
+    ipam:
+      config:
+        subnet: 172.20.0.0/16
+    app-network:
+      driver: bridge
+      ipam:
+        config:
+          subnet: 172.21.0.0/16
+
+# Optional: Consul for HA setup (can be removed for single node)
+# consul:
+#   image: hashicorp/consul:1.16.1
+#   container_name: bin-check-consul
+#   ports:
+#     - "8500:8500"
+#   networks:
+#     - vault-network
+#   restart: unless-stopped
+#   depends_on:
+#     - vault-network
+
+# Database services
+# postgres:
+#   image: postgres:15
+#   container_name: bin-check-db
+#   environment:
+#     POSTGRES_DB: bincheck_prod
+#     POSTGRES_USER: bincheck
+#     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+#   ports:
+#     - "5432:5432"
+#   volumes:
+#     - postgres_data:/var/lib/postgresql/data
+#     - app-network
+#   networks:
+#     - app-network
+#   restart: unless-stopped
+#   depends_on:
+#     - db-network
+
+# Redis services
+# redis:
+#   image: redis:7-alpine
+#   container_name: bin-check-redis
+#   ports:
+#     - "6379:6379"
+#   volumes:
+#     - redis_data:/data
+#   networks:
+#     - app-network
+#   restart: unless-stopped
+#   depends_on:
+#     - app-network
+
+# Application service
+# bin-check-api:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: bin-check-api
+    container_name: bin-check-api
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgres://postgres:5432/bincheck_prod
+      REDIS_URL: redis://redis:6379
+      # Vault integration variables
+      VAULT_ADDR: http://vault-network
+      VAULT_TOKEN: ${VAULT_TOKEN}
+      VAULT_URI: http://vault-network:8200
+      VAULT_MOUNT_POINT: secret/data
+      JWT_SECRET: vault:secret/JWT_SECRET
+      JWT_REFRESH_SECRET: vault:secret/JWT_REFRESH_SECRET
+      POSTGRES_PASSWORD: vault:secret/POSTGRES_PASSWORD
+      DATABASE_URL: vault:secret/DATABASE_URL
+      REDIS_PASSWORD: vault:secret/REDIS_PASSWORD
+      BIN_CHECK_API_KEY: vault:secret/BIN_CHECK_API_KEY
+      BIN_CHECK_ADMIN_SECRET: vault:secret/BIN_CHECK_ADMIN_SECRET
+    volumes:
+      - app-network
+    networks:
+      - app-network
+    restart: unless-stopped
+    depends_on:
+      - postgres
+      - redis
+      - vault-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+networks:
+  vault-network:
+    driver: bridge
+    ipam:
+      config:
+        subnet: 172.20.0.0/16
+  app-network:
+    driver: bridge
+    ipam:
+      config:
+        subnet: 172.21.0.0/16
+  db-network:
+    driver: bridge
+    ipam:
+      config:
+        subnet: 172.22.0.0/16
+  redis-network:
+    driver: bridge
+    ipam:
+      config:
+        subnet: 172.23.0.0/16

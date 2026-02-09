@@ -1,0 +1,47 @@
+{
+  "411111": {
+    "scheme": "visa",
+    "type": "debit",
+    "brand": "Visa Classic",
+    "bank": {
+      "name": "Test Bank Integration",
+      "city": "San Francisco",
+      "url": "https://testbank.example.com"
+    },
+    "country": {
+      "name": "United States",
+      "alpha2": "US"
+    },
+    "length": 16,
+    "luhn": true
+  },
+  "542523": {
+    "scheme": "mastercard",
+    "type": "credit",
+    "brand": "Mastercard Gold",
+    "bank": {
+      "name": "Integration Test Bank",
+      "city": "New York"
+    },
+    "country": {
+      "name": "Canada",
+      "alpha2": "CA"
+    },
+    "length": 16,
+    "luhn": true
+  },
+  "378282": {
+    "scheme": "amex",
+    "type": "credit",
+    "brand": "American Express",
+    "bank": {
+      "name": "Amex Test Bank"
+    },
+    "country": {
+      "name": "United States",
+      "alpha2": "US"
+    },
+    "length": 15,
+    "luhn": true
+  }
+}

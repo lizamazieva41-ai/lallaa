@@ -1,0 +1,124 @@
+name: Code Quality Checks
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    name: ESLint
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run ESLint
+      run: npm run lint -- --format=github
+
+    - name: Run Prettier check
+      run: npx prettier --check .
+
+  format:
+    name: Prettier
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Check formatting
+      run: npx prettier --check .
+
+    - name: Auto-format and push
+      if: failure()
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        npx prettier --write .
+        git add .
+        git commit -m "Auto-format code with Prettier" || true
+        git push
+
+  complexity:
+    name: Code Complexity
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Install complexity tools
+      run: npm install -g complexity-report
+
+    - name: Run complexity analysis
+      run: complexity --format json --output complexity.json src/
+
+    - name: Check complexity thresholds
+      run: |
+        # Example: Check if any function has complexity > 10
+        if [ -f complexity.json ]; then
+          high_complexity=$(cat complexity.json | jq '.reports[] | select(.aggregate.complexity.cyclomatic > 10)')
+          if [ ! -z "$high_complexity" ]; then
+            echo "High complexity functions found:"
+            echo "$high_complexity"
+            exit 1
+          fi
+        fi
+
+  size:
+    name: Bundle Size Analysis
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build project
+      run: npm run build
+
+    - name: Analyze bundle size
+      run: |
+        du -sh dist/ || echo "No dist directory found"
+        find dist/ -name "*.js" -exec wc -c {} + | sort -n
+
+    - name: Compare with main branch
+      if: github.event_name == 'pull_request'
+      run: |
+        git fetch origin main
+        git diff --name-only origin/main -- | head -20

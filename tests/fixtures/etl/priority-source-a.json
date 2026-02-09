@@ -1,0 +1,14 @@
+{
+  "411111": {
+    "scheme": "visa",
+    "type": "debit",
+    "brand": "Visa Classic",
+    "bank": {
+      "name": "Priority Bank"
+    },
+    "country": {
+      "name": "United States",
+      "alpha2": "US"
+    }
+  }
+}

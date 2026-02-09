@@ -1,0 +1,142 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@mapbox/node-pre-gyp": {
+      "name": "@mapbox/node-pre-gyp",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "tar"
+      ],
+      "effects": [
+        "bcrypt"
+      ],
+      "range": "<=1.0.11",
+      "nodes": [
+        "node_modules/@mapbox/node-pre-gyp"
+      ],
+      "fixAvailable": {
+        "name": "bcrypt",
+        "version": "6.0.0",
+        "isSemVerMajor": true
+      }
+    },
+    "bcrypt": {
+      "name": "bcrypt",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@mapbox/node-pre-gyp"
+      ],
+      "effects": [],
+      "range": "5.0.1 - 5.1.1",
+      "nodes": [
+        "node_modules/bcrypt"
+      ],
+      "fixAvailable": {
+        "name": "bcrypt",
+        "version": "6.0.0",
+        "isSemVerMajor": true
+      }
+    },
+    "pm2": {
+      "name": "pm2",
+      "severity": "low",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1112031,
+          "name": "pm2",
+          "dependency": "pm2",
+          "title": "pm2 Regular Expression Denial of Service vulnerability",
+          "url": "https://github.com/advisories/GHSA-x5gf-qvw8-r2rm",
+          "severity": "low",
+          "cwe": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 4.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<=6.0.14"
+        }
+      ],
+      "effects": [],
+      "range": "*",
+      "nodes": [
+        "node_modules/pm2"
+      ],
+      "fixAvailable": false
+    },
+    "tar": {
+      "name": "tar",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1112255,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanitization",
+          "url": "https://github.com/advisories/GHSA-8qq5-rm4j-mr97",
+          "severity": "high",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=7.5.2"
+        },
+        {
+          "source": 1112329,
+          "name": "tar",
+          "dependency": "tar",
+          "title": "Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS",
+          "url": "https://github.com/advisories/GHSA-r6q2-hw4h-h46w",
+          "severity": "high",
+          "cwe": [
+            "CWE-176"
+          ],
+          "cvss": {
+            "score": 8.8,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L"
+          },
+          "range": "<=7.5.3"
+        }
+      ],
+      "effects": [
+        "@mapbox/node-pre-gyp"
+      ],
+      "range": "<=7.5.3",
+      "nodes": [
+        "node_modules/tar"
+      ],
+      "fixAvailable": {
+        "name": "bcrypt",
+        "version": "6.0.0",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 1,
+      "moderate": 0,
+      "high": 3,
+      "critical": 0,
+      "total": 4
+    },
+    "dependencies": {
+      "prod": 372,
+      "dev": 345,
+      "optional": 8,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 723
+    }
+  }
+}

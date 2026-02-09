@@ -1,0 +1,16 @@
+{
+  "400000": {
+    "length": 16,
+    "luhn": true,
+    "scheme": "visa",
+    "bank": {
+      "name": "Test Bank & Co. LLC",
+      "url": "https://test-bank.com/path?query=value",
+      "phone": "+1 (555) 123-4567"
+    },
+    "country": {
+      "alpha2": "US",
+      "name": "United States"
+    }
+  }
+}

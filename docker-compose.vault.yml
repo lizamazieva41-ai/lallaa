@@ -1,0 +1,69 @@
+# HashiCorp Vault deployment configuration
+version: '3.8'
+
+services:
+  vault:
+    image: hashicorp/vault:1.15.6
+    container_name: bin-check-vault
+    ports:
+      - "8200:8200"  # Vault UI
+      - "8201:8201"  # Vault API
+    environment:
+      VAULT_ADDR: "http://localhost:8200"
+      VAULT_API_ADDR: "http://localhost:8201"
+      VAULT_CLUSTER_ADDR: "http://localhost:8201"
+      VAULT_DEV_ROOT_TOKEN_ID: "bin-check-vault-root"
+      VAULT_DEV_LISTEN_ADDRESS: "0.0.0.0:8201"
+    volumes:
+      - vault_data:/vault/data
+      - vault_logs:/vault/logs
+      - ./vault/config:/vault/config
+      - ./vault/policies:/vault/policies
+    command: vault server -config=/vault/config/vault.hcl
+    healthcheck:
+      test: ["CMD", "vault", "status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - vault-network
+    restart: unless-stopped
+
+  # Consul for Vault HA (optional but recommended)
+  consul:
+    image: hashicorp/consul:1.16.1
+    container_name: bin-check-consul
+    ports:
+      - "8500:8500"
+    environment:
+      CONSUL_BIND_INTERFACE: "0.0.0.0"
+      CONSUL_CLIENT_INTERFACE: "0.0.0.0"
+    volumes:
+      - consul_data:/consul/data
+      - consul_config:/consul/config
+    command: consul agent -server -bootstrap-expect=1 -ui -client=0.0.0.0
+    networks:
+      - vault-network
+    restart: unless-stopped
+
+volumes:
+  vault_data:
+    driver: local
+  vault_logs:
+    driver: local
+  vault_config:
+    driver: local
+  vault_policies:
+    driver: local
+  consul_data:
+    driver: local
+  consul_config:
+    driver: local
+
+networks:
+  vault-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

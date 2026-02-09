@@ -1,0 +1,243 @@
+# HashiCorp Vault deployment (Production Ready)
+
+version: '3.8.1'
+
+networks:
+  vault-network:
+    driver: bridge
+    ipam:
+      config: []
+      services:
+        - name: vault
+          image: hashicorp/vault:1.15.6
+          ports:
+            - "8200:8200"
+          environment:
+            VAULT_ADDR: "http://0.0.0.0"
+            VAULT_API_ADDR: "http://0.0.0.0"
+            VAULT_CLUSTER_ADDR: "http://0.0.0.0"
+            VAULT_DEV_LISTEN_ADDRESS: "0.0.0.0"
+          depends_on:
+            - postgres
+          - redis
+          networks:
+            - vault-network
+          - app-network
+          - consul-network
+    app-network:
+    driver: bridge
+    ipam:
+      config: []
+      services:
+        - name: bin-check-api
+          build:
+          context: .
+          dockerfile: ./Dockerfile
+        restart: unless-stopped
+          ports:
+            - "3000:3000"
+          environment:
+            - NODE_ENV=production
+            - DB_HOST=postgres
+            - REDIS_HOST=redis
+            - VAULT_ADDR=http://0.0.0.0
+            - VAULT_API_ADDR=http://0.0.0.0
+          depends_on:
+            - vault-network
+            - postgres
+            - redis
+    postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: bincheck_prod
+      POSTGRES_USER: bincheck
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_HOST: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    depends_on:
+      - app-network
+    redis:
+    image: redis:7-alpine
+    environment:
+      REDIS_HOST: redis
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+      REDIS_DB: 0
+      REDIS_DB: redis
+      REDIS_PORT: 6379
+      depends_on:
+      - app-network
+
+networks:
+  vault-network:
+    driver: bridge
+    ipam:
+      config: []
+    services:
+      - name: consul
+        image: hashicorp/consul:1.16.1
+          ports:
+            - "8500:8500"
+        environment:
+          CONSUL_HTTP_ADDR: "http://0.0.0.0"
+          CONSUL_HTTPS: true
+          CONSUL_GRPCON: "true"
+          CONSUL_RPC_PROTOCOL: "grpc"
+        restart: unless-stopped
+        depends_on:
+          - postgres
+          - redis
+    app-network:
+    driver: bridge
+    ipam:
+      config: []
+      ports:
+        - "3000:3000"
+    networks:
+      - vault-network
+      - app-network
+
+volumes:
+  vault_data:
+    driver: local
+  auth:
+      root_token: ${VAULT_ROOT_TOKEN}
+    policies: bincheck-policies
+      data: vault_data
+      config: vault_config
+      files: vault_policies
+    consul_data:
+      driver: local
+    kv_data:
+      driver: local
+      files: consul_data
+    vault_logs:
+      driver: local
+      files: vault_logs
+    vault_config:
+      driver: local
+      files: vault_config
+  redis_data:
+      driver: local
+      files: vault_config
+
+# Environment variables (in production, these would come from secure secret management)
+environment:
+  NODE_ENV: production
+  API_PORT: 3000
+  API_HOST: 0.0.0.0
+  DB_HOST: postgres
+  POSTGRES_DB: bincheck_prod
+  REDIS_HOST: redis
+  REDIS_PORT: 6379
+  VAULT_ADDR: http://0.0.0.0
+  VAULT_API_ADDR: http://0.0.0.0
+  VAULT_CLUSTER_ADDR: http://0.0.0.0
+  CONSUL_BIND_INTERFACE: 0.0.0.0
+  CONSUL_BIND_PORT: 8500
+
+# Production TLS configuration
+tls_disable: 1
+auto_unseal: true
+ui: true
+api_addr: http://0.0.0.0
+cluster_addr: http://0.0.0.0
+
+# Listeners configuration
+listener "tcp" {
+  address = "0.0.0.0"
+  port = 8200
+  tls_disable: 1
+  cluster_address: "http://0.0.0.0"
+  api_addr: "http://0.0.0.0"
+}
+
+# Secret engines configuration
+enable_kv_secret_engine_v2: true
+enable_transit_secret_engine: true
+enable_database_secrets_engine: true
+enable_pki_secret_engine: true
+enable_ssh_signing_engine: true
+
+# KV v2 secrets engine configuration
+kv:
+  path: "secret/"
+  version: "2"
+
+# Transit v2 secrets engine configuration
+transit:
+  path: "transit/"
+  
+  # Auto-unseal for administrative operations
+  auto_unseal: true
+  
+  # Default encryption key configuration
+  transit_default_key_name: "bincheck-default-key"
+  
+  # Cache TTL (time-to-live) for encrypted values
+  cache_ttl: "300s"
+
+# Database secrets engine configuration
+database:
+  allowed_roles: [
+    "bincheck-db-owner",
+    "bincheck-db-reader"
+  ]
+  mount_point: "database/"
+  revocation_statement: "ALTER ROLE \"{{identity}}\" WITH {{identity}} REVOKE \"ALL PRIVILEGES ON DATABASE \"{{database}}\" TO PUBLIC"
+  revoke = "false"
+  mount_point: "database/"
+}
+
+# PKI v2 secrets engine configuration
+pki:
+  path: "pki/"
+  
+  # Default TTL for certificates
+  default_ttl: "8760h"
+  
+  # Maximum TTL for certificates (1 year)
+  max_ttl: "87600h"
+  
+  # Allow certificate issuance without roles (development only)
+  allowed_roles: [
+    "bincheck-ca-admin"
+  ]
+  mount_point: "pki/"
+  
+  # Key signing key types
+  allowed_key_types: [
+    "rsa",
+    "ecdsa",
+    "ed25519"
+  ]
+  
+  # Key bits configuration
+  default_key_bits: 2048
+  max_key_bits: 4096
+  
+  # Generate signing keys with proper type
+  generate_signing_key: true
+  
+  # For production, create specific signing keys
+  # For development, default key is sufficient
+  generate_signing_key: false
+
+# SSH secrets engine configuration
+ssh:
+  path: "ssh/"
+  
+  # Generate keys with proper type
+  generate_signing_key: true
+  
+  # Key signing key types
+  allowed_key_types: [
+    "rsa",
+    "ecdsa",
+    "ed25519"
+  ]
+  
+  # Key bits configuration
+  default_key_bits: 2048
+  max_key_bits: 4096
+}

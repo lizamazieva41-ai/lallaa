@@ -1,0 +1,15 @@
+[
+  {
+    "date": "2026-01-26",
+    "overall": 48.5,
+    "byCategory": {
+      "Security": 71.25,
+      "Testing": 3
+    },
+    "gaps": 263,
+    "criticalGaps": 5,
+    "highGaps": 5,
+    "mediumGaps": 245,
+    "lowGaps": 8
+  }
+]

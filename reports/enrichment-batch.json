@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-01-26T09:57:34.577Z",
+  "totalBins": 329671,
+  "binsNeedingEnrichment": 329671,
+  "binsEnriched": 3,
+  "binsAttempted": 3,
+  "cacheHits": 0,
+  "errors": 0,
+  "completenessBefore": {
+    "issuer": 60,
+    "url": 0,
+    "phone": 0,
+    "city": 0,
+    "country": 100,
+    "scheme": 100,
+    "brand": 0
+  },
+  "completenessAfter": {
+    "issuer": 60,
+    "url": 0,
+    "phone": 0,
+    "city": 0,
+    "country": 100,
+    "scheme": 100,
+    "brand": 0
+  },
+  "topEnriched": [
+    {
+      "bin": "401795",
+      "fieldsAdded": [
+        "issuer",
+        "brand"
+      ]
+    },
+    {
+      "bin": "401940",
+      "fieldsAdded": [
+        "issuer",
+        "brand"
+      ]
+    }
+  ]
+}

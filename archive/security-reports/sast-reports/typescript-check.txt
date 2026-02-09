@@ -1,0 +1,84 @@
+
+> payment-sandbox-api@1.1.0 build
+> tsc
+
+src/controllers/admin.ts(28,39): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/controllers/admin.ts(32,44): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/controllers/auth.ts(450,36): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/controllers/auth.ts(470,51): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/controllers/bin.ts(40,44): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/controllers/bin.ts(106,28): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/controllers/bin.ts(110,50): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/controllers/cards.ts(147,57): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/controllers/cards.ts(272,57): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/controllers/cards.ts(288,9): error TS2322: Type 'string | string[]' is not assignable to type 'string | undefined'.
+  Type 'string[]' is not assignable to type 'string'.
+src/controllers/iban.ts(183,44): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/controllers/iban.ts(188,57): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/middleware/audit.ts(29,3): error TS2322: Type '(chunk?: any, encoding?: any) => void' is not assignable to type '{ (cb?: (() => void) | undefined): Response<any, Record<string, any>>; (chunk: any, cb?: (() => void) | undefined): Response<any, Record<string, any>>; (chunk: any, encoding: BufferEncoding, cb?: (() => void) | undefined): Response<...>; }'.
+  Type 'void' is not assignable to type 'Response<any, Record<string, any>>'.
+src/middleware/auth-enhanced.ts(20,7): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(33,7): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(61,7): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(77,7): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(87,5): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(109,7): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(143,7): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(155,9): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(155,56): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(156,7): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(166,9): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(167,7): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(177,9): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(177,36): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(179,12): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(181,21): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(183,22): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(186,9): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(198,11): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(199,14): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(200,15): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(201,13): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(205,11): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(206,14): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(207,13): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(208,13): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(214,8): error TS18046: 'apiKeyData' is of type 'unknown'.
+src/middleware/auth-enhanced.ts(231,5): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(263,3): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(278,7): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(296,7): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(328,7): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(346,36): error TS2339: Property 'substring' does not exist on type 'string | string[]'.
+  Property 'substring' does not exist on type 'string[]'.
+src/middleware/auth-enhanced.ts(352,7): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(364,5): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/auth-enhanced.ts(405,30): error TS2571: Object is of type 'unknown'.
+src/middleware/auth-enhanced.ts(409,20): error TS2571: Object is of type 'unknown'.
+src/middleware/auth-enhanced.ts(415,42): error TS2571: Object is of type 'unknown'.
+src/middleware/rateLimit.ts(92,9): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/rateLimit.ts(146,31): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+src/middleware/rls.ts(18,18): error TS2430: Interface 'AuthenticatedRequest' incorrectly extends interface 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  Types of property 'user' are incompatible.
+    Type '{ id: string; email: string; role: string; tier: string; } | undefined' is not assignable to type 'TokenPayload | undefined'.
+      Type '{ id: string; email: string; role: string; tier: string; }' is missing the following properties from type 'TokenPayload': userId, type
+src/middleware/rls.ts(118,5): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/rls.ts(137,5): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+src/middleware/rls.ts(199,41): error TS2344: Type 'T' does not satisfy the constraint 'QueryResultRow'.
+src/routes/country.ts(36,51): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/routes/country.ts(80,57): error TS2345: Argument of type 'string | string[]' is not assignable to parameter of type 'string'.
+  Type 'string[]' is not assignable to type 'string'.
+src/services/auth.ts(228,23): error TS2339: Property 'updateLastActivity' does not exist on type 'UserModel'.

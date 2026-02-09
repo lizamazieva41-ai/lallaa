@@ -1,0 +1,16 @@
+{
+  "invalid_bin": {
+    "length": "not a number",
+    "luhn": "not boolean",
+    "scheme": null,
+    "bank": "not an object"
+  },
+  "40000": {
+    "length": 16,
+    "luhn": true
+  },
+  "": {
+    "length": 16,
+    "luhn": true
+  }
+}

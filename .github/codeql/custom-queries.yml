@@ -1,0 +1,69 @@
+name: "Custom JavaScript Security Queries"
+description: "Custom security queries for Bin Check API"
+language: javascript
+version: "2.3.0"
+
+# Custom queries for Node.js security
+queries:
+  - name: potential-hardcoded-credentials
+    description: Detect potential hardcoded credentials in source code
+    severity: error
+    message: "Potential hardcoded credential detected"
+    patterns:
+      - pattern: |
+          (password|secret|key|token)\s*[:=]\s*['"]\w+['"]
+        languages: [javascript]
+      
+  - name: unsafe-eval-usage
+    description: Detect unsafe eval() usage
+    severity: error
+    message: "Unsafe eval() usage detected"
+    patterns:
+      - pattern: eval($)
+        languages: [javascript]
+      
+  - name: sql-injection-patterns
+    description: Detect potential SQL injection vulnerabilities
+    severity: error
+    message: "Potential SQL injection vulnerability detected"
+    patterns:
+      - pattern: |
+          query\s*[:=]\s*['"][^']*\$\{[^}]*\}[^']*["']
+        languages: [javascript]
+      
+  - name: hardcoded-jwt-secrets
+    description: Detect hardcoded JWT secrets
+    severity: error
+    message: "Hardcoded JWT secret detected"
+    patterns:
+      - pattern: |
+          (jwt_secret|JWT_SECRET)\s*[:=]\s*['"]\w+['"]
+        languages: [javascript]
+
+# OWASP Top 10 specific queries
+owasp:
+  - category: A01_Broken_Access_Control
+    queries:
+      - name: missing-authorization-check
+        description: Check for missing authorization checks
+        patterns:
+          - pattern: |
+              (app\.(get|post|put|delete)\(.*[^)]*auth[^)]*\))
+            severity: warning
+            
+  - category: A03_Injection
+    queries:
+      - name: potential-sql-injection
+        description: Check for SQL injection patterns
+        patterns:
+          - pattern: |
+              (SELECT|INSERT|UPDATE|DELETE).*\$\{
+            severity: error
+            
+  - category: A02_Cryptographic_Failures
+    queries:
+      - name: weak-crypto-algorithms
+        description: Check for weak cryptographic algorithms
+        patterns:
+          - pattern: (md5|sha1)\s*\(
+            severity: warning

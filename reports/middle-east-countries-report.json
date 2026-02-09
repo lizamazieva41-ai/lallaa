@@ -1,0 +1,113 @@
+{
+  "generatedAt": "2026-01-26T10:13:59.320Z",
+  "summary": {
+    "totalMiddleEastCountries": 17,
+    "totalBins": 8560,
+    "totalBanks": 852,
+    "coverage": "100% - All 17 Middle East countries are present"
+  },
+  "countries": [
+    {
+      "code": "TR",
+      "name": "TR",
+      "bins": 1815,
+      "banks": 149
+    },
+    {
+      "code": "AE",
+      "name": "AE",
+      "bins": 1349,
+      "banks": 109
+    },
+    {
+      "code": "EG",
+      "name": "EG",
+      "bins": 889,
+      "banks": 77
+    },
+    {
+      "code": "SA",
+      "name": "SA",
+      "bins": 741,
+      "banks": 56
+    },
+    {
+      "code": "LB",
+      "name": "LB",
+      "bins": 622,
+      "banks": 42
+    },
+    {
+      "code": "QA",
+      "name": "QA",
+      "bins": 473,
+      "banks": 37
+    },
+    {
+      "code": "JO",
+      "name": "JORDAN",
+      "bins": 453,
+      "banks": 52
+    },
+    {
+      "code": "IL",
+      "name": "IL",
+      "bins": 450,
+      "banks": 40
+    },
+    {
+      "code": "BH",
+      "name": "BH",
+      "bins": 369,
+      "banks": 49
+    },
+    {
+      "code": "KW",
+      "name": "KUWAIT",
+      "bins": 322,
+      "banks": 33
+    },
+    {
+      "code": "IQ",
+      "name": "IRAQ",
+      "bins": 306,
+      "banks": 60
+    },
+    {
+      "code": "OM",
+      "name": "OM",
+      "bins": 286,
+      "banks": 33
+    },
+    {
+      "code": "CY",
+      "name": "CYPRUS",
+      "bins": 235,
+      "banks": 52
+    },
+    {
+      "code": "PS",
+      "name": "PALESTINIAN TERRITORY, OCCUPIED",
+      "bins": 104,
+      "banks": 18
+    },
+    {
+      "code": "YE",
+      "name": "YEMEN",
+      "bins": 74,
+      "banks": 15
+    },
+    {
+      "code": "SY",
+      "name": "SYRIAN ARAB REPUBLIC",
+      "bins": 38,
+      "banks": 10
+    },
+    {
+      "code": "IR",
+      "name": "IRAN, ISLAMIC REPUBLIC OF",
+      "bins": 34,
+      "banks": 20
+    }
+  ]
+}

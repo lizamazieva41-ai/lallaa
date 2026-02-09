@@ -1,0 +1,71 @@
+# HashiCorp Vault deployment
+version: '3.8'
+
+networks:
+  vault-network:
+    driver: bridge
+
+services:
+  vault:
+    image: hashicorp/vault:1.15.6
+    container_name: bin-check-vault
+    ports:
+      - "8200:8200"
+    environment:
+      VAULT_ADDR: http://0.0.0.0:8200
+      VAULT_API_ADDR: http://localhost:8200
+      VAULT_CLUSTER_ADDR: http://localhost:8201
+      VAULT_DEV_ROOT_TOKEN_ID: "bin-check-vault-root"
+      VAULT_LOG_LEVEL: info
+      VAULT_LOG_FORMAT: json
+      VAULT_LOG_LEVEL: DEBUG
+      SKIP_SEAL: "true"
+      VAULT_DEV_LISTEN_ADDRESS: "0.0.0.0"
+      # Key shares for HA setup (not needed for single node development)
+      # VAULT_KEY_SHARES: "false"
+      # VAULT_UI: "true"
+      # Consul integration (if needed)
+      # VAULT_CONSUL_HTTP_ADDR: "http://consul:8500"
+      # VAULT_CONSUL_CA_CERT_PATH: "/vault/consul/tls/ca.pem"
+      # VAULT_CONSUL_CA_KEY_PATH: "/vault/tls/ca.key"
+    volumes:
+      - vault_data:/vault/data
+      - vault_logs:/vault/logs
+      - vault_config:/vault/config
+      - vault_policies:/vault/policies
+      - vault_transit:/vault/transit
+      - consul_data:/consul/data
+      - consul_config:/consul/config
+    command: server -config=/vault/config/vault.hcl
+    restart: unless-stopped
+    depends_on:
+      - consul
+
+  consul:
+    image: hashicorp/consul:1.16.1
+    container_name: bin-check-consul
+    ports:
+      - "8500:8500"
+    environment:
+      CONSUL_BIND_INTERFACE: "0.0.0.0"
+      CONSUL_CLIENT_INTERFACE: "0.0.0.0"
+      CONSUL_ALLOW_LISTEN_ADDRESS: "0.0.0.0"
+    volumes:
+      - consul_data:/consul/data
+      - consul_config:/consul/config
+    command: consul agent -server -config=/consul/consul/config
+    restart: unless-stopped
+    depends_on:
+      - vault
+
+networks:
+  - vault-network
+
+volumes:
+  vault_data:
+  vault_logs:
+  vault_config:
+  vault_policies:
+  consul_data:
+  consul_data:
+  consul_config:

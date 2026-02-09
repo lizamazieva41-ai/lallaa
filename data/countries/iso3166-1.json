@@ -1,0 +1,3848 @@
+[
+  {
+    "iso2": "AD",
+    "iso3": "AND",
+    "name": "Andorra",
+    "commonNames": [
+      "Principality of Andorra",
+      "AD",
+      "Principat d'Andorra",
+      "AND"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "iso2": "AE",
+    "iso3": "ARE",
+    "name": "United Arab Emirates",
+    "commonNames": [
+      "AE",
+      "UAE",
+      "Emirates",
+      "ARE"
+    ],
+    "currencyCode": "AED",
+    "currencyName": "United Arab Emirates dirham",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "AF",
+    "iso3": "AFG",
+    "name": "Afghanistan",
+    "commonNames": [
+      "Islamic Republic of Afghanistan",
+      "AF",
+      "Afġānistān",
+      "AFG"
+    ],
+    "currencyCode": "AFN",
+    "currencyName": "Afghan afghani",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "iso2": "AG",
+    "iso3": "ATG",
+    "name": "Antigua and Barbuda",
+    "commonNames": [
+      "AG",
+      "ATG"
+    ],
+    "currencyCode": "XCD",
+    "currencyName": "Eastern Caribbean dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "AI",
+    "iso3": "AIA",
+    "name": "Anguilla",
+    "commonNames": [
+      "AI",
+      "AIA"
+    ],
+    "currencyCode": "XCD",
+    "currencyName": "Eastern Caribbean dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "AL",
+    "iso3": "ALB",
+    "name": "Albania",
+    "commonNames": [
+      "Republic of Albania",
+      "AL",
+      "Shqipëri",
+      "Shqipëria",
+      "Shqipnia",
+      "ALB"
+    ],
+    "currencyCode": "ALL",
+    "currencyName": "Albanian lek",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  {
+    "iso2": "AM",
+    "iso3": "ARM",
+    "name": "Armenia",
+    "commonNames": [
+      "Republic of Armenia",
+      "AM",
+      "Hayastan",
+      "Հայաստանի Հանրապետություն",
+      "ARM"
+    ],
+    "currencyCode": "AMD",
+    "currencyName": "Armenian dram",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "AO",
+    "iso3": "AGO",
+    "name": "Angola",
+    "commonNames": [
+      "Republic of Angola",
+      "AO",
+      "República de Angola",
+      "ʁɛpublika de an'ɡɔla",
+      "AGO"
+    ],
+    "currencyCode": "AOA",
+    "currencyName": "Angolan kwanza",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  {
+    "iso2": "AQ",
+    "iso3": "ATA",
+    "name": "Antarctica",
+    "commonNames": [
+      "AQ",
+      "ATA"
+    ],
+    "currencyCode": "",
+    "currencyName": "",
+    "region": "Antarctic",
+    "subregion": "Unknown"
+  },
+  {
+    "iso2": "AR",
+    "iso3": "ARG",
+    "name": "Argentina",
+    "commonNames": [
+      "Argentine Republic",
+      "AR",
+      "República Argentina",
+      "ARG"
+    ],
+    "currencyCode": "ARS",
+    "currencyName": "Argentine peso",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "AS",
+    "iso3": "ASM",
+    "name": "American Samoa",
+    "commonNames": [
+      "AS",
+      "Amerika Sāmoa",
+      "Amelika Sāmoa",
+      "Sāmoa Amelika",
+      "ASM"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  {
+    "iso2": "AT",
+    "iso3": "AUT",
+    "name": "Austria",
+    "commonNames": [
+      "Republic of Austria",
+      "AT",
+      "Osterreich",
+      "Oesterreich",
+      "AUT"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Central Europe"
+  },
+  {
+    "iso2": "AU",
+    "iso3": "AUS",
+    "name": "Australia",
+    "commonNames": [
+      "Commonwealth of Australia",
+      "AU",
+      "AUS"
+    ],
+    "currencyCode": "AUD",
+    "currencyName": "Australian dollar",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  {
+    "iso2": "AW",
+    "iso3": "ABW",
+    "name": "Aruba",
+    "commonNames": [
+      "AW",
+      "ABW"
+    ],
+    "currencyCode": "AWG",
+    "currencyName": "Aruban florin",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "AX",
+    "iso3": "ALA",
+    "name": "Åland Islands",
+    "commonNames": [
+      "AX",
+      "Aaland",
+      "Aland",
+      "Ahvenanmaa",
+      "ALA"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "AZ",
+    "iso3": "AZE",
+    "name": "Azerbaijan",
+    "commonNames": [
+      "Republic of Azerbaijan",
+      "AZ",
+      "Azərbaycan Respublikası",
+      "AZE"
+    ],
+    "currencyCode": "AZN",
+    "currencyName": "Azerbaijani manat",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "BA",
+    "iso3": "BIH",
+    "name": "Bosnia and Herzegovina",
+    "commonNames": [
+      "BA",
+      "Bosnia-Herzegovina",
+      "Босна и Херцеговина",
+      "BIH"
+    ],
+    "currencyCode": "BAM",
+    "currencyName": "Bosnia and Herzegovina convertible mark",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  {
+    "iso2": "BB",
+    "iso3": "BRB",
+    "name": "Barbados",
+    "commonNames": [
+      "BB",
+      "BRB"
+    ],
+    "currencyCode": "BBD",
+    "currencyName": "Barbadian dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "BD",
+    "iso3": "BGD",
+    "name": "Bangladesh",
+    "commonNames": [
+      "People's Republic of Bangladesh",
+      "BD",
+      "Gônôprôjatôntri Bangladesh",
+      "BGD"
+    ],
+    "currencyCode": "BDT",
+    "currencyName": "Bangladeshi taka",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "iso2": "BE",
+    "iso3": "BEL",
+    "name": "Belgium",
+    "commonNames": [
+      "Kingdom of Belgium",
+      "BE",
+      "België",
+      "Belgie",
+      "Belgien",
+      "Belgique",
+      "Koninkrijk België",
+      "Royaume de Belgique",
+      "Königreich Belgien",
+      "BEL"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "iso2": "BF",
+    "iso3": "BFA",
+    "name": "Burkina Faso",
+    "commonNames": [
+      "BF",
+      "BFA"
+    ],
+    "currencyCode": "XOF",
+    "currencyName": "West African CFA franc",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "BG",
+    "iso3": "BGR",
+    "name": "Bulgaria",
+    "commonNames": [
+      "Republic of Bulgaria",
+      "BG",
+      "Република България",
+      "BGR"
+    ],
+    "currencyCode": "BGN",
+    "currencyName": "Bulgarian lev",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  {
+    "iso2": "BH",
+    "iso3": "BHR",
+    "name": "Bahrain",
+    "commonNames": [
+      "Kingdom of Bahrain",
+      "BH",
+      "Mamlakat al-Baḥrayn",
+      "BHR"
+    ],
+    "currencyCode": "BHD",
+    "currencyName": "Bahraini dinar",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "BI",
+    "iso3": "BDI",
+    "name": "Burundi",
+    "commonNames": [
+      "Republic of Burundi",
+      "BI",
+      "Republika y'Uburundi",
+      "République du Burundi",
+      "BDI"
+    ],
+    "currencyCode": "BIF",
+    "currencyName": "Burundian franc",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "BJ",
+    "iso3": "BEN",
+    "name": "Benin",
+    "commonNames": [
+      "Republic of Benin",
+      "BJ",
+      "République du Bénin",
+      "BEN"
+    ],
+    "currencyCode": "XOF",
+    "currencyName": "West African CFA franc",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "BL",
+    "iso3": "BLM",
+    "name": "Saint Barthélemy",
+    "commonNames": [
+      "Collectivity of Saint Barthélemy",
+      "BL",
+      "St. Barthelemy",
+      "Collectivité de Saint-Barthélemy",
+      "BLM"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "BM",
+    "iso3": "BMU",
+    "name": "Bermuda",
+    "commonNames": [
+      "BM",
+      "The Islands of Bermuda",
+      "The Bermudas",
+      "Somers Isles",
+      "BMU"
+    ],
+    "currencyCode": "BMD",
+    "currencyName": "Bermudian dollar",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  {
+    "iso2": "BN",
+    "iso3": "BRN",
+    "name": "Brunei",
+    "commonNames": [
+      "Nation of Brunei, Abode of Peace",
+      "BN",
+      "Brunei Darussalam",
+      "Nation of Brunei",
+      "the Abode of Peace",
+      "BRN"
+    ],
+    "currencyCode": "BND",
+    "currencyName": "Brunei dollar",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  {
+    "iso2": "BO",
+    "iso3": "BOL",
+    "name": "Bolivia",
+    "commonNames": [
+      "Plurinational State of Bolivia",
+      "BO",
+      "Buliwya",
+      "Wuliwya",
+      "Bolivia, Plurinational State of",
+      "Estado Plurinacional de Bolivia",
+      "Buliwya Mamallaqta",
+      "Wuliwya Suyu",
+      "Tetã Volívia",
+      "BOL"
+    ],
+    "currencyCode": "BOB",
+    "currencyName": "Bolivian boliviano",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "BQ",
+    "iso3": "BES",
+    "name": "Caribbean Netherlands",
+    "commonNames": [
+      "Bonaire, Sint Eustatius and Saba",
+      "BES islands",
+      "BQ",
+      "BES"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "BR",
+    "iso3": "BRA",
+    "name": "Brazil",
+    "commonNames": [
+      "Federative Republic of Brazil",
+      "BR",
+      "Brasil",
+      "República Federativa do Brasil",
+      "BRA"
+    ],
+    "currencyCode": "BRL",
+    "currencyName": "Brazilian real",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "BS",
+    "iso3": "BHS",
+    "name": "Bahamas",
+    "commonNames": [
+      "Commonwealth of the Bahamas",
+      "BS",
+      "BHS"
+    ],
+    "currencyCode": "BSD",
+    "currencyName": "Bahamian dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "BT",
+    "iso3": "BTN",
+    "name": "Bhutan",
+    "commonNames": [
+      "Kingdom of Bhutan",
+      "BT",
+      "BTN"
+    ],
+    "currencyCode": "BTN",
+    "currencyName": "Bhutanese ngultrum",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "iso2": "BV",
+    "iso3": "BVT",
+    "name": "Bouvet Island",
+    "commonNames": [
+      "BV",
+      "Bouvetøya",
+      "Bouvet-øya",
+      "BVT"
+    ],
+    "currencyCode": "",
+    "currencyName": "",
+    "region": "Antarctic",
+    "subregion": "Unknown"
+  },
+  {
+    "iso2": "BW",
+    "iso3": "BWA",
+    "name": "Botswana",
+    "commonNames": [
+      "Republic of Botswana",
+      "BW",
+      "Lefatshe la Botswana",
+      "BWA"
+    ],
+    "currencyCode": "BWP",
+    "currencyName": "Botswana pula",
+    "region": "Africa",
+    "subregion": "Southern Africa"
+  },
+  {
+    "iso2": "BY",
+    "iso3": "BLR",
+    "name": "Belarus",
+    "commonNames": [
+      "Republic of Belarus",
+      "BY",
+      "Bielaruś",
+      "Белоруссия",
+      "Республика Белоруссия",
+      "BLR"
+    ],
+    "currencyCode": "BYN",
+    "currencyName": "Belarusian ruble",
+    "region": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  {
+    "iso2": "BZ",
+    "iso3": "BLZ",
+    "name": "Belize",
+    "commonNames": [
+      "BZ",
+      "BLZ"
+    ],
+    "currencyCode": "BZD",
+    "currencyName": "Belize dollar",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  {
+    "iso2": "CA",
+    "iso3": "CAN",
+    "name": "Canada",
+    "commonNames": [
+      "CA",
+      "CAN"
+    ],
+    "currencyCode": "CAD",
+    "currencyName": "Canadian dollar",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  {
+    "iso2": "CC",
+    "iso3": "CCK",
+    "name": "Cocos (Keeling) Islands",
+    "commonNames": [
+      "Territory of the Cocos (Keeling) Islands",
+      "CC",
+      "Keeling Islands",
+      "Cocos Islands",
+      "CCK"
+    ],
+    "currencyCode": "AUD",
+    "currencyName": "Australian dollar",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  {
+    "iso2": "CD",
+    "iso3": "COD",
+    "name": "DR Congo",
+    "commonNames": [
+      "Democratic Republic of the Congo",
+      "CD",
+      "DR Congo",
+      "Congo-Kinshasa",
+      "Congo, the Democratic Republic of the",
+      "DRC",
+      "COD"
+    ],
+    "currencyCode": "CDF",
+    "currencyName": "Congolese franc",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  {
+    "iso2": "CF",
+    "iso3": "CAF",
+    "name": "Central African Republic",
+    "commonNames": [
+      "CF",
+      "Central African Republic",
+      "République centrafricaine",
+      "CAF"
+    ],
+    "currencyCode": "XAF",
+    "currencyName": "Central African CFA franc",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  {
+    "iso2": "CG",
+    "iso3": "COG",
+    "name": "Republic of the Congo",
+    "commonNames": [
+      "CG",
+      "Congo",
+      "Congo-Brazzaville",
+      "COG"
+    ],
+    "currencyCode": "XAF",
+    "currencyName": "Central African CFA franc",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  {
+    "iso2": "CH",
+    "iso3": "CHE",
+    "name": "Switzerland",
+    "commonNames": [
+      "Swiss Confederation",
+      "CH",
+      "Schweiz",
+      "Suisse",
+      "Svizzera",
+      "Svizra",
+      "CHE"
+    ],
+    "currencyCode": "CHF",
+    "currencyName": "Swiss franc",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "iso2": "CI",
+    "iso3": "CIV",
+    "name": "Ivory Coast",
+    "commonNames": [
+      "Republic of Côte d'Ivoire",
+      "CI",
+      "Côte d'Ivoire",
+      "Ivory Coast",
+      "République de Côte d'Ivoire",
+      "CIV"
+    ],
+    "currencyCode": "XOF",
+    "currencyName": "West African CFA franc",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "CK",
+    "iso3": "COK",
+    "name": "Cook Islands",
+    "commonNames": [
+      "CK",
+      "Kūki 'Āirani",
+      "COK"
+    ],
+    "currencyCode": "CKD",
+    "currencyName": "Cook Islands dollar",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  {
+    "iso2": "CL",
+    "iso3": "CHL",
+    "name": "Chile",
+    "commonNames": [
+      "Republic of Chile",
+      "CL",
+      "República de Chile",
+      "CHL"
+    ],
+    "currencyCode": "CLP",
+    "currencyName": "Chilean peso",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "CM",
+    "iso3": "CMR",
+    "name": "Cameroon",
+    "commonNames": [
+      "Republic of Cameroon",
+      "CM",
+      "République du Cameroun",
+      "CMR"
+    ],
+    "currencyCode": "XAF",
+    "currencyName": "Central African CFA franc",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  {
+    "iso2": "CN",
+    "iso3": "CHN",
+    "name": "China",
+    "commonNames": [
+      "People's Republic of China",
+      "CN",
+      "Zhōngguó",
+      "Zhongguo",
+      "Zhonghua",
+      "中华人民共和国",
+      "Zhōnghuá Rénmín Gònghéguó",
+      "CHN"
+    ],
+    "currencyCode": "CNY",
+    "currencyName": "Chinese yuan",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "iso2": "CO",
+    "iso3": "COL",
+    "name": "Colombia",
+    "commonNames": [
+      "Republic of Colombia",
+      "CO",
+      "República de Colombia",
+      "COL"
+    ],
+    "currencyCode": "COP",
+    "currencyName": "Colombian peso",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "CR",
+    "iso3": "CRI",
+    "name": "Costa Rica",
+    "commonNames": [
+      "Republic of Costa Rica",
+      "CR",
+      "República de Costa Rica",
+      "CRI"
+    ],
+    "currencyCode": "CRC",
+    "currencyName": "Costa Rican colón",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  {
+    "iso2": "CU",
+    "iso3": "CUB",
+    "name": "Cuba",
+    "commonNames": [
+      "Republic of Cuba",
+      "CU",
+      "República de Cuba",
+      "CUB"
+    ],
+    "currencyCode": "CUC",
+    "currencyName": "Cuban convertible peso",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "CV",
+    "iso3": "CPV",
+    "name": "Cape Verde",
+    "commonNames": [
+      "Republic of Cabo Verde",
+      "CV",
+      "República de Cabo Verde",
+      "CPV"
+    ],
+    "currencyCode": "CVE",
+    "currencyName": "Cape Verdean escudo",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "CW",
+    "iso3": "CUW",
+    "name": "Curaçao",
+    "commonNames": [
+      "Country of Curaçao",
+      "CW",
+      "Curacao",
+      "Kòrsou",
+      "Land Curaçao",
+      "Pais Kòrsou",
+      "CUW"
+    ],
+    "currencyCode": "ANG",
+    "currencyName": "Netherlands Antillean guilder",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "CX",
+    "iso3": "CXR",
+    "name": "Christmas Island",
+    "commonNames": [
+      "Territory of Christmas Island",
+      "CX",
+      "CXR"
+    ],
+    "currencyCode": "AUD",
+    "currencyName": "Australian dollar",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  {
+    "iso2": "CY",
+    "iso3": "CYP",
+    "name": "Cyprus",
+    "commonNames": [
+      "Republic of Cyprus",
+      "CY",
+      "Kýpros",
+      "Kıbrıs",
+      "Κυπριακή Δημοκρατία",
+      "Kıbrıs Cumhuriyeti",
+      "CYP"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "iso2": "CZ",
+    "iso3": "CZE",
+    "name": "Czechia",
+    "commonNames": [
+      "Czech Republic",
+      "CZ",
+      "Česká republika",
+      "Česko",
+      "CZE"
+    ],
+    "currencyCode": "CZK",
+    "currencyName": "Czech koruna",
+    "region": "Europe",
+    "subregion": "Central Europe"
+  },
+  {
+    "iso2": "DE",
+    "iso3": "DEU",
+    "name": "Germany",
+    "commonNames": [
+      "Federal Republic of Germany",
+      "DE",
+      "Bundesrepublik Deutschland",
+      "DEU"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "iso2": "DJ",
+    "iso3": "DJI",
+    "name": "Djibouti",
+    "commonNames": [
+      "Republic of Djibouti",
+      "DJ",
+      "Jabuuti",
+      "Gabuuti",
+      "République de Djibouti",
+      "Gabuutih Ummuuno",
+      "Jamhuuriyadda Jabuuti",
+      "DJI"
+    ],
+    "currencyCode": "DJF",
+    "currencyName": "Djiboutian franc",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "DK",
+    "iso3": "DNK",
+    "name": "Denmark",
+    "commonNames": [
+      "Kingdom of Denmark",
+      "DK",
+      "Danmark",
+      "Kongeriget Danmark",
+      "DNK"
+    ],
+    "currencyCode": "DKK",
+    "currencyName": "Danish krone",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "DM",
+    "iso3": "DMA",
+    "name": "Dominica",
+    "commonNames": [
+      "Commonwealth of Dominica",
+      "DM",
+      "Dominique",
+      "Wai‘tu kubuli",
+      "DMA"
+    ],
+    "currencyCode": "XCD",
+    "currencyName": "Eastern Caribbean dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "DO",
+    "iso3": "DOM",
+    "name": "Dominican Republic",
+    "commonNames": [
+      "DO",
+      "DOM"
+    ],
+    "currencyCode": "DOP",
+    "currencyName": "Dominican peso",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "DZ",
+    "iso3": "DZA",
+    "name": "Algeria",
+    "commonNames": [
+      "People's Democratic Republic of Algeria",
+      "DZ",
+      "Dzayer",
+      "Algérie",
+      "DZA"
+    ],
+    "currencyCode": "DZD",
+    "currencyName": "Algerian dinar",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "iso2": "EC",
+    "iso3": "ECU",
+    "name": "Ecuador",
+    "commonNames": [
+      "Republic of Ecuador",
+      "EC",
+      "República del Ecuador",
+      "ECU"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "EE",
+    "iso3": "EST",
+    "name": "Estonia",
+    "commonNames": [
+      "Republic of Estonia",
+      "EE",
+      "Eesti",
+      "Eesti Vabariik",
+      "EST"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "EG",
+    "iso3": "EGY",
+    "name": "Egypt",
+    "commonNames": [
+      "Arab Republic of Egypt",
+      "EG",
+      "EGY"
+    ],
+    "currencyCode": "EGP",
+    "currencyName": "Egyptian pound",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "iso2": "EH",
+    "iso3": "ESH",
+    "name": "Western Sahara",
+    "commonNames": [
+      "Sahrawi Arab Democratic Republic",
+      "EH",
+      "Taneẓroft Tutrimt",
+      "ESH"
+    ],
+    "currencyCode": "DZD",
+    "currencyName": "Algerian dinar",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "iso2": "ER",
+    "iso3": "ERI",
+    "name": "Eritrea",
+    "commonNames": [
+      "State of Eritrea",
+      "ER",
+      "ሃገረ ኤርትራ",
+      "Dawlat Iritriyá",
+      "ʾErtrā",
+      "Iritriyā",
+      "ERI"
+    ],
+    "currencyCode": "ERN",
+    "currencyName": "Eritrean nakfa",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "ES",
+    "iso3": "ESP",
+    "name": "Spain",
+    "commonNames": [
+      "Kingdom of Spain",
+      "ES",
+      "Reino de España",
+      "ESP"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "iso2": "ET",
+    "iso3": "ETH",
+    "name": "Ethiopia",
+    "commonNames": [
+      "Federal Democratic Republic of Ethiopia",
+      "ET",
+      "ʾĪtyōṗṗyā",
+      "የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ",
+      "ETH"
+    ],
+    "currencyCode": "ETB",
+    "currencyName": "Ethiopian birr",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "FI",
+    "iso3": "FIN",
+    "name": "Finland",
+    "commonNames": [
+      "Republic of Finland",
+      "FI",
+      "Suomi",
+      "Suomen tasavalta",
+      "Republiken Finland",
+      "FIN"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "FJ",
+    "iso3": "FJI",
+    "name": "Fiji",
+    "commonNames": [
+      "Republic of Fiji",
+      "FJ",
+      "Viti",
+      "Matanitu ko Viti",
+      "Fijī Gaṇarājya",
+      "FJI"
+    ],
+    "currencyCode": "FJD",
+    "currencyName": "Fijian dollar",
+    "region": "Oceania",
+    "subregion": "Melanesia"
+  },
+  {
+    "iso2": "FK",
+    "iso3": "FLK",
+    "name": "Falkland Islands",
+    "commonNames": [
+      "FK",
+      "Islas Malvinas",
+      "Falkland Islands (Malvinas)",
+      "FLK"
+    ],
+    "currencyCode": "FKP",
+    "currencyName": "Falkland Islands pound",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "FM",
+    "iso3": "FSM",
+    "name": "Micronesia",
+    "commonNames": [
+      "Federated States of Micronesia",
+      "FM",
+      "Micronesia, Federated States of",
+      "FSM"
+    ],
+    "currencyCode": "",
+    "currencyName": "",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  {
+    "iso2": "FO",
+    "iso3": "FRO",
+    "name": "Faroe Islands",
+    "commonNames": [
+      "FO",
+      "Føroyar",
+      "Færøerne",
+      "FRO"
+    ],
+    "currencyCode": "DKK",
+    "currencyName": "Danish krone",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "FR",
+    "iso3": "FRA",
+    "name": "France",
+    "commonNames": [
+      "French Republic",
+      "FR",
+      "République française",
+      "FRA"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "iso2": "GA",
+    "iso3": "GAB",
+    "name": "Gabon",
+    "commonNames": [
+      "Gabonese Republic",
+      "GA",
+      "République Gabonaise",
+      "GAB"
+    ],
+    "currencyCode": "XAF",
+    "currencyName": "Central African CFA franc",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  {
+    "iso2": "GB",
+    "iso3": "GBR",
+    "name": "United Kingdom",
+    "commonNames": [
+      "United Kingdom of Great Britain and Northern Ireland",
+      "GB",
+      "UK",
+      "Great Britain",
+      "GBR"
+    ],
+    "currencyCode": "GBP",
+    "currencyName": "British pound",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "GD",
+    "iso3": "GRD",
+    "name": "Grenada",
+    "commonNames": [
+      "GD",
+      "GRD"
+    ],
+    "currencyCode": "XCD",
+    "currencyName": "Eastern Caribbean dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "GE",
+    "iso3": "GEO",
+    "name": "Georgia",
+    "commonNames": [
+      "GE",
+      "Sakartvelo",
+      "GEO"
+    ],
+    "currencyCode": "GEL",
+    "currencyName": "lari",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "GF",
+    "iso3": "GUF",
+    "name": "French Guiana",
+    "commonNames": [
+      "Guiana",
+      "GF",
+      "Guyane",
+      "GUF"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "GG",
+    "iso3": "GGY",
+    "name": "Guernsey",
+    "commonNames": [
+      "Bailiwick of Guernsey",
+      "GG",
+      "Bailliage de Guernesey",
+      "GGY"
+    ],
+    "currencyCode": "GBP",
+    "currencyName": "British pound",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "GH",
+    "iso3": "GHA",
+    "name": "Ghana",
+    "commonNames": [
+      "Republic of Ghana",
+      "GH",
+      "GHA"
+    ],
+    "currencyCode": "GHS",
+    "currencyName": "Ghanaian cedi",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "GI",
+    "iso3": "GIB",
+    "name": "Gibraltar",
+    "commonNames": [
+      "GI",
+      "GIB"
+    ],
+    "currencyCode": "GIP",
+    "currencyName": "Gibraltar pound",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "iso2": "GL",
+    "iso3": "GRL",
+    "name": "Greenland",
+    "commonNames": [
+      "GL",
+      "Grønland",
+      "GRL"
+    ],
+    "currencyCode": "DKK",
+    "currencyName": "krone",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  {
+    "iso2": "GM",
+    "iso3": "GMB",
+    "name": "Gambia",
+    "commonNames": [
+      "Republic of the Gambia",
+      "GM",
+      "GMB"
+    ],
+    "currencyCode": "GMD",
+    "currencyName": "dalasi",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "GN",
+    "iso3": "GIN",
+    "name": "Guinea",
+    "commonNames": [
+      "Republic of Guinea",
+      "GN",
+      "République de Guinée",
+      "GIN"
+    ],
+    "currencyCode": "GNF",
+    "currencyName": "Guinean franc",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "GP",
+    "iso3": "GLP",
+    "name": "Guadeloupe",
+    "commonNames": [
+      "GP",
+      "Gwadloup",
+      "GLP"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "GQ",
+    "iso3": "GNQ",
+    "name": "Equatorial Guinea",
+    "commonNames": [
+      "Republic of Equatorial Guinea",
+      "GQ",
+      "República de Guinea Ecuatorial",
+      "République de Guinée équatoriale",
+      "República da Guiné Equatorial",
+      "GNQ"
+    ],
+    "currencyCode": "XAF",
+    "currencyName": "Central African CFA franc",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  {
+    "iso2": "GR",
+    "iso3": "GRC",
+    "name": "Greece",
+    "commonNames": [
+      "Hellenic Republic",
+      "GR",
+      "Elláda",
+      "Ελληνική Δημοκρατία",
+      "GRC"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "iso2": "GS",
+    "iso3": "SGS",
+    "name": "South Georgia",
+    "commonNames": [
+      "South Georgia and the South Sandwich Islands",
+      "GS",
+      "SGS"
+    ],
+    "currencyCode": "SHP",
+    "currencyName": "Saint Helena pound",
+    "region": "Antarctic",
+    "subregion": "Unknown"
+  },
+  {
+    "iso2": "GT",
+    "iso3": "GTM",
+    "name": "Guatemala",
+    "commonNames": [
+      "Republic of Guatemala",
+      "GT",
+      "GTM"
+    ],
+    "currencyCode": "GTQ",
+    "currencyName": "Guatemalan quetzal",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  {
+    "iso2": "GU",
+    "iso3": "GUM",
+    "name": "Guam",
+    "commonNames": [
+      "GU",
+      "Guåhån",
+      "GUM"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  {
+    "iso2": "GW",
+    "iso3": "GNB",
+    "name": "Guinea-Bissau",
+    "commonNames": [
+      "Republic of Guinea-Bissau",
+      "GW",
+      "República da Guiné-Bissau",
+      "GNB"
+    ],
+    "currencyCode": "XOF",
+    "currencyName": "West African CFA franc",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "GY",
+    "iso3": "GUY",
+    "name": "Guyana",
+    "commonNames": [
+      "Co-operative Republic of Guyana",
+      "GY",
+      "GUY"
+    ],
+    "currencyCode": "GYD",
+    "currencyName": "Guyanese dollar",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "HK",
+    "iso3": "HKG",
+    "name": "Hong Kong",
+    "commonNames": [
+      "Hong Kong Special Administrative Region of the People's Republic of China",
+      "HK",
+      "HKG"
+    ],
+    "currencyCode": "HKD",
+    "currencyName": "Hong Kong dollar",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "iso2": "HM",
+    "iso3": "HMD",
+    "name": "Heard Island and McDonald Islands",
+    "commonNames": [
+      "HM",
+      "Heard Island and McDonald Islands",
+      "HMD"
+    ],
+    "currencyCode": "",
+    "currencyName": "",
+    "region": "Antarctic",
+    "subregion": "Unknown"
+  },
+  {
+    "iso2": "HN",
+    "iso3": "HND",
+    "name": "Honduras",
+    "commonNames": [
+      "Republic of Honduras",
+      "HN",
+      "República de Honduras",
+      "HND"
+    ],
+    "currencyCode": "HNL",
+    "currencyName": "Honduran lempira",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  {
+    "iso2": "HR",
+    "iso3": "HRV",
+    "name": "Croatia",
+    "commonNames": [
+      "Republic of Croatia",
+      "HR",
+      "Hrvatska",
+      "Republika Hrvatska",
+      "HRV"
+    ],
+    "currencyCode": "HRK",
+    "currencyName": "Croatian kuna",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  {
+    "iso2": "HT",
+    "iso3": "HTI",
+    "name": "Haiti",
+    "commonNames": [
+      "Republic of Haiti",
+      "HT",
+      "République d'Haïti",
+      "Repiblik Ayiti",
+      "HTI"
+    ],
+    "currencyCode": "HTG",
+    "currencyName": "Haitian gourde",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "HU",
+    "iso3": "HUN",
+    "name": "Hungary",
+    "commonNames": [
+      "HU",
+      "HUN"
+    ],
+    "currencyCode": "HUF",
+    "currencyName": "Hungarian forint",
+    "region": "Europe",
+    "subregion": "Central Europe"
+  },
+  {
+    "iso2": "ID",
+    "iso3": "IDN",
+    "name": "Indonesia",
+    "commonNames": [
+      "Republic of Indonesia",
+      "ID",
+      "Republik Indonesia",
+      "IDN"
+    ],
+    "currencyCode": "IDR",
+    "currencyName": "Indonesian rupiah",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  {
+    "iso2": "IE",
+    "iso3": "IRL",
+    "name": "Ireland",
+    "commonNames": [
+      "Republic of Ireland",
+      "IE",
+      "Éire",
+      "Poblacht na hÉireann",
+      "IRL"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "IL",
+    "iso3": "ISR",
+    "name": "Israel",
+    "commonNames": [
+      "State of Israel",
+      "IL",
+      "Medīnat Yisrā'el",
+      "ISR"
+    ],
+    "currencyCode": "ILS",
+    "currencyName": "Israeli new shekel",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "IM",
+    "iso3": "IMN",
+    "name": "Isle of Man",
+    "commonNames": [
+      "IM",
+      "Ellan Vannin",
+      "Mann",
+      "Mannin",
+      "IMN"
+    ],
+    "currencyCode": "GBP",
+    "currencyName": "British pound",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "IN",
+    "iso3": "IND",
+    "name": "India",
+    "commonNames": [
+      "Republic of India",
+      "IN",
+      "Bhārat",
+      "Bharat Ganrajya",
+      "இந்தியா",
+      "IND"
+    ],
+    "currencyCode": "INR",
+    "currencyName": "Indian rupee",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "iso2": "IO",
+    "iso3": "IOT",
+    "name": "British Indian Ocean Territory",
+    "commonNames": [
+      "IO",
+      "IOT"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "IQ",
+    "iso3": "IRQ",
+    "name": "Iraq",
+    "commonNames": [
+      "Republic of Iraq",
+      "IQ",
+      "Jumhūriyyat al-‘Irāq",
+      "IRQ"
+    ],
+    "currencyCode": "IQD",
+    "currencyName": "Iraqi dinar",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "IR",
+    "iso3": "IRN",
+    "name": "Iran",
+    "commonNames": [
+      "Islamic Republic of Iran",
+      "IR",
+      "Iran, Islamic Republic of",
+      "Jomhuri-ye Eslāmi-ye Irān",
+      "IRN"
+    ],
+    "currencyCode": "IRR",
+    "currencyName": "Iranian rial",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "iso2": "IS",
+    "iso3": "ISL",
+    "name": "Iceland",
+    "commonNames": [
+      "IS",
+      "Island",
+      "Republic of Iceland",
+      "Lýðveldið Ísland",
+      "ISL"
+    ],
+    "currencyCode": "ISK",
+    "currencyName": "Icelandic króna",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "IT",
+    "iso3": "ITA",
+    "name": "Italy",
+    "commonNames": [
+      "Italian Republic",
+      "IT",
+      "Repubblica italiana",
+      "ITA"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "iso2": "JE",
+    "iso3": "JEY",
+    "name": "Jersey",
+    "commonNames": [
+      "Bailiwick of Jersey",
+      "JE",
+      "Bailliage de Jersey",
+      "Bailliage dé Jèrri",
+      "JEY"
+    ],
+    "currencyCode": "GBP",
+    "currencyName": "British pound",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "JM",
+    "iso3": "JAM",
+    "name": "Jamaica",
+    "commonNames": [
+      "JM",
+      "JAM"
+    ],
+    "currencyCode": "JMD",
+    "currencyName": "Jamaican dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "JO",
+    "iso3": "JOR",
+    "name": "Jordan",
+    "commonNames": [
+      "Hashemite Kingdom of Jordan",
+      "JO",
+      "al-Mamlakah al-Urdunīyah al-Hāshimīyah",
+      "JOR"
+    ],
+    "currencyCode": "JOD",
+    "currencyName": "Jordanian dinar",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "JP",
+    "iso3": "JPN",
+    "name": "Japan",
+    "commonNames": [
+      "JP",
+      "Nippon",
+      "Nihon",
+      "JPN"
+    ],
+    "currencyCode": "JPY",
+    "currencyName": "Japanese yen",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "iso2": "KE",
+    "iso3": "KEN",
+    "name": "Kenya",
+    "commonNames": [
+      "Republic of Kenya",
+      "KE",
+      "Jamhuri ya Kenya",
+      "KEN"
+    ],
+    "currencyCode": "KES",
+    "currencyName": "Kenyan shilling",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "KG",
+    "iso3": "KGZ",
+    "name": "Kyrgyzstan",
+    "commonNames": [
+      "Kyrgyz Republic",
+      "KG",
+      "Киргизия",
+      "Кыргыз Республикасы",
+      "Kyrgyz Respublikasy",
+      "KGZ"
+    ],
+    "currencyCode": "KGS",
+    "currencyName": "Kyrgyzstani som",
+    "region": "Asia",
+    "subregion": "Central Asia"
+  },
+  {
+    "iso2": "KH",
+    "iso3": "KHM",
+    "name": "Cambodia",
+    "commonNames": [
+      "Kingdom of Cambodia",
+      "KH",
+      "KHM"
+    ],
+    "currencyCode": "KHR",
+    "currencyName": "Cambodian riel",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  {
+    "iso2": "KI",
+    "iso3": "KIR",
+    "name": "Kiribati",
+    "commonNames": [
+      "Independent and Sovereign Republic of Kiribati",
+      "KI",
+      "Republic of Kiribati",
+      "Ribaberiki Kiribati",
+      "KIR"
+    ],
+    "currencyCode": "AUD",
+    "currencyName": "Australian dollar",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  {
+    "iso2": "KM",
+    "iso3": "COM",
+    "name": "Comoros",
+    "commonNames": [
+      "Union of the Comoros",
+      "KM",
+      "Union des Comores",
+      "Udzima wa Komori",
+      "al-Ittiḥād al-Qumurī",
+      "COM"
+    ],
+    "currencyCode": "KMF",
+    "currencyName": "Comorian franc",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "KN",
+    "iso3": "KNA",
+    "name": "Saint Kitts and Nevis",
+    "commonNames": [
+      "Federation of Saint Christopher and Nevis",
+      "KN",
+      "KNA"
+    ],
+    "currencyCode": "XCD",
+    "currencyName": "Eastern Caribbean dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "KP",
+    "iso3": "PRK",
+    "name": "North Korea",
+    "commonNames": [
+      "Democratic People's Republic of Korea",
+      "KP",
+      "DPRK",
+      "조선민주주의인민공화국",
+      "Chosŏn Minjujuŭi Inmin Konghwaguk",
+      "Korea, Democratic People's Republic of",
+      "북한",
+      "북조선",
+      "PRK"
+    ],
+    "currencyCode": "KPW",
+    "currencyName": "North Korean won",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "iso2": "KR",
+    "iso3": "KOR",
+    "name": "South Korea",
+    "commonNames": [
+      "Republic of Korea",
+      "KR",
+      "Korea, Republic of",
+      "남한",
+      "남조선",
+      "KOR"
+    ],
+    "currencyCode": "KRW",
+    "currencyName": "South Korean won",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "iso2": "KW",
+    "iso3": "KWT",
+    "name": "Kuwait",
+    "commonNames": [
+      "State of Kuwait",
+      "KW",
+      "Dawlat al-Kuwait",
+      "KWT"
+    ],
+    "currencyCode": "KWD",
+    "currencyName": "Kuwaiti dinar",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "KY",
+    "iso3": "CYM",
+    "name": "Cayman Islands",
+    "commonNames": [
+      "KY",
+      "CYM"
+    ],
+    "currencyCode": "KYD",
+    "currencyName": "Cayman Islands dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "KZ",
+    "iso3": "KAZ",
+    "name": "Kazakhstan",
+    "commonNames": [
+      "Republic of Kazakhstan",
+      "KZ",
+      "Qazaqstan",
+      "Казахстан",
+      "Қазақстан Республикасы",
+      "Qazaqstan Respublïkası",
+      "Республика Казахстан",
+      "Respublika Kazakhstan",
+      "KAZ"
+    ],
+    "currencyCode": "KZT",
+    "currencyName": "Kazakhstani tenge",
+    "region": "Asia",
+    "subregion": "Central Asia"
+  },
+  {
+    "iso2": "LA",
+    "iso3": "LAO",
+    "name": "Laos",
+    "commonNames": [
+      "Lao People's Democratic Republic",
+      "LA",
+      "Lao",
+      "Sathalanalat Paxathipatai Paxaxon Lao",
+      "LAO"
+    ],
+    "currencyCode": "LAK",
+    "currencyName": "Lao kip",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  {
+    "iso2": "LB",
+    "iso3": "LBN",
+    "name": "Lebanon",
+    "commonNames": [
+      "Lebanese Republic",
+      "LB",
+      "Al-Jumhūrīyah Al-Libnānīyah",
+      "LBN"
+    ],
+    "currencyCode": "LBP",
+    "currencyName": "Lebanese pound",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "LC",
+    "iso3": "LCA",
+    "name": "Saint Lucia",
+    "commonNames": [
+      "LC",
+      "LCA"
+    ],
+    "currencyCode": "XCD",
+    "currencyName": "Eastern Caribbean dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "LI",
+    "iso3": "LIE",
+    "name": "Liechtenstein",
+    "commonNames": [
+      "Principality of Liechtenstein",
+      "LI",
+      "Fürstentum Liechtenstein",
+      "LIE"
+    ],
+    "currencyCode": "CHF",
+    "currencyName": "Swiss franc",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "iso2": "LK",
+    "iso3": "LKA",
+    "name": "Sri Lanka",
+    "commonNames": [
+      "Democratic Socialist Republic of Sri Lanka",
+      "LK",
+      "ilaṅkai",
+      "LKA"
+    ],
+    "currencyCode": "LKR",
+    "currencyName": "Sri Lankan rupee",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "iso2": "LR",
+    "iso3": "LBR",
+    "name": "Liberia",
+    "commonNames": [
+      "Republic of Liberia",
+      "LR",
+      "LBR"
+    ],
+    "currencyCode": "LRD",
+    "currencyName": "Liberian dollar",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "LS",
+    "iso3": "LSO",
+    "name": "Lesotho",
+    "commonNames": [
+      "Kingdom of Lesotho",
+      "LS",
+      "Muso oa Lesotho",
+      "LSO"
+    ],
+    "currencyCode": "LSL",
+    "currencyName": "Lesotho loti",
+    "region": "Africa",
+    "subregion": "Southern Africa"
+  },
+  {
+    "iso2": "LT",
+    "iso3": "LTU",
+    "name": "Lithuania",
+    "commonNames": [
+      "Republic of Lithuania",
+      "LT",
+      "Lietuvos Respublika",
+      "LTU"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "LU",
+    "iso3": "LUX",
+    "name": "Luxembourg",
+    "commonNames": [
+      "Grand Duchy of Luxembourg",
+      "LU",
+      "Grand-Duché de Luxembourg",
+      "Großherzogtum Luxemburg",
+      "Groussherzogtum Lëtzebuerg",
+      "LUX"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "iso2": "LV",
+    "iso3": "LVA",
+    "name": "Latvia",
+    "commonNames": [
+      "Republic of Latvia",
+      "LV",
+      "Latvijas Republika",
+      "LVA"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "LY",
+    "iso3": "LBY",
+    "name": "Libya",
+    "commonNames": [
+      "State of Libya",
+      "LY",
+      "Dawlat Libya",
+      "LBY"
+    ],
+    "currencyCode": "LYD",
+    "currencyName": "Libyan dinar",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "iso2": "MA",
+    "iso3": "MAR",
+    "name": "Morocco",
+    "commonNames": [
+      "Kingdom of Morocco",
+      "MA",
+      "Al-Mamlakah al-Maġribiyah",
+      "MAR"
+    ],
+    "currencyCode": "MAD",
+    "currencyName": "Moroccan dirham",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "iso2": "MC",
+    "iso3": "MCO",
+    "name": "Monaco",
+    "commonNames": [
+      "Principality of Monaco",
+      "MC",
+      "Principauté de Monaco",
+      "MCO"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "iso2": "MD",
+    "iso3": "MDA",
+    "name": "Moldova",
+    "commonNames": [
+      "Republic of Moldova",
+      "MD",
+      "Moldova, Republic of",
+      "Republica Moldova",
+      "MDA"
+    ],
+    "currencyCode": "MDL",
+    "currencyName": "Moldovan leu",
+    "region": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  {
+    "iso2": "ME",
+    "iso3": "MNE",
+    "name": "Montenegro",
+    "commonNames": [
+      "ME",
+      "Crna Gora",
+      "MNE"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  {
+    "iso2": "MF",
+    "iso3": "MAF",
+    "name": "Saint Martin",
+    "commonNames": [
+      "MF",
+      "Collectivity of Saint Martin",
+      "Collectivité de Saint-Martin",
+      "Saint Martin (French part)",
+      "MAF"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "MG",
+    "iso3": "MDG",
+    "name": "Madagascar",
+    "commonNames": [
+      "Republic of Madagascar",
+      "MG",
+      "Repoblikan'i Madagasikara",
+      "République de Madagascar",
+      "MDG"
+    ],
+    "currencyCode": "MGA",
+    "currencyName": "Malagasy ariary",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "MH",
+    "iso3": "MHL",
+    "name": "Marshall Islands",
+    "commonNames": [
+      "Republic of the Marshall Islands",
+      "MH",
+      "Aolepān Aorōkin M̧ajeļ",
+      "MHL"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  {
+    "iso2": "MK",
+    "iso3": "MKD",
+    "name": "North Macedonia",
+    "commonNames": [
+      "Republic of North Macedonia",
+      "MK",
+      "The former Yugoslav Republic of Macedonia",
+      "Macedonia, The Former Yugoslav Republic of",
+      "Република Северна Македонија",
+      "MKD"
+    ],
+    "currencyCode": "MKD",
+    "currencyName": "denar",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  {
+    "iso2": "ML",
+    "iso3": "MLI",
+    "name": "Mali",
+    "commonNames": [
+      "Republic of Mali",
+      "ML",
+      "République du Mali",
+      "MLI"
+    ],
+    "currencyCode": "XOF",
+    "currencyName": "West African CFA franc",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "MM",
+    "iso3": "MMR",
+    "name": "Myanmar",
+    "commonNames": [
+      "Republic of the Union of Myanmar",
+      "MM",
+      "Burma",
+      "Pyidaunzu Thanmăda Myăma Nainngandaw",
+      "MMR"
+    ],
+    "currencyCode": "MMK",
+    "currencyName": "Burmese kyat",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  {
+    "iso2": "MN",
+    "iso3": "MNG",
+    "name": "Mongolia",
+    "commonNames": [
+      "MN",
+      "MNG"
+    ],
+    "currencyCode": "MNT",
+    "currencyName": "Mongolian tögrög",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "iso2": "MO",
+    "iso3": "MAC",
+    "name": "Macau",
+    "commonNames": [
+      "Macao Special Administrative Region of the People's Republic of China",
+      "MO",
+      "澳门",
+      "Macao",
+      "中華人民共和國澳門特別行政區",
+      "Região Administrativa Especial de Macau da República Popular da China",
+      "MAC"
+    ],
+    "currencyCode": "MOP",
+    "currencyName": "Macanese pataca",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "iso2": "MP",
+    "iso3": "MNP",
+    "name": "Northern Mariana Islands",
+    "commonNames": [
+      "Commonwealth of the Northern Mariana Islands",
+      "MP",
+      "Sankattan Siha Na Islas Mariånas",
+      "MNP"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  {
+    "iso2": "MQ",
+    "iso3": "MTQ",
+    "name": "Martinique",
+    "commonNames": [
+      "MQ",
+      "MTQ"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "MR",
+    "iso3": "MRT",
+    "name": "Mauritania",
+    "commonNames": [
+      "Islamic Republic of Mauritania",
+      "MR",
+      "al-Jumhūriyyah al-ʾIslāmiyyah al-Mūrītāniyyah",
+      "MRT"
+    ],
+    "currencyCode": "MRU",
+    "currencyName": "Mauritanian ouguiya",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "MS",
+    "iso3": "MSR",
+    "name": "Montserrat",
+    "commonNames": [
+      "MS",
+      "MSR"
+    ],
+    "currencyCode": "XCD",
+    "currencyName": "Eastern Caribbean dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "MT",
+    "iso3": "MLT",
+    "name": "Malta",
+    "commonNames": [
+      "Republic of Malta",
+      "MT",
+      "Repubblika ta' Malta",
+      "MLT"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "iso2": "MU",
+    "iso3": "MUS",
+    "name": "Mauritius",
+    "commonNames": [
+      "Republic of Mauritius",
+      "MU",
+      "République de Maurice",
+      "MUS"
+    ],
+    "currencyCode": "MUR",
+    "currencyName": "Mauritian rupee",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "MV",
+    "iso3": "MDV",
+    "name": "Maldives",
+    "commonNames": [
+      "Republic of the Maldives",
+      "MV",
+      "Maldive Islands",
+      "Dhivehi Raajjeyge Jumhooriyya",
+      "MDV"
+    ],
+    "currencyCode": "MVR",
+    "currencyName": "Maldivian rufiyaa",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "iso2": "MW",
+    "iso3": "MWI",
+    "name": "Malawi",
+    "commonNames": [
+      "Republic of Malawi",
+      "MW",
+      "MWI"
+    ],
+    "currencyCode": "MWK",
+    "currencyName": "Malawian kwacha",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "MX",
+    "iso3": "MEX",
+    "name": "Mexico",
+    "commonNames": [
+      "United Mexican States",
+      "MX",
+      "Mexicanos",
+      "Estados Unidos Mexicanos",
+      "MEX"
+    ],
+    "currencyCode": "MXN",
+    "currencyName": "Mexican peso",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  {
+    "iso2": "MY",
+    "iso3": "MYS",
+    "name": "Malaysia",
+    "commonNames": [
+      "MY",
+      "MYS"
+    ],
+    "currencyCode": "MYR",
+    "currencyName": "Malaysian ringgit",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  {
+    "iso2": "MZ",
+    "iso3": "MOZ",
+    "name": "Mozambique",
+    "commonNames": [
+      "Republic of Mozambique",
+      "MZ",
+      "República de Moçambique",
+      "MOZ"
+    ],
+    "currencyCode": "MZN",
+    "currencyName": "Mozambican metical",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "NA",
+    "iso3": "NAM",
+    "name": "Namibia",
+    "commonNames": [
+      "Republic of Namibia",
+      "NA",
+      "Namibië",
+      "NAM"
+    ],
+    "currencyCode": "NAD",
+    "currencyName": "Namibian dollar",
+    "region": "Africa",
+    "subregion": "Southern Africa"
+  },
+  {
+    "iso2": "NC",
+    "iso3": "NCL",
+    "name": "New Caledonia",
+    "commonNames": [
+      "NC",
+      "NCL"
+    ],
+    "currencyCode": "XPF",
+    "currencyName": "CFP franc",
+    "region": "Oceania",
+    "subregion": "Melanesia"
+  },
+  {
+    "iso2": "NE",
+    "iso3": "NER",
+    "name": "Niger",
+    "commonNames": [
+      "Republic of Niger",
+      "NE",
+      "Nijar",
+      "NER"
+    ],
+    "currencyCode": "XOF",
+    "currencyName": "West African CFA franc",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "NF",
+    "iso3": "NFK",
+    "name": "Norfolk Island",
+    "commonNames": [
+      "Territory of Norfolk Island",
+      "NF",
+      "Teratri of Norf'k Ailen",
+      "NFK"
+    ],
+    "currencyCode": "AUD",
+    "currencyName": "Australian dollar",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  {
+    "iso2": "NG",
+    "iso3": "NGA",
+    "name": "Nigeria",
+    "commonNames": [
+      "Federal Republic of Nigeria",
+      "NG",
+      "Nijeriya",
+      "Naíjíríà",
+      "NGA"
+    ],
+    "currencyCode": "NGN",
+    "currencyName": "Nigerian naira",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "NI",
+    "iso3": "NIC",
+    "name": "Nicaragua",
+    "commonNames": [
+      "Republic of Nicaragua",
+      "NI",
+      "República de Nicaragua",
+      "NIC"
+    ],
+    "currencyCode": "NIO",
+    "currencyName": "Nicaraguan córdoba",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  {
+    "iso2": "NL",
+    "iso3": "NLD",
+    "name": "Netherlands",
+    "commonNames": [
+      "Kingdom of the Netherlands",
+      "NL",
+      "Holland",
+      "Nederland",
+      "The Netherlands",
+      "NLD"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "iso2": "NO",
+    "iso3": "NOR",
+    "name": "Norway",
+    "commonNames": [
+      "Kingdom of Norway",
+      "NO",
+      "Norge",
+      "Noreg",
+      "Kongeriket Norge",
+      "Kongeriket Noreg",
+      "NOR"
+    ],
+    "currencyCode": "NOK",
+    "currencyName": "Norwegian krone",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "NP",
+    "iso3": "NPL",
+    "name": "Nepal",
+    "commonNames": [
+      "Federal Democratic Republic of Nepal",
+      "NP",
+      "Loktāntrik Ganatantra Nepāl",
+      "NPL"
+    ],
+    "currencyCode": "NPR",
+    "currencyName": "Nepalese rupee",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "iso2": "NR",
+    "iso3": "NRU",
+    "name": "Nauru",
+    "commonNames": [
+      "Republic of Nauru",
+      "NR",
+      "Naoero",
+      "Pleasant Island",
+      "Ripublik Naoero",
+      "NRU"
+    ],
+    "currencyCode": "AUD",
+    "currencyName": "Australian dollar",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  {
+    "iso2": "NU",
+    "iso3": "NIU",
+    "name": "Niue",
+    "commonNames": [
+      "NU",
+      "NIU"
+    ],
+    "currencyCode": "NZD",
+    "currencyName": "New Zealand dollar",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  {
+    "iso2": "NZ",
+    "iso3": "NZL",
+    "name": "New Zealand",
+    "commonNames": [
+      "NZ",
+      "Aotearoa",
+      "NZL"
+    ],
+    "currencyCode": "NZD",
+    "currencyName": "New Zealand dollar",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  {
+    "iso2": "OM",
+    "iso3": "OMN",
+    "name": "Oman",
+    "commonNames": [
+      "Sultanate of Oman",
+      "OM",
+      "Salṭanat ʻUmān",
+      "OMN"
+    ],
+    "currencyCode": "OMR",
+    "currencyName": "Omani rial",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "PA",
+    "iso3": "PAN",
+    "name": "Panama",
+    "commonNames": [
+      "Republic of Panama",
+      "PA",
+      "República de Panamá",
+      "PAN"
+    ],
+    "currencyCode": "PAB",
+    "currencyName": "Panamanian balboa",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  {
+    "iso2": "PE",
+    "iso3": "PER",
+    "name": "Peru",
+    "commonNames": [
+      "Republic of Peru",
+      "PE",
+      "República del Perú",
+      "PER"
+    ],
+    "currencyCode": "PEN",
+    "currencyName": "Peruvian sol",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "PF",
+    "iso3": "PYF",
+    "name": "French Polynesia",
+    "commonNames": [
+      "PF",
+      "Polynésie française",
+      "French Polynesia",
+      "Pōrīnetia Farāni",
+      "PYF"
+    ],
+    "currencyCode": "XPF",
+    "currencyName": "CFP franc",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  {
+    "iso2": "PG",
+    "iso3": "PNG",
+    "name": "Papua New Guinea",
+    "commonNames": [
+      "Independent State of Papua New Guinea",
+      "PG",
+      "Independen Stet bilong Papua Niugini",
+      "PNG"
+    ],
+    "currencyCode": "PGK",
+    "currencyName": "Papua New Guinean kina",
+    "region": "Oceania",
+    "subregion": "Melanesia"
+  },
+  {
+    "iso2": "PH",
+    "iso3": "PHL",
+    "name": "Philippines",
+    "commonNames": [
+      "Republic of the Philippines",
+      "PH",
+      "Repúblika ng Pilipinas",
+      "PHL"
+    ],
+    "currencyCode": "PHP",
+    "currencyName": "Philippine peso",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  {
+    "iso2": "PK",
+    "iso3": "PAK",
+    "name": "Pakistan",
+    "commonNames": [
+      "Islamic Republic of Pakistan",
+      "PK",
+      "Pākistān",
+      "Islāmī Jumhūriya'eh Pākistān",
+      "PAK"
+    ],
+    "currencyCode": "PKR",
+    "currencyName": "Pakistani rupee",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "iso2": "PL",
+    "iso3": "POL",
+    "name": "Poland",
+    "commonNames": [
+      "Republic of Poland",
+      "PL",
+      "Rzeczpospolita Polska",
+      "POL"
+    ],
+    "currencyCode": "PLN",
+    "currencyName": "Polish złoty",
+    "region": "Europe",
+    "subregion": "Central Europe"
+  },
+  {
+    "iso2": "PM",
+    "iso3": "SPM",
+    "name": "Saint Pierre and Miquelon",
+    "commonNames": [
+      "PM",
+      "Collectivité territoriale de Saint-Pierre-et-Miquelon",
+      "SPM"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  {
+    "iso2": "PN",
+    "iso3": "PCN",
+    "name": "Pitcairn Islands",
+    "commonNames": [
+      "Pitcairn Group of Islands",
+      "PN",
+      "Pitcairn",
+      "Pitcairn Henderson Ducie and Oeno Islands",
+      "PCN"
+    ],
+    "currencyCode": "NZD",
+    "currencyName": "New Zealand dollar",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  {
+    "iso2": "PR",
+    "iso3": "PRI",
+    "name": "Puerto Rico",
+    "commonNames": [
+      "Commonwealth of Puerto Rico",
+      "PR",
+      "Estado Libre Asociado de Puerto Rico",
+      "PRI"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "PS",
+    "iso3": "PSE",
+    "name": "Palestine",
+    "commonNames": [
+      "State of Palestine",
+      "PS",
+      "Palestine, State of",
+      "Dawlat Filasṭin",
+      "PSE"
+    ],
+    "currencyCode": "EGP",
+    "currencyName": "Egyptian pound",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "PT",
+    "iso3": "PRT",
+    "name": "Portugal",
+    "commonNames": [
+      "Portuguese Republic",
+      "PT",
+      "Portuguesa",
+      "República Portuguesa",
+      "PRT"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "iso2": "PW",
+    "iso3": "PLW",
+    "name": "Palau",
+    "commonNames": [
+      "Republic of Palau",
+      "PW",
+      "Beluu er a Belau",
+      "PLW"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  {
+    "iso2": "PY",
+    "iso3": "PRY",
+    "name": "Paraguay",
+    "commonNames": [
+      "Republic of Paraguay",
+      "PY",
+      "República del Paraguay",
+      "Tetã Paraguái",
+      "PRY"
+    ],
+    "currencyCode": "PYG",
+    "currencyName": "Paraguayan guaraní",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "QA",
+    "iso3": "QAT",
+    "name": "Qatar",
+    "commonNames": [
+      "State of Qatar",
+      "QA",
+      "Dawlat Qaṭar",
+      "QAT"
+    ],
+    "currencyCode": "QAR",
+    "currencyName": "Qatari riyal",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "RE",
+    "iso3": "REU",
+    "name": "Réunion",
+    "commonNames": [
+      "Réunion Island",
+      "RE",
+      "Reunion",
+      "REU"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "RO",
+    "iso3": "ROU",
+    "name": "Romania",
+    "commonNames": [
+      "RO",
+      "Rumania",
+      "Roumania",
+      "România",
+      "ROU"
+    ],
+    "currencyCode": "RON",
+    "currencyName": "Romanian leu",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  {
+    "iso2": "RS",
+    "iso3": "SRB",
+    "name": "Serbia",
+    "commonNames": [
+      "Republic of Serbia",
+      "RS",
+      "Srbija",
+      "Република Србија",
+      "Republika Srbija",
+      "SRB"
+    ],
+    "currencyCode": "RSD",
+    "currencyName": "Serbian dinar",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  {
+    "iso2": "RU",
+    "iso3": "RUS",
+    "name": "Russia",
+    "commonNames": [
+      "Russian Federation",
+      "RU",
+      "Российская Федерация",
+      "RUS"
+    ],
+    "currencyCode": "RUB",
+    "currencyName": "Russian ruble",
+    "region": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  {
+    "iso2": "RW",
+    "iso3": "RWA",
+    "name": "Rwanda",
+    "commonNames": [
+      "Republic of Rwanda",
+      "RW",
+      "Repubulika y'u Rwanda",
+      "République du Rwanda",
+      "RWA"
+    ],
+    "currencyCode": "RWF",
+    "currencyName": "Rwandan franc",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "SA",
+    "iso3": "SAU",
+    "name": "Saudi Arabia",
+    "commonNames": [
+      "Kingdom of Saudi Arabia",
+      "Saudi",
+      "SA",
+      "Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah",
+      "SAU"
+    ],
+    "currencyCode": "SAR",
+    "currencyName": "Saudi riyal",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "SB",
+    "iso3": "SLB",
+    "name": "Solomon Islands",
+    "commonNames": [
+      "SB",
+      "SLB"
+    ],
+    "currencyCode": "SBD",
+    "currencyName": "Solomon Islands dollar",
+    "region": "Oceania",
+    "subregion": "Melanesia"
+  },
+  {
+    "iso2": "SC",
+    "iso3": "SYC",
+    "name": "Seychelles",
+    "commonNames": [
+      "Republic of Seychelles",
+      "SC",
+      "Repiblik Sesel",
+      "République des Seychelles",
+      "SYC"
+    ],
+    "currencyCode": "SCR",
+    "currencyName": "Seychellois rupee",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "SD",
+    "iso3": "SDN",
+    "name": "Sudan",
+    "commonNames": [
+      "Republic of the Sudan",
+      "SD",
+      "Jumhūrīyat as-Sūdān",
+      "SDN"
+    ],
+    "currencyCode": "SDG",
+    "currencyName": "Sudanese pound",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "iso2": "SE",
+    "iso3": "SWE",
+    "name": "Sweden",
+    "commonNames": [
+      "Kingdom of Sweden",
+      "SE",
+      "Konungariket Sverige",
+      "SWE"
+    ],
+    "currencyCode": "SEK",
+    "currencyName": "Swedish krona",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "SG",
+    "iso3": "SGP",
+    "name": "Singapore",
+    "commonNames": [
+      "Republic of Singapore",
+      "SG",
+      "Singapura",
+      "Republik Singapura",
+      "新加坡共和国",
+      "SGP"
+    ],
+    "currencyCode": "SGD",
+    "currencyName": "Singapore dollar",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  {
+    "iso2": "SH",
+    "iso3": "SHN",
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "commonNames": [
+      "Saint Helena",
+      "St. Helena, Ascension and Tristan da Cunha",
+      "SH",
+      "SHN"
+    ],
+    "currencyCode": "GBP",
+    "currencyName": "Pound sterling",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "SI",
+    "iso3": "SVN",
+    "name": "Slovenia",
+    "commonNames": [
+      "Republic of Slovenia",
+      "SI",
+      "Republika Slovenija",
+      "SVN"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Central Europe"
+  },
+  {
+    "iso2": "SJ",
+    "iso3": "SJM",
+    "name": "Svalbard and Jan Mayen",
+    "commonNames": [
+      "Svalbard og Jan Mayen",
+      "SJ",
+      "Svalbard and Jan Mayen Islands",
+      "SJM"
+    ],
+    "currencyCode": "NOK",
+    "currencyName": "krone",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  {
+    "iso2": "SK",
+    "iso3": "SVK",
+    "name": "Slovakia",
+    "commonNames": [
+      "Slovak Republic",
+      "SK",
+      "Slovenská republika",
+      "SVK"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Central Europe"
+  },
+  {
+    "iso2": "SL",
+    "iso3": "SLE",
+    "name": "Sierra Leone",
+    "commonNames": [
+      "Republic of Sierra Leone",
+      "SL",
+      "SLE"
+    ],
+    "currencyCode": "SLL",
+    "currencyName": "Sierra Leonean leone",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "SM",
+    "iso3": "SMR",
+    "name": "San Marino",
+    "commonNames": [
+      "Most Serene Republic of San Marino",
+      "SM",
+      "Republic of San Marino",
+      "Repubblica di San Marino",
+      "SMR"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "iso2": "SN",
+    "iso3": "SEN",
+    "name": "Senegal",
+    "commonNames": [
+      "Republic of Senegal",
+      "SN",
+      "République du Sénégal",
+      "SEN"
+    ],
+    "currencyCode": "XOF",
+    "currencyName": "West African CFA franc",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "SO",
+    "iso3": "SOM",
+    "name": "Somalia",
+    "commonNames": [
+      "Federal Republic of Somalia",
+      "SO",
+      "aṣ-Ṣūmāl",
+      "Jamhuuriyadda Federaalka Soomaaliya",
+      "Jumhūriyyat aṣ-Ṣūmāl al-Fiderāliyya",
+      "SOM"
+    ],
+    "currencyCode": "SOS",
+    "currencyName": "Somali shilling",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "SR",
+    "iso3": "SUR",
+    "name": "Suriname",
+    "commonNames": [
+      "Republic of Suriname",
+      "SR",
+      "Sarnam",
+      "Sranangron",
+      "Republiek Suriname",
+      "SUR"
+    ],
+    "currencyCode": "SRD",
+    "currencyName": "Surinamese dollar",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "SS",
+    "iso3": "SSD",
+    "name": "South Sudan",
+    "commonNames": [
+      "Republic of South Sudan",
+      "SS",
+      "SSD"
+    ],
+    "currencyCode": "SSP",
+    "currencyName": "South Sudanese pound",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  {
+    "iso2": "ST",
+    "iso3": "STP",
+    "name": "São Tomé and Príncipe",
+    "commonNames": [
+      "Democratic Republic of São Tomé and Príncipe",
+      "ST",
+      "Sao Tome and Principe",
+      "República Democrática de São Tomé e Príncipe",
+      "STP"
+    ],
+    "currencyCode": "STN",
+    "currencyName": "São Tomé and Príncipe dobra",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  {
+    "iso2": "SV",
+    "iso3": "SLV",
+    "name": "El Salvador",
+    "commonNames": [
+      "Republic of El Salvador",
+      "SV",
+      "República de El Salvador",
+      "SLV"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  {
+    "iso2": "SX",
+    "iso3": "SXM",
+    "name": "Sint Maarten",
+    "commonNames": [
+      "SX",
+      "Sint Maarten (Dutch part)",
+      "SXM"
+    ],
+    "currencyCode": "ANG",
+    "currencyName": "Netherlands Antillean guilder",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "SY",
+    "iso3": "SYR",
+    "name": "Syria",
+    "commonNames": [
+      "Syrian Arab Republic",
+      "SY",
+      "Al-Jumhūrīyah Al-ʻArabīyah As-Sūrīyah",
+      "SYR"
+    ],
+    "currencyCode": "SYP",
+    "currencyName": "Syrian pound",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "SZ",
+    "iso3": "SWZ",
+    "name": "Eswatini",
+    "commonNames": [
+      "Kingdom of Eswatini",
+      "SZ",
+      "Swaziland",
+      "weSwatini",
+      "Swatini",
+      "Ngwane",
+      "Umbuso weSwatini",
+      "SWZ"
+    ],
+    "currencyCode": "SZL",
+    "currencyName": "Swazi lilangeni",
+    "region": "Africa",
+    "subregion": "Southern Africa"
+  },
+  {
+    "iso2": "TC",
+    "iso3": "TCA",
+    "name": "Turks and Caicos Islands",
+    "commonNames": [
+      "TC",
+      "TCA"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "TD",
+    "iso3": "TCD",
+    "name": "Chad",
+    "commonNames": [
+      "Republic of Chad",
+      "TD",
+      "Tchad",
+      "République du Tchad",
+      "TCD"
+    ],
+    "currencyCode": "XAF",
+    "currencyName": "Central African CFA franc",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  {
+    "iso2": "TF",
+    "iso3": "ATF",
+    "name": "French Southern and Antarctic Lands",
+    "commonNames": [
+      "Territory of the French Southern and Antarctic Lands",
+      "TF",
+      "French Southern Territories",
+      "ATF"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Antarctic",
+    "subregion": "Unknown"
+  },
+  {
+    "iso2": "TG",
+    "iso3": "TGO",
+    "name": "Togo",
+    "commonNames": [
+      "Togolese Republic",
+      "TG",
+      "Togolese",
+      "République Togolaise",
+      "TGO"
+    ],
+    "currencyCode": "XOF",
+    "currencyName": "West African CFA franc",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  {
+    "iso2": "TH",
+    "iso3": "THA",
+    "name": "Thailand",
+    "commonNames": [
+      "Kingdom of Thailand",
+      "TH",
+      "Prathet",
+      "Thai",
+      "ราชอาณาจักรไทย",
+      "Ratcha Anachak Thai",
+      "THA"
+    ],
+    "currencyCode": "THB",
+    "currencyName": "Thai baht",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  {
+    "iso2": "TJ",
+    "iso3": "TJK",
+    "name": "Tajikistan",
+    "commonNames": [
+      "Republic of Tajikistan",
+      "TJ",
+      "Toçikiston",
+      "Ҷумҳурии Тоҷикистон",
+      "Çumhuriyi Toçikiston",
+      "TJK"
+    ],
+    "currencyCode": "TJS",
+    "currencyName": "Tajikistani somoni",
+    "region": "Asia",
+    "subregion": "Central Asia"
+  },
+  {
+    "iso2": "TK",
+    "iso3": "TKL",
+    "name": "Tokelau",
+    "commonNames": [
+      "TK",
+      "TKL"
+    ],
+    "currencyCode": "NZD",
+    "currencyName": "New Zealand dollar",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  {
+    "iso2": "TL",
+    "iso3": "TLS",
+    "name": "Timor-Leste",
+    "commonNames": [
+      "Democratic Republic of Timor-Leste",
+      "TL",
+      "East Timor",
+      "República Democrática de Timor-Leste",
+      "Repúblika Demokrátika Timór-Leste",
+      "Timór Lorosa'e",
+      "Timor Lorosae",
+      "TLS"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  {
+    "iso2": "TM",
+    "iso3": "TKM",
+    "name": "Turkmenistan",
+    "commonNames": [
+      "TM",
+      "TKM"
+    ],
+    "currencyCode": "TMT",
+    "currencyName": "Turkmenistan manat",
+    "region": "Asia",
+    "subregion": "Central Asia"
+  },
+  {
+    "iso2": "TN",
+    "iso3": "TUN",
+    "name": "Tunisia",
+    "commonNames": [
+      "Tunisian Republic",
+      "TN",
+      "Republic of Tunisia",
+      "al-Jumhūriyyah at-Tūnisiyyah",
+      "TUN"
+    ],
+    "currencyCode": "TND",
+    "currencyName": "Tunisian dinar",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  {
+    "iso2": "TO",
+    "iso3": "TON",
+    "name": "Tonga",
+    "commonNames": [
+      "Kingdom of Tonga",
+      "TO",
+      "TON"
+    ],
+    "currencyCode": "TOP",
+    "currencyName": "Tongan paʻanga",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  {
+    "iso2": "TR",
+    "iso3": "TUR",
+    "name": "Turkey",
+    "commonNames": [
+      "Republic of Turkey",
+      "TR",
+      "Turkiye",
+      "Türkiye Cumhuriyeti",
+      "TUR"
+    ],
+    "currencyCode": "TRY",
+    "currencyName": "Turkish lira",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "TT",
+    "iso3": "TTO",
+    "name": "Trinidad and Tobago",
+    "commonNames": [
+      "Republic of Trinidad and Tobago",
+      "TT",
+      "TTO"
+    ],
+    "currencyCode": "TTD",
+    "currencyName": "Trinidad and Tobago dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "TV",
+    "iso3": "TUV",
+    "name": "Tuvalu",
+    "commonNames": [
+      "TV",
+      "TUV"
+    ],
+    "currencyCode": "AUD",
+    "currencyName": "Australian dollar",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  {
+    "iso2": "TW",
+    "iso3": "TWN",
+    "name": "Taiwan",
+    "commonNames": [
+      "Republic of China (Taiwan)",
+      "TW",
+      "Táiwān",
+      "Republic of China",
+      "中華民國",
+      "Zhōnghuá Mínguó",
+      "Chinese Taipei",
+      "TWN"
+    ],
+    "currencyCode": "TWD",
+    "currencyName": "New Taiwan dollar",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  {
+    "iso2": "TZ",
+    "iso3": "TZA",
+    "name": "Tanzania",
+    "commonNames": [
+      "United Republic of Tanzania",
+      "TZ",
+      "Tanzania, United Republic of",
+      "Jamhuri ya Muungano wa Tanzania",
+      "TZA"
+    ],
+    "currencyCode": "TZS",
+    "currencyName": "Tanzanian shilling",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "UA",
+    "iso3": "UKR",
+    "name": "Ukraine",
+    "commonNames": [
+      "UA",
+      "Ukrayina",
+      "UKR"
+    ],
+    "currencyCode": "UAH",
+    "currencyName": "Ukrainian hryvnia",
+    "region": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  {
+    "iso2": "UG",
+    "iso3": "UGA",
+    "name": "Uganda",
+    "commonNames": [
+      "Republic of Uganda",
+      "UG",
+      "Jamhuri ya Uganda",
+      "UGA"
+    ],
+    "currencyCode": "UGX",
+    "currencyName": "Ugandan shilling",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "UM",
+    "iso3": "UMI",
+    "name": "United States Minor Outlying Islands",
+    "commonNames": [
+      "UM",
+      "UMI"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  {
+    "iso2": "US",
+    "iso3": "USA",
+    "name": "United States",
+    "commonNames": [
+      "United States of America",
+      "US",
+      "USA"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Americas",
+    "subregion": "North America",
+    "validationRules": {
+      "binPrefixes": [
+        "4",
+        "5",
+        "34",
+        "37",
+        "6"
+      ],
+      "cardNetworks": [
+        "visa",
+        "mastercard",
+        "amex",
+        "discover"
+      ]
+    }
+  },
+  {
+    "iso2": "UY",
+    "iso3": "URY",
+    "name": "Uruguay",
+    "commonNames": [
+      "Oriental Republic of Uruguay",
+      "UY",
+      "República Oriental del Uruguay",
+      "URY"
+    ],
+    "currencyCode": "UYU",
+    "currencyName": "Uruguayan peso",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "UZ",
+    "iso3": "UZB",
+    "name": "Uzbekistan",
+    "commonNames": [
+      "Republic of Uzbekistan",
+      "UZ",
+      "O‘zbekiston Respublikasi",
+      "Ўзбекистон Республикаси",
+      "UZB"
+    ],
+    "currencyCode": "UZS",
+    "currencyName": "Uzbekistani soʻm",
+    "region": "Asia",
+    "subregion": "Central Asia"
+  },
+  {
+    "iso2": "VA",
+    "iso3": "VAT",
+    "name": "Vatican City",
+    "commonNames": [
+      "Vatican City State",
+      "VA",
+      "Holy See (Vatican City State)",
+      "Stato della Città del Vaticano",
+      "VAT"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  {
+    "iso2": "VC",
+    "iso3": "VCT",
+    "name": "Saint Vincent and the Grenadines",
+    "commonNames": [
+      "VC",
+      "VCT"
+    ],
+    "currencyCode": "XCD",
+    "currencyName": "Eastern Caribbean dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "VE",
+    "iso3": "VEN",
+    "name": "Venezuela",
+    "commonNames": [
+      "Bolivarian Republic of Venezuela",
+      "VE",
+      "Venezuela, Bolivarian Republic of",
+      "República Bolivariana de Venezuela",
+      "VEN"
+    ],
+    "currencyCode": "VES",
+    "currencyName": "Venezuelan bolívar soberano",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  {
+    "iso2": "VG",
+    "iso3": "VGB",
+    "name": "British Virgin Islands",
+    "commonNames": [
+      "Virgin Islands",
+      "VG",
+      "Virgin Islands, British",
+      "VGB"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "VI",
+    "iso3": "VIR",
+    "name": "United States Virgin Islands",
+    "commonNames": [
+      "Virgin Islands of the United States",
+      "VI",
+      "Virgin Islands, U.S.",
+      "VIR"
+    ],
+    "currencyCode": "USD",
+    "currencyName": "United States dollar",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  {
+    "iso2": "VN",
+    "iso3": "VNM",
+    "name": "Vietnam",
+    "commonNames": [
+      "Socialist Republic of Vietnam",
+      "VN",
+      "Cộng hòa Xã hội chủ nghĩa Việt Nam",
+      "Viet Nam",
+      "VNM"
+    ],
+    "currencyCode": "VND",
+    "currencyName": "Vietnamese đồng",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "validationRules": {
+      "cardNetworks": [
+        "visa",
+        "mastercard",
+        "jcb",
+        "unionpay"
+      ]
+    }
+  },
+  {
+    "iso2": "VU",
+    "iso3": "VUT",
+    "name": "Vanuatu",
+    "commonNames": [
+      "Republic of Vanuatu",
+      "VU",
+      "Ripablik blong Vanuatu",
+      "République de Vanuatu",
+      "VUT"
+    ],
+    "currencyCode": "VUV",
+    "currencyName": "Vanuatu vatu",
+    "region": "Oceania",
+    "subregion": "Melanesia"
+  },
+  {
+    "iso2": "WF",
+    "iso3": "WLF",
+    "name": "Wallis and Futuna",
+    "commonNames": [
+      "Territory of the Wallis and Futuna Islands",
+      "WF",
+      "Territoire des îles Wallis et Futuna",
+      "WLF"
+    ],
+    "currencyCode": "XPF",
+    "currencyName": "CFP franc",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  {
+    "iso2": "WS",
+    "iso3": "WSM",
+    "name": "Samoa",
+    "commonNames": [
+      "Independent State of Samoa",
+      "WS",
+      "Malo Saʻoloto Tutoʻatasi o Sāmoa",
+      "WSM"
+    ],
+    "currencyCode": "WST",
+    "currencyName": "Samoan tālā",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  {
+    "iso2": "XK",
+    "iso3": "UNK",
+    "name": "Kosovo",
+    "commonNames": [
+      "Republic of Kosovo",
+      "XK",
+      "Република Косово",
+      "UNK"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  {
+    "iso2": "YE",
+    "iso3": "YEM",
+    "name": "Yemen",
+    "commonNames": [
+      "Republic of Yemen",
+      "YE",
+      "Yemeni Republic",
+      "al-Jumhūriyyah al-Yamaniyyah",
+      "YEM"
+    ],
+    "currencyCode": "YER",
+    "currencyName": "Yemeni rial",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  {
+    "iso2": "YT",
+    "iso3": "MYT",
+    "name": "Mayotte",
+    "commonNames": [
+      "Department of Mayotte",
+      "YT",
+      "Département de Mayotte",
+      "MYT"
+    ],
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "ZA",
+    "iso3": "ZAF",
+    "name": "South Africa",
+    "commonNames": [
+      "Republic of South Africa",
+      "ZA",
+      "RSA",
+      "Suid-Afrika",
+      "ZAF"
+    ],
+    "currencyCode": "ZAR",
+    "currencyName": "South African rand",
+    "region": "Africa",
+    "subregion": "Southern Africa"
+  },
+  {
+    "iso2": "ZM",
+    "iso3": "ZMB",
+    "name": "Zambia",
+    "commonNames": [
+      "Republic of Zambia",
+      "ZM",
+      "ZMB"
+    ],
+    "currencyCode": "ZMW",
+    "currencyName": "Zambian kwacha",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  {
+    "iso2": "ZW",
+    "iso3": "ZWE",
+    "name": "Zimbabwe",
+    "commonNames": [
+      "Republic of Zimbabwe",
+      "ZW",
+      "ZWE"
+    ],
+    "currencyCode": "BWP",
+    "currencyName": "Botswana pula",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  }
+]
